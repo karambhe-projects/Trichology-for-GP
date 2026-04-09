@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 — Hair and Scalp Anatomy | Trichology for GP</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{
+  --ink:#18161A;--ink2:#3d3a42;--ink3:#7a7680;
+  --bg:#F9F7F4;--bg2:#F2EFE9;--bg3:#E8E3DB;
+  --rule:#D4CEC4;--ch-accent:#185FA5;
+  --teal:#1a6b6b;--teal2:#e6f5f5;
+  --gold:#9a7228;--gold2:#c49a3c;--goldbg:#fdf6e4;
+  --coral:#b84a2a;--coralbg:#fdf0ec;
+  --blue:#2a4e8c;--bluebg:#edf2fc;
+  --green:#2a6a3a;--greenbg:#edf6ee;
+  --purple:#5a2a8c;--purplebg:#f0eafc;
+  --red:#aa2020;--redbg:#fceaea;
+  --info:#185FA5;--infobg:#E6F1FB;
+  --success:#3B6D11;--successbg:#EAF3DE;
+  --warning:#854F0B;--warningbg:#FAEEDA;
+  --danger:#A32D2D;--dangerbg:#FCEBEB;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.78;font-size:16.5px;max-width:940px;margin:0 auto;padding-bottom:80px}
+
+/* HEADER */
+.ch-header{padding:44px 46px 32px;border-bottom:0.5px solid var(--rule);position:relative;overflow:hidden}
+.header-number{font-family:'Playfair Display',serif;font-size:132px;font-weight:700;color:rgba(0,0,0,0.04);position:absolute;right:32px;top:-10px;line-height:1;user-select:none}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--info);margin-bottom:12px}
+.ch-title{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.1;margin-bottom:8px;position:relative;z-index:1}
+.ch-sub{font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:var(--ink2);margin-bottom:20px}
+
+.nav{display:flex;border-bottom:1px solid var(--rule);padding:0 46px;position:sticky;top:0;z-index:200;background:var(--bg);overflow-x:auto;gap:0}
+.nav::-webkit-scrollbar{height:0}
+.nt{font-size:14px;color:var(--ink3);padding:12px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .18s;text-decoration:none}
+.nt:hover{color:var(--ink)}
+.nt.on{color:var(--info);border-bottom-color:var(--info);font-weight:500}
+
+.sec{display:none;padding:36px 46px 20px}
+.sec.on{display:block}
+
+/* TYPOGRAPHY */
+h2{font-family:'Playfair Display',serif;font-size:27.5px;font-weight:600;margin:34px 0 13px;padding-bottom:9px;border-bottom:1px solid var(--rule)}
+h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:500;font-style:italic;color:var(--ink2);margin:22px 0 10px}
+p{margin-bottom:14px;color:var(--ink2);font-size:16.5px}
+strong{color:var(--ink);font-weight:500}
+
+/* BOXES */
+.box-gp{background:var(--warningbg);border-left:3px solid var(--warning);padding:17px 22px;margin:22px 0;border-radius:0 10px 10px 0}
+.box-gp .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--warning);margin-bottom:7px}
+.box-gp p{font-style:italic;color:var(--ink2);margin:0;font-size:16px}
+.box-key{background:var(--infobg);border-left:3px solid var(--info);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-key .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:5px}
+.box-key p{margin:0;color:var(--blue);font-size:15.5px}
+.box-warn{background:var(--dangerbg);border-left:3px solid var(--danger);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-warn .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--danger);margin-bottom:5px}
+.box-warn p{margin:0;color:#5a1010;font-size:15.5px}
+.box-success{background:var(--successbg);border-left:3px solid var(--success);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-success .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--success);margin-bottom:5px}
+.box-success p{margin:0;color:#1a4a0a;font-size:15.5px}
+
+/* DIAGRAM CARD (ch2-specific, using ch1 palette) */
+.diagram-card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px;margin:24px 0}
+.diagram-title{font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+.diagram-caption{font-size:14.5px;font-style:italic;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.65}
+
+/* DCARD (ch1 standard) */
+.dcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px;margin:24px 0}
+.dcard-title{font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+.dcard-cap{font-size:14.5px;font-style:italic;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.65}
+
+/* LEGEND (ch2-specific) */
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2)}
+.leg-dot{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+
+/* TABLE (ch2 struct-table, styled like ch1 dtable) */
+.struct-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+.struct-table th{background:var(--bg2);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule)}
+.struct-table td{padding:11px 15px;border-bottom:1px solid var(--rule);vertical-align:top}
+.struct-table tr:last-child td{border-bottom:none}
+.struct-table td:first-child{font-weight:500;color:var(--ink)}
+.struct-table tr:hover td{background:var(--bg)}
+.dtable{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+.dtable th{background:var(--bg2);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule)}
+.dtable td{padding:11px 15px;border-bottom:1px solid var(--rule);vertical-align:top}
+.dtable tr:last-child td{border-bottom:none}
+.dtable td:first-child{font-weight:500;color:var(--ink)}
+.dtable tr:hover td{background:var(--bg)}
+
+/* FCARD (ch1 standard) */
+.fcard{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.fcard .ftag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.fcard .ftitle{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.fcard .fdesc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+
+/* QUICK RECALL (ch2-specific, styled like ch1 rcrd) */
+.recall-box{background:var(--bg2);border:1px solid var(--rule);border-radius:12px;padding:22px;margin:24px 0}
+.recall-box h3{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:600;margin:0 0 10px;color:var(--ink);border:none}
+.recall-box .mnemonic{font-size:22px;font-weight:600;letter-spacing:4px;color:var(--info);font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.recall-box p{color:var(--ink2);font-size:14.5px;margin-bottom:6px}
+.recall-items{list-style:none;font-size:14.5px;line-height:2.1;color:var(--ink2);margin:12px 0 0}
+.recall-items li{padding:0}
+.recall-items li::before{content:"\2192 ";color:var(--ink3)}
+.recall-items li strong{color:var(--info)}
+
+/* RCRD (ch1 standard) */
+.rcrd{background:var(--bg2);border:1px solid var(--rule);border-radius:12px;padding:22px}
+.rcrd h4{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.rcrd .mnem{font-size:22px;font-weight:600;letter-spacing:4px;color:var(--info);font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.rcrd ul{list-style:none;font-size:14.5px;line-height:2.1;color:var(--ink2)}
+.rcrd ul li::before{content:"\2192 ";color:var(--ink3)}
+.rcrd ul strong{color:var(--info)}
+
+/* PHASE BADGES (ch2-specific) */
+.phase-badge{display:inline-block;font-size:12px;font-weight:500;padding:3px 10px;border-radius:20px;margin:2px}
+.badge-anagen{background:var(--successbg);color:var(--success)}
+.badge-catagen{background:var(--warningbg);color:var(--warning)}
+.badge-telogen{background:var(--purplebg);color:var(--purple)}
+.badge-exogen{background:var(--coralbg);color:var(--coral)}
+
+/* FLASHCARD DECK (ch2-specific, using ch1 palette) */
+.flashcard-intro{font-size:16.5px;color:var(--ink3);margin-bottom:24px}
+.fc-progress{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.fc-bar{flex:1;height:3px;background:var(--rule);border-radius:2px;overflow:hidden}
+.fc-fill{height:100%;background:var(--info);border-radius:2px;transition:width .4s}
+.fc-count{font-size:13px;color:var(--ink3);min-width:72px;text-align:right}
+.flashcard{height:210px;perspective:1000px;cursor:pointer;margin-bottom:14px}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .48s cubic-bezier(.4,0,.2,1)}
+.fc-inner.flipped{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 32px;text-align:center}
+.fc-front{background:#fff;border:1px solid var(--rule)}
+.fc-front .fc-cat{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:10px}
+.fc-front .fc-q{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:500;color:var(--ink);line-height:1.45}
+.fc-back{background:var(--infobg);transform:rotateY(180deg)}
+.fc-back .fc-a{font-size:16px;color:var(--blue);line-height:1.7;white-space:pre-line}
+.fc-back .fc-hint{font-size:12px;color:var(--blue);margin-top:10px;opacity:.72}
+.fc-flip-hint{font-size:13px;color:var(--ink3);text-align:center;margin-bottom:6px}
+.fc-nav{display:flex;gap:10px;justify-content:center}
+.fc-btn{font-family:'DM Sans',sans-serif;font-size:14.5px;padding:9px 20px;border-radius:8px;border:1px solid var(--rule);background:#fff;color:var(--ink2);cursor:pointer;transition:all .14s}
+.fc-btn:hover{background:var(--bg2)}
+.fc-btn.primary{background:var(--infobg);color:var(--blue);border-color:var(--info)}
+.fc-shuffle{font-size:13px;color:var(--gold);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif}
+.fc-done{display:none;background:var(--successbg);border:1px solid #a0d080;border-radius:10px;padding:18px;text-align:center;margin-top:14px}
+.fc-done h3{font-family:'Playfair Display',serif;color:var(--green);font-size:20px;margin-bottom:6px}
+.fc-done p{color:#2a5a1a;font-size:14.5px;margin:0}
+
+/* REFERENCES */
+.ref-list{list-style:none;margin:14px 0}
+.ref-list li{font-size:14.5px;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--rule);line-height:1.65}
+.ref-list li:last-child{border-bottom:none}
+.ref-list li span,.ref-list li .rn{font-weight:500;color:var(--ink);margin-right:5px}
+
+/* FLASHCARD ch1 standard (pbar/fcrd variants) */
+.pbar-wrap{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.pbar{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.pfill{height:100%;background:var(--info);border-radius:2px;transition:width .4s}
+.pct{font-size:13px;color:var(--ink3);min-width:72px;text-align:right}
+.fcrd{height:210px;perspective:1000px;cursor:pointer;margin-bottom:14px}
+.fc-ctrl{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.fc-ctrl button{font-size:13px;color:var(--gold);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif}
+.hint-txt{font-size:13px;color:var(--ink3);text-align:center;margin-bottom:6px}
+.fcbtn{font-family:'DM Sans',sans-serif;font-size:14.5px;padding:9px 20px;border-radius:8px;border:1px solid var(--rule);background:#fff;color:var(--ink2);cursor:pointer;transition:all .14s}
+.fcbtn:hover{background:var(--bg2)}
+.fcbtn.pri{background:var(--infobg);color:var(--blue);border-color:var(--info)}
+
+@media(max-width:640px){
+  .ch-header,.nav,.sec{padding-left:20px;padding-right:20px}
+  .header-number{font-size:88px}
+  .nt{padding:12px 10px}
+}
+</style>
+</head>
+<body>
+
+<div class="ch-nav">
+  <a href="chapter_01_introduction.html">← Ch. 1: Introduction</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_03_history_examination.html">Ch. 3: History &amp; Examination →</a>
+</div>
+
+<!-- HEADER -->
+<div class="ch-header">
+  <div class="header-number">2</div>
+  <div class="eyebrow">Trichology for GP · Chapter Two</div>
+  <div class="ch-title">Hair &amp; Scalp Anatomy</div>
+  <div class="ch-sub">From follicle to fibre — the complete picture</div>
+</div>
+
+<!-- TABS -->
+<div class="nav">
+  <span class="nt on" onclick="showSec('overview')">Overview</span>
+  <span class="nt" onclick="showSec('pilosebaceous')">Pilosebaceous Unit</span>
+  <span class="nt" onclick="showSec('follicle')">Follicle Anatomy</span>
+  <span class="nt" onclick="showSec('shaft')">Hair Shaft</span>
+  <span class="nt" onclick="showSec('cycle')">Hair Cycle</span>
+  <span class="nt" onclick="showSec('recall')">Quick Recall</span>
+  <span class="nt" onclick="showSec('flashcards')">Anki Cards</span>
+  <span class="nt" onclick="showSec('references')">References</span>
+</div>
+
+<!-- ===================== OVERVIEW ===================== -->
+<div class="sec on" id="sec-overview">
+  <div class="box-gp">
+    <div class="lbl">GP-Level Analogy</div>
+    <p>"Think of the scalp as a densely planted garden: each hair is a flower, the follicle is its root system, the sebaceous gland is the built-in irrigation nozzle, and the arrector pili is the muscle that makes the plant stand up in the cold."</p>
+  </div>
+  <p>The scalp is home to approximately <strong>100,000 follicular units</strong>, with density highest in the frontal and vertex regions. Each follicle is a self-contained mini-organ capable of cycling through growth, regression, and rest phases throughout a person's lifetime.</p>
+  <p>Understanding the anatomy underpins your ability to interpret hair loss patterns, counsel patients accurately, and recognise which histological compartment a given drug or disease is most likely targeting.</p>
+
+  <h2>Scalp Layer Anatomy</h2>
+  <div class="diagram-card">
+    <div class="diagram-title">Fig 2.1 — Scalp layer anatomy (cross-section) — SCALP mnemonic</div>
+    <svg width="100%" viewBox="0 0 760 340">
+      <!-- Layer fills -->
+      <rect x="40" y="30" width="460" height="38" rx="4" fill="#f5dcc8" stroke="#c8906a" stroke-width="0.8"/>
+      <rect x="40" y="68" width="460" height="36" fill="#ead0b8" stroke="#b87a52" stroke-width="0.8"/>
+      <rect x="40" y="104" width="460" height="34" fill="#d4c0a8" stroke="#a06a40" stroke-width="0.8"/>
+      <rect x="40" y="138" width="460" height="32" fill="#e8d4c0" stroke="#b88a6a" stroke-width="0.8"/>
+      <rect x="40" y="170" width="460" height="36" fill="#f0e8d8" stroke="#c8a880" stroke-width="0.8"/>
+      <rect x="40" y="206" width="460" height="90" fill="#e0d4c0" stroke="#b09070" stroke-width="0.8"/>
+      <!-- Layer labels -->
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a3a1a" x="52" y="54" font-weight="500">S — Skin (epidermis + dermis)</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a3a1a" x="52" y="91">C — Connective tissue (superficial fascia, vessels, nerves)</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#5a3010" x="52" y="126">A — Aponeurosis (galea aponeurotica)</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#5a3010" x="52" y="159">L — Loose areolar tissue (danger space)</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#5a3010" x="52" y="193">P — Pericranium (periosteum)</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#3a2008" x="52" y="240">Skull (calvarium)</text>
+      <!-- Follicle sketch -->
+      <ellipse cx="310" cy="68" rx="5" ry="5" fill="#c06040" opacity="0.7"/>
+      <rect x="307" y="73" width="6" height="90" rx="3" fill="#c06040" opacity="0.5"/>
+      <ellipse cx="310" cy="162" rx="10" ry="7" fill="#c06040" opacity="0.6"/>
+      <!-- SCALP mnemonic badge -->
+      <rect x="560" y="40" width="170" height="200" rx="10" fill="#fff8ed" stroke="#d4a84b" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#b5862a" x="645" y="62" text-anchor="middle" font-weight="600" letter-spacing="2">SCALP MNEMONIC</text>
+      <text font-family="DM Sans,sans-serif" font-size="28" fill="#b5862a" x="645" y="108" text-anchor="middle" font-weight="700">SCALP</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a4010" x="580" y="133"><tspan font-weight="600">S</tspan> — Skin</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a4010" x="580" y="151"><tspan font-weight="600">C</tspan> — Connective tissue</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a4010" x="580" y="169"><tspan font-weight="600">A</tspan> — Aponeurosis</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a4010" x="580" y="187"><tspan font-weight="600">L</tspan> — Loose areolar</text>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a4010" x="580" y="205"><tspan font-weight="600">P</tspan> — Pericranium</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#a07030" font-style="italic" x="645" y="226" text-anchor="middle">Hair follicles sit in S &amp; C</text>
+    </svg>
+    <div class="diagram-caption">The SCALP mnemonic describes the five layers of the scalp. Follicles originate in the dermis and their bulbs extend into the subcutaneous connective tissue. Infections in the L (loose areolar) layer can spread widely — it is the "danger space" of the scalp.</div>
+  </div>
+  <div class="box-key">
+    <div class="lbl">Clinical Pearl</div>
+    <p>Infections in the <strong>loose areolar (L) layer</strong> can spread widely — it is the "danger space" of the scalp. Lacerations of the galea (A) must be closed separately from skin to prevent gaping wounds.</p>
+  </div>
+</div>
+
+<!-- ===================== PILOSEBACEOUS ===================== -->
+<div class="sec" id="sec-pilosebaceous">
+  <h2>The Pilosebaceous Unit</h2>
+  <p>The <strong>pilosebaceous unit (PSU)</strong> is the functional building block of hair-bearing skin. It consists of three intimately connected structures that act together as a single physiological unit.</p>
+
+  <div class="diagram-card">
+    <div class="diagram-title">Fig 2.2 — The pilosebaceous unit (schematic)</div>
+    <svg width="100%" viewBox="0 0 760 440">
+      <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- SKIN SURFACE -->
+      <rect x="40" y="28" width="440" height="18" rx="4" fill="#f5dcc8" stroke="#c8906a" stroke-width="0.8" opacity="0.7"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#9a6040" x="52" y="41">Epidermis surface</text>
+      <!-- DERMIS background -->
+      <rect x="40" y="46" width="440" height="280" rx="0" fill="#faf0e8" stroke="#ddc0a0" stroke-width="0.5"/>
+      <!-- FOLLICLE CANAL -->
+      <rect x="178" y="46" width="40" height="260" rx="6" fill="#e8c8a8" stroke="#b8906a" stroke-width="1.2"/>
+      <!-- Inner hair shaft -->
+      <rect x="191" y="46" width="14" height="280" rx="3" fill="#4a3020" opacity="0.85"/>
+      <!-- Bulb -->
+      <ellipse cx="198" cy="316" rx="34" ry="22" fill="#c87850" stroke="#a05830" stroke-width="1.2"/>
+      <!-- Dermal papilla -->
+      <ellipse cx="198" cy="318" rx="14" ry="10" fill="#d4a870" stroke="#b08040" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#6a3808" x="198" y="321" text-anchor="middle">DP</text>
+      <!-- SEBACEOUS GLAND -->
+      <ellipse cx="270" cy="130" rx="38" ry="26" fill="#fff0a0" stroke="#d4b030" stroke-width="1.2"/>
+      <ellipse cx="252" cy="118" rx="20" ry="16" fill="#ffe878" stroke="#c4a020" stroke-width="0.8"/>
+      <ellipse cx="282" cy="122" rx="18" ry="14" fill="#ffe878" stroke="#c4a020" stroke-width="0.8"/>
+      <ellipse cx="265" cy="142" rx="16" ry="12" fill="#ffe060" stroke="#c4a020" stroke-width="0.8"/>
+      <!-- Sebaceous duct -->
+      <path d="M242 144 Q232 155 218 155" fill="none" stroke="#c4a020" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- ARRECTOR PILI -->
+      <path d="M130 96 Q140 130 218 170" fill="none" stroke="#8050c8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+      <path d="M126 94 Q136 128 214 168" fill="none" stroke="#a070e0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+      <!-- Infundibulum label -->
+      <line x1="218" y1="72" x2="80" y2="60" stroke="#888" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="218" cy="72" r="2.5" fill="#888"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5a3a1a" x="44" y="58" font-weight="500">Infundibulum</text>
+      <!-- Isthmus label -->
+      <line x1="218" y1="150" x2="80" y2="152" stroke="#888" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="218" cy="150" r="2.5" fill="#888"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5a3a1a" x="44" y="150" font-weight="500">Isthmus</text>
+      <!-- Lower follicle label -->
+      <line x1="218" y1="240" x2="80" y2="240" stroke="#888" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="218" cy="240" r="2.5" fill="#888"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5a3a1a" x="44" y="238" font-weight="500">Lower follicle</text>
+      <!-- Bulb label -->
+      <line x1="218" y1="316" x2="80" y2="316" stroke="#888" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="218" cy="316" r="2.5" fill="#888"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5a3a1a" x="44" y="314" font-weight="500">Bulb &amp; Papilla</text>
+      <!-- Sebaceous gland label -->
+      <line x1="308" y1="128" x2="450" y2="100" stroke="#c4a020" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="308" cy="128" r="2.5" fill="#c4a020"/>
+      <rect x="414" y="82" width="140" height="36" rx="6" fill="#fff8d0" stroke="#d4b030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#6a5000" x="484" y="98" text-anchor="middle" font-weight="500">Sebaceous gland</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#8a7020" x="484" y="112" text-anchor="middle">secretes sebum</text>
+      <!-- Arrector label -->
+      <line x1="148" y1="135" x2="80" y2="200" stroke="#8050c8" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="148" cy="135" r="2.5" fill="#8050c8"/>
+      <rect x="28" y="196" width="150" height="36" rx="6" fill="#f0e8ff" stroke="#9060d8" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#3a1880" x="103" y="212" text-anchor="middle" font-weight="500">Arrector pili</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#6040a0" x="103" y="226" text-anchor="middle">smooth muscle</text>
+      <!-- Hair shaft label -->
+      <line x1="198" y1="80" x2="450" y2="170" stroke="#604030" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="198" cy="80" r="2.5" fill="#604030"/>
+      <rect x="414" y="152" width="130" height="36" rx="6" fill="#f0e8e0" stroke="#a06848" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#4a2808" x="479" y="168" text-anchor="middle" font-weight="500">Hair shaft</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a4828" x="479" y="182" text-anchor="middle">cuticle, cortex, medulla</text>
+      <!-- Bulge label -->
+      <ellipse cx="220" cy="175" rx="8" ry="6" fill="#d080a0" opacity="0.7"/>
+      <line x1="228" y1="175" x2="450" y2="230" stroke="#d080a0" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="228" cy="175" r="2.5" fill="#d080a0"/>
+      <rect x="414" y="214" width="130" height="36" rx="6" fill="#ffe0ef" stroke="#d060a0" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#80104a" x="479" y="230" text-anchor="middle" font-weight="500">Bulge region</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#a04070" x="479" y="244" text-anchor="middle">stem cell niche</text>
+      <!-- Melanocyte dots in bulb -->
+      <circle cx="186" cy="306" r="3.5" fill="#1a0a00" opacity="0.7"/>
+      <circle cx="210" cy="302" r="3.5" fill="#1a0a00" opacity="0.7"/>
+    </svg>
+    <div class="legend">
+      <div class="leg-item"><div class="leg-dot" style="background:#e8c8a8;border:1px solid #b8906a"></div>Follicular canal</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#4a3020"></div>Hair shaft</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#ffe878;border:1px solid #c4a020"></div>Sebaceous gland</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#a070e0"></div>Arrector pili</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#d080a0"></div>Bulge (stem cells)</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#d4a870;border:1px solid #b08040"></div>Dermal papilla</div>
+    </div>
+    <div class="diagram-caption">Fig 2.2: The complete pilosebaceous unit. Note the three anatomical zones (infundibulum, isthmus, lower follicle/bulb) and the three accessory structures (sebaceous gland, arrector pili, bulge stem cell niche).</div>
+  </div>
+
+  <h3>1. The Hair Follicle</h3>
+  <p>A <strong>tubular invagination of the epidermis</strong> extending down into the dermis and subcutaneous fat. It contains the machinery for hair production and is the primary target in alopecia areata, lichen planopilaris, and androgenetic alopecia.</p>
+
+  <h3>2. The Sebaceous Gland</h3>
+  <p>A <strong>holocrine gland</strong> — the entire cell disintegrates to release its product — attached to the upper third of the follicle. It secretes <em>sebum</em> (triglycerides, wax esters, squalene, fatty acids) into the infundibulum, lubricating the hair and providing weak antimicrobial activity.</p>
+  <div class="box-gp">
+    <div class="lbl">GP Analogy</div>
+    <p>"The sebaceous gland is the follicle's built-in oil dispenser — it squeezes an entire cell's worth of lipid into the hair canal every time it fires."</p>
+  </div>
+
+  <h3>3. The Arrector Pili Muscle</h3>
+  <p>A small bundle of <strong>smooth muscle</strong> running obliquely from the dermal papillary layer to the follicle bulge. Innervated by sympathetic adrenergic fibres, it contracts in response to cold or emotional stimuli — producing <em>piloerection</em> (goosebumps). Though functionally vestigial in humans, it anchors the follicle; its destruction disrupts follicular architecture in scarring alopecias.</p>
+
+  <table class="struct-table">
+    <thead><tr><th>Component</th><th>Type</th><th>Function</th><th>Clinical relevance</th></tr></thead>
+    <tbody>
+      <tr><td>Hair follicle</td><td>Epithelial invagination</td><td>Produces hair shaft</td><td>Target in AA, AGA, LPP</td></tr>
+      <tr><td>Sebaceous gland</td><td>Holocrine gland</td><td>Sebum secretion</td><td>Hyperactive in seborrhoeic dermatitis; absent in FFA</td></tr>
+      <tr><td>Arrector pili</td><td>Smooth muscle</td><td>Piloerection, anchoring</td><td>Destroyed in scarring alopecias</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===================== FOLLICLE ANATOMY ===================== -->
+<div class="sec" id="sec-follicle">
+  <h2>Follicle Anatomy: Three Zones</h2>
+  <p>The follicle is divided into three zones. Each has distinct <strong>regenerative capacity, immunological privilege, and disease susceptibility</strong>.</p>
+
+  <div class="diagram-card">
+    <div class="diagram-title">Fig 2.3 — Three zones of the hair follicle and their clinical significance</div>
+    <svg width="100%" viewBox="0 0 760 460">
+      <!-- Zone backgrounds -->
+      <rect x="120" y="20" width="260" height="100" rx="10" fill="#fff3e0" stroke="#e8a030" stroke-width="1.5" opacity="0.9"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#a06000" x="250" y="44" text-anchor="middle" font-weight="600">INFUNDIBULUM</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#c07820" x="250" y="62" text-anchor="middle">Follicular pore → sebaceous gland duct</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#c07820" x="250" y="78" text-anchor="middle">Keratinises like surface epidermis</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#c07820" x="250" y="94" text-anchor="middle">Communicates with skin surface</text>
+
+      <rect x="120" y="135" width="260" height="100" rx="10" fill="#e8f5e8" stroke="#2a8a2a" stroke-width="1.5" opacity="0.9"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#1a6a1a" x="250" y="159" text-anchor="middle" font-weight="600">ISTHMUS</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a7a2a" x="250" y="177" text-anchor="middle">Sebaceous gland → arrector pili insertion</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a7a2a" x="250" y="193" text-anchor="middle">Site of bulge (stem cell niche)</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a7a2a" x="250" y="209" text-anchor="middle">Trichilemmal keratinisation</text>
+
+      <rect x="120" y="250" width="260" height="100" rx="10" fill="#ede8f8" stroke="#6a3aaa" stroke-width="1.5" opacity="0.9"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#4a1a8a" x="250" y="274" text-anchor="middle" font-weight="600">LOWER FOLLICLE / BULB</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3aaa" x="250" y="292" text-anchor="middle">Below arrector insertion → bulb</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3aaa" x="250" y="308" text-anchor="middle">Matrix cells: rapid mitosis</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3aaa" x="250" y="324" text-anchor="middle">Cycles through anagen/catagen/telogen</text>
+
+      <!-- Bulb -->
+      <ellipse cx="250" cy="390" rx="60" ry="30" fill="#c87850" stroke="#a05830" stroke-width="1.2"/>
+      <ellipse cx="250" cy="392" rx="26" ry="16" fill="#d4a870" stroke="#b08040" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5a2800" x="250" y="395" text-anchor="middle" font-weight="500">Dermal papilla</text>
+
+      <!-- Clinical significance panels -->
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#444" x="440" y="40" font-weight="600">Clinical significance</text>
+      <line x1="435" y1="48" x2="660" y2="48" stroke="#ddd" stroke-width="0.8"/>
+
+      <rect x="440" y="56" width="280" height="76" rx="8" fill="#fff8f0" stroke="#e8a030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#a06000" x="455" y="76" font-weight="500">Infundibulum diseases:</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#7a5020" x="455" y="94">• Folliculitis, Demodex</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#7a5020" x="455" y="110">• Comedones (acne, nevus comedonicus)</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#7a5020" x="455" y="124">• Tinea capitis (infundibular invasion)</text>
+
+      <rect x="440" y="152" width="280" height="76" rx="8" fill="#f0f8f0" stroke="#2a8a2a" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#1a6a1a" x="455" y="172" font-weight="500">Isthmus diseases:</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="455" y="190">• Lichen planopilaris — bulge destruction</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="455" y="206">• Frontal fibrosing alopecia (FFA)</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="455" y="220">• Discoid lupus (upper follicle)</text>
+
+      <rect x="440" y="248" width="280" height="76" rx="8" fill="#f0ecfc" stroke="#6a3aaa" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" fill="#4a1a8a" x="455" y="268" font-weight="500">Lower follicle / bulb diseases:</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3aaa" x="455" y="286">• Alopecia areata (peribulbar lymphocytes)</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3aaa" x="455" y="302">• AGA (DHT-mediated bulb miniaturisation)</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3aaa" x="455" y="318">• Chemotherapy-induced alopecia</text>
+    </svg>
+    <div class="diagram-caption">Fig 2.3: The three zones of the follicle mapped to their associated diseases. Disease targeting the isthmus/bulge causes permanent (scarring) alopecia because the stem cell reservoir is destroyed. Diseases targeting the lower follicle (AA, AGA) spare the bulge, making regrowth theoretically possible.</div>
+  </div>
+
+  <div class="box-warn">
+    <div class="lbl">Key Rule for GP</div>
+    <p>If you feel scarring/fibrosis at the follicular openings, or see absent follicular ostia on dermoscopy → refer urgently. Scarring alopecia = stem cell loss = irreversibility. Time matters.</p>
+  </div>
+
+  <table class="struct-table">
+    <thead><tr><th>Zone</th><th>Boundaries</th><th>Keratinisation</th><th>Permanent loss if destroyed?</th></tr></thead>
+    <tbody>
+      <tr><td>Infundibulum</td><td>Follicular pore → sebaceous duct</td><td>Epidermoid (surface-type)</td><td>No stem cells here</td></tr>
+      <tr><td>Isthmus</td><td>Sebaceous duct → arrector pili</td><td>Trichilemmal</td><td>YES — contains bulge stem cells</td></tr>
+      <tr><td>Lower follicle/Bulb</td><td>Arrector insertion → matrix/papilla</td><td>Matrix</td><td>Potentially reversible — bulge spared</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===================== HAIR SHAFT ===================== -->
+<div class="sec" id="sec-shaft">
+  <h2>Hair Shaft Structure</h2>
+  <p>The hair shaft is a <strong>dead, keratinised filament</strong> produced by the matrix cells of the bulb. It has three concentric layers — analogous to a reinforced concrete column.</p>
+  <div class="box-gp">
+    <div class="lbl">GP Analogy</div>
+    <p>"Think of the hair shaft as a pencil: the outer varnish coating is the cuticle, the wooden barrel providing strength is the cortex, and the soft graphite core — often absent — is the medulla."</p>
+  </div>
+  <div class="diagram-card">
+    <div class="diagram-title">Fig 2.4 — Cross-section of the hair shaft</div>
+    <svg width="100%" viewBox="0 0 760 360">
+      <!-- Outer circle: cuticle -->
+      <circle cx="200" cy="180" r="130" fill="#d4b890" stroke="#a07840" stroke-width="2"/>
+      <!-- Middle: cortex -->
+      <circle cx="200" cy="180" r="100" fill="#8a6040" stroke="#6a4020" stroke-width="1.5"/>
+      <!-- Cortex melanin granules -->
+      <circle cx="165" cy="160" r="4" fill="#2a1800" opacity="0.6"/>
+      <circle cx="185" cy="145" r="3.5" fill="#2a1800" opacity="0.5"/>
+      <circle cx="210" cy="155" r="4" fill="#2a1800" opacity="0.6"/>
+      <circle cx="230" cy="170" r="3" fill="#2a1800" opacity="0.4"/>
+      <circle cx="180" cy="200" r="3.5" fill="#2a1800" opacity="0.5"/>
+      <circle cx="205" cy="210" r="3" fill="#2a1800" opacity="0.4"/>
+      <circle cx="225" cy="195" r="4" fill="#2a1800" opacity="0.5"/>
+      <!-- Medulla -->
+      <circle cx="200" cy="180" r="28" fill="#f0d8b0" stroke="#c0a060" stroke-width="1.2" stroke-dasharray="3 2"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#6a4000" x="200" y="185" text-anchor="middle">Medulla</text>
+      <!-- Scale patterns on cuticle -->
+      <path d="M120 130 Q130 140 125 150" fill="none" stroke="#e8c890" stroke-width="2" opacity="0.7"/>
+      <path d="M112 150 Q122 160 117 170" fill="none" stroke="#e8c890" stroke-width="2" opacity="0.7"/>
+      <path d="M110 172 Q120 182 115 192" fill="none" stroke="#e8c890" stroke-width="2" opacity="0.7"/>
+      <!-- Labels with leaders -->
+      <line x1="270" y1="130" x2="380" y2="80" stroke="#a07840" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="270" cy="130" r="3" fill="#a07840"/>
+      <rect x="360" y="58" width="180" height="50" rx="8" fill="#faf0e0" stroke="#c09040" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#6a4000" x="450" y="79" text-anchor="middle" font-weight="600">Cuticle</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#8a5820" x="450" y="97" text-anchor="middle">6–10 overlapping flat scales</text>
+      <line x1="240" y1="240" x2="380" y2="210" stroke="#6a4020" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="240" cy="240" r="3" fill="#6a4020"/>
+      <rect x="360" y="190" width="180" height="62" rx="8" fill="#f0e4d8" stroke="#8a5030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#4a2800" x="450" y="210" text-anchor="middle" font-weight="600">Cortex</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3818" x="450" y="228" text-anchor="middle">~80% of shaft volume</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6a3818" x="450" y="244" text-anchor="middle">Macrofibrils + melanin granules</text>
+      <line x1="220" y1="182" x2="380" y2="310" stroke="#c0a060" stroke-width="0.8" stroke-dasharray="3 3"/>
+      <circle cx="220" cy="182" r="3" fill="#c0a060"/>
+      <rect x="360" y="290" width="180" height="50" rx="8" fill="#faf4e4" stroke="#c0a050" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#6a4800" x="450" y="310" text-anchor="middle" font-weight="600">Medulla</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#8a6028" x="450" y="328" text-anchor="middle">Air spaces; absent in vellus</text>
+    </svg>
+    <div class="diagram-caption">Fig 2.4: Cross-sectional anatomy of the hair shaft. The cortex dominates and provides both mechanical strength (keratin macrofibrils) and optical properties (melanin granule distribution).</div>
+  </div>
+
+  <h3>1. Cuticle — The Protective Armour</h3>
+  <p>6–10 flattened, overlapping dead cells arranged like roof tiles pointing toward the tip. Rich in disulphide bonds and surface lipids (18-MEA). Healthy cuticle = smooth feel and light reflection. <em>Hair cosmetics principally target the cuticle.</em></p>
+
+  <h3>2. Cortex — The Engine Room</h3>
+  <table class="struct-table">
+    <thead><tr><th>Property</th><th>Structural basis</th></tr></thead>
+    <tbody>
+      <tr><td>Mechanical strength</td><td>Coiled α-keratin macrofibrils cross-linked by disulphide bonds</td></tr>
+      <tr><td>Elasticity</td><td>Disulphide bonds (targeted by perms and relaxers)</td></tr>
+      <tr><td>Colour</td><td>Eumelanin (brown-black) and phaeomelanin (red-yellow) synthesised by melanocytes in the bulb</td></tr>
+      <tr><td>Texture/curl</td><td>Asymmetric keratin distribution and follicle shape</td></tr>
+    </tbody>
+  </table>
+
+  <h3>3. Medulla — The Inner Core</h3>
+  <p>A discontinuous central column of loosely packed cells and air spaces. <strong>Absent in vellus hair</strong>. Function debated — may contribute to thermal insulation and light reflection.</p>
+  <div class="box-key">
+    <div class="lbl">GP Clinical Note</div>
+    <p>Trichorrhexis nodosa (the most common hair shaft defect) presents as white nodes on the shaft — fracture points where the cortex has splayed open. Ask about heat styling, bleaching, or physical trauma.</p>
+  </div>
+</div>
+
+<!-- ===================== HAIR CYCLE ===================== -->
+<div class="sec" id="sec-cycle">
+  <h2>The Hair Growth Cycle</h2>
+  <p>Each follicle independently cycles through distinct phases. On a normal scalp, approximately <strong>85–90% of follicles are in anagen at any time</strong>, 1% in catagen, and 10–15% in telogen.</p>
+
+  <div class="diagram-card">
+    <div class="diagram-title">Fig 2.5 — The four phases of the hair growth cycle</div>
+    <svg width="100%" viewBox="0 0 760 340">
+      <defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- ANAGEN -->
+      <rect x="30" y="30" width="160" height="250" rx="12" fill="#e8f5e8" stroke="#2a8a2a" stroke-width="1.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#1a6a1a" x="110" y="56" text-anchor="middle" font-weight="600">ANAGEN</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a8a2a" x="110" y="74" text-anchor="middle">Growth phase</text>
+      <rect x="100" y="86" width="8" height="80" rx="2" fill="#2a1800"/>
+      <ellipse cx="104" cy="168" rx="16" ry="10" fill="#c87850" stroke="#a05830" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="110" y="202" text-anchor="middle">2–6 years</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="110" y="218" text-anchor="middle">85–90% follicles</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="110" y="234" text-anchor="middle">Active mitosis</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="110" y="250" text-anchor="middle">~1 cm/month</text>
+      <!-- CATAGEN -->
+      <rect x="210" y="30" width="160" height="250" rx="12" fill="#fff8e0" stroke="#e8a020" stroke-width="1.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#b07000" x="290" y="56" text-anchor="middle" font-weight="600">CATAGEN</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#c08020" x="290" y="74" text-anchor="middle">Regression phase</text>
+      <rect x="283" y="86" width="7" height="50" rx="2" fill="#2a1800" opacity="0.6"/>
+      <ellipse cx="286" cy="140" rx="10" ry="8" fill="#c87850" stroke="#a05830" stroke-width="0.8" opacity="0.8"/>
+      <ellipse cx="286" cy="138" rx="6" ry="4" fill="#e0a870"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#b07020" x="290" y="185" text-anchor="middle">2–3 weeks</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#b07020" x="290" y="201" text-anchor="middle">&lt;1% follicles</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#b07020" x="290" y="217" text-anchor="middle">Mitosis ceases</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#b07020" x="290" y="233" text-anchor="middle">Club hair forms</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#b07020" x="290" y="249" text-anchor="middle">Apoptosis</text>
+      <!-- TELOGEN -->
+      <rect x="390" y="30" width="160" height="250" rx="12" fill="#f0ecff" stroke="#7040c0" stroke-width="1.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#4a20a0" x="470" y="56" text-anchor="middle" font-weight="600">TELOGEN</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#6030c0" x="470" y="74" text-anchor="middle">Resting phase</text>
+      <rect x="463" y="86" width="7" height="35" rx="2" fill="#4a3020" opacity="0.5"/>
+      <ellipse cx="466" cy="124" rx="9" ry="6" fill="#c0a070" stroke="#908050" stroke-width="0.8"/>
+      <ellipse cx="466" cy="148" rx="7" ry="5" fill="#a0c8a0" stroke="#608060" stroke-width="0.8" opacity="0.7"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5030a0" x="470" y="185" text-anchor="middle">3–4 months</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5030a0" x="470" y="201" text-anchor="middle">10–15% follicles</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5030a0" x="470" y="217" text-anchor="middle">Club hair anchored</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5030a0" x="470" y="233" text-anchor="middle">No pigment</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#5030a0" x="470" y="249" text-anchor="middle">New anagen below</text>
+      <!-- EXOGEN -->
+      <rect x="570" y="30" width="160" height="250" rx="12" fill="#ffecec" stroke="#c03030" stroke-width="1.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" fill="#901010" x="650" y="56" text-anchor="middle" font-weight="600">EXOGEN</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#b02020" x="650" y="74" text-anchor="middle">Shedding phase</text>
+      <rect x="643" y="86" width="7" height="30" rx="2" fill="#4a3020" opacity="0.5"/>
+      <line x1="646" y1="116" x2="646" y2="155" stroke="#c03030" stroke-width="2" marker-end="url(#arr2)"/>
+      <ellipse cx="646" cy="118" rx="9" ry="6" fill="#c0a070" stroke="#908050" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#a01010" x="650" y="185" text-anchor="middle">~100 hairs/day</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#a01010" x="650" y="201" text-anchor="middle">normal shedding</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#a01010" x="650" y="217" text-anchor="middle">Club hair released</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#a01010" x="650" y="233" text-anchor="middle">by new anagen</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#a01010" x="650" y="249" text-anchor="middle">TE = too many at once</text>
+      <!-- Arrows between phases -->
+      <line x1="190" y1="155" x2="208" y2="155" stroke="#888" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <line x1="370" y1="155" x2="388" y2="155" stroke="#888" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <line x1="550" y1="155" x2="568" y2="155" stroke="#888" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <!-- Cycle return arrow -->
+      <path d="M650 295 Q650 315 340 315 Q30 315 30 290 L30 282" fill="none" stroke="#2a8a2a" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr2)"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#2a6a2a" x="340" y="328" text-anchor="middle">↺ cycle restarts → new anagen</text>
+    </svg>
+    <div class="diagram-caption">Fig 2.5: The four phases of the hair growth cycle. Telogen effluvium occurs when a systemic stressor synchronises more follicles into telogen simultaneously — shedding peaks 2–3 months later.</div>
+  </div>
+
+  <div class="box-gp">
+    <div class="lbl">GP Analogy — Telogen Effluvium</div>
+    <p>"Imagine each follicle is a worker on a 3-year contract. A factory crisis triggers mass early retirements. Three months later all those workers' replacements arrive — but you notice the factory floor was empty for a while. That 3-month lag explains why patients notice shedding after a fever, not during it."</p>
+  </div>
+
+  <table class="struct-table">
+    <thead><tr><th>Phase</th><th>Duration</th><th>% scalp</th><th>Key event</th><th>Relevant condition</th></tr></thead>
+    <tbody>
+      <tr><td><span class="phase-badge badge-anagen">Anagen</span></td><td>2–6 years</td><td>85–90%</td><td>Active keratinocyte proliferation</td><td>Anagen effluvium (chemo); AGA (shortened)</td></tr>
+      <tr><td><span class="phase-badge badge-catagen">Catagen</span></td><td>2–3 weeks</td><td>&lt;1%</td><td>Apoptosis, club hair formation</td><td>Rarely isolated pathology</td></tr>
+      <tr><td><span class="phase-badge badge-telogen">Telogen</span></td><td>3–4 months</td><td>10–15%</td><td>Club hair resting; new anagen initiates</td><td>Telogen effluvium</td></tr>
+      <tr><td><span class="phase-badge badge-exogen">Exogen</span></td><td>Days–weeks</td><td>Variable</td><td>Active club hair release</td><td>Chronic telogen effluvium</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===================== QUICK RECALL ===================== -->
+<div class="sec" id="sec-recall">
+  <h2>Quick Recall — Summary Cards</h2>
+
+  <div class="recall-box">
+    <h3>The Big Three — Pilosebaceous Unit: FSA</h3>
+    <div class="mnemonic">F · S · A</div>
+    <ul class="recall-items">
+      <li><strong style="color:#f0d080">F</strong>ollicle — produces the hair shaft; the engine</li>
+      <li><strong style="color:#f0d080">S</strong>ebaceous gland — lubrication &amp; antimicrobial lipids (holocrine)</li>
+      <li><strong style="color:#f0d080">A</strong>rrector pili — sympathetically innervated smooth muscle; anchors follicle</li>
+    </ul>
+  </div>
+
+  <div class="recall-box" style="background:linear-gradient(135deg,#2a3a6a 0%,#1a2a5a 100%)">
+    <h3 style="color:#a0b8e0">Follicle Zones: IIL (top to bottom)</h3>
+    <div class="mnemonic" style="font-size:24px;letter-spacing:4px">I · I · L</div>
+    <ul class="recall-items" style="color:#b0c8e0">
+      <li><strong style="color:#f0e080">I</strong>nfundibulum — surface to sebaceous duct; folliculitis, tinea</li>
+      <li><strong style="color:#f0e080">I</strong>sthmus — sebaceous duct to arrector; bulge stem cells; SCARRING alopecias</li>
+      <li><strong style="color:#f0e080">L</strong>ower follicle/Bulb — matrix, papilla; AA, AGA; potentially reversible</li>
+    </ul>
+  </div>
+
+  <div class="recall-box" style="background:linear-gradient(135deg,#4a2a0a 0%,#3a1a00 100%)">
+    <h3 style="color:#e0c080">Hair Shaft: CCM (pencil analogy)</h3>
+    <div class="mnemonic">C · C · M</div>
+    <ul class="recall-items" style="color:#d8b870">
+      <li><strong style="color:#f8f0c0">C</strong>uticle — overlapping scales; cosmetic target; reflects light</li>
+      <li><strong style="color:#f8f0c0">C</strong>ortex — 80% volume; keratin + melanin = strength + colour</li>
+      <li><strong style="color:#f8f0c0">M</strong>edulla — central core; absent in vellus; air spaces</li>
+    </ul>
+  </div>
+
+  <div class="recall-box" style="background:linear-gradient(135deg,#3a1a4a 0%,#2a0a3a 100%)">
+    <h3 style="color:#c0a8e0">Hair Cycle: ACTE</h3>
+    <div class="mnemonic">A · C · T · E</div>
+    <ul class="recall-items" style="color:#c0a8d8">
+      <li><strong style="color:#f0d8f8">A</strong>nagen — 2–6 yrs, 85–90%, growing</li>
+      <li><strong style="color:#f0d8f8">C</strong>atagen — 2–3 wks, &lt;1%, regressing (apoptosis)</li>
+      <li><strong style="color:#f0d8f8">T</strong>elogen — 3–4 months, 10–15%, resting</li>
+      <li><strong style="color:#f0d8f8">E</strong>xogen — shedding; ~100/day normal; TE = too many in T at once</li>
+    </ul>
+  </div>
+
+  <h2>GP Quick-Reference: "When to worry"</h2>
+  <table class="struct-table">
+    <thead><tr><th>Finding</th><th>Anatomy targeted</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>Scarring / absent follicular openings</td><td>Isthmus/bulge destruction</td><td>Urgent referral — irreversible</td></tr>
+      <tr><td>Diffuse shedding 2–3 months post-illness</td><td>Telogen effluvium — lower follicle</td><td>Reassure, investigate triggers</td></tr>
+      <tr><td>Pattern thinning (temporal recession/vertex)</td><td>AGA — bulb miniaturisation</td><td>Discuss treatment early</td></tr>
+      <tr><td>Patch of non-scarring loss, exclamation hairs</td><td>AA — peribulbar inflammation</td><td>Confirm, treat or refer</td></tr>
+      <tr><td>Broken hairs + scaling</td><td>Infundibular infection (tinea) or shaft defect</td><td>Fungal swab/microscopy</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===================== FLASHCARDS ===================== -->
+<div class="sec" id="sec-flashcards">
+  <h2>Anki Flashcard Deck — Chapter 2</h2>
+  <p class="flashcard-intro">18 cards covering all key concepts from this chapter. Click a card to reveal the answer.</p>
+  <div class="fc-progress">
+    <div class="fc-bar"><div class="fc-fill" id="fc-bar" style="width:0%"></div></div>
+    <div class="fc-count" id="fc-count">Card 1 of 18</div>
+  </div>
+  <p class="fc-flip-hint">↩ tap card to flip</p>
+  <div class="flashcard" id="flashcard" onclick="flipCard()">
+    <div class="fc-inner" id="fc-inner">
+      <div class="fc-front">
+        <div class="fc-cat" id="fc-cat">Category</div>
+        <div class="fc-q" id="fc-q">Question text</div>
+      </div>
+      <div class="fc-back">
+        <div class="fc-a" id="fc-a">Answer text</div>
+        <div class="fc-hint" id="fc-hint"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fc-nav">
+    <button class="fc-btn" onclick="rateCard('hard')">😓 Hard</button>
+    <button class="fc-btn" onclick="rateCard('ok')">🤔 Got it</button>
+    <button class="fc-btn primary" onclick="rateCard('easy')">✓ Easy</button>
+  </div>
+  <div style="text-align:center;margin-top:16px">
+    <button class="fc-shuffle" onclick="shuffleCards()">⇄ Shuffle deck</button>
+    <button class="fc-shuffle" onclick="restartCards()">↺ Restart</button>
+  </div>
+  <div class="fc-done" id="fc-done">
+    <h3>Deck complete!</h3>
+    <p id="fc-summary"></p>
+  </div>
+  <h3 style="margin-top:36px;margin-bottom:16px">All 18 cards preview</h3>
+  <table class="struct-table" id="all-cards-table"></table>
+</div>
+
+<!-- ===================== REFERENCES ===================== -->
+<div class="sec" id="sec-references">
+  <h2>References</h2>
+  <p style="color:var(--ink3);font-size:15px;margin-bottom:16px">APA 7th edition format.</p>
+  <ul class="ref-list">
+    <li><span>1.</span> Cotsarelis, G., &amp; Millar, S. E. (2001). Towards a molecular understanding of hair loss and its treatment. <em>Trends in Molecular Medicine, 7</em>(7), 293–301. https://doi.org/10.1016/S1471-4914(01)02027-5</li>
+    <li><span>2.</span> Dawber, R., &amp; Van Neste, D. (Eds.). (1995). <em>Hair and scalp disorders: Common presenting signs, differential diagnosis and treatment</em>. Martin Dunitz.</li>
+    <li><span>3.</span> Headington, J. T. (1984). Transverse microscopic anatomy of the human scalp. <em>Archives of Dermatology, 120</em>(4), 449–456. https://doi.org/10.1001/archderm.1984.01650400015005</li>
+    <li><span>4.</span> Inui, S., Nakajima, T., Itami, S., &amp; Mori, T. (2010). Assessment of dermoscopy in androgenetic alopecia: Usefulness for evaluating miniaturization extent of hair follicles. <em>Journal of Dermatology, 37</em>(7), 620–625.</li>
+    <li><span>5.</span> Khumalo, N. P., Jessop, S., Gumedze, F., &amp; Ehrlich, R. (2007). Hairdressing and the prevalence of scalp disease in African adults. <em>British Journal of Dermatology, 157</em>(5), 981–988.</li>
+    <li><span>6.</span> Messenger, A. G., &amp; Rundegren, J. (2004). Minoxidil: Mechanisms of action on hair growth. <em>British Journal of Dermatology, 150</em>(2), 186–194. https://doi.org/10.1111/j.1365-2133.2004.05785.x</li>
+    <li><span>7.</span> Paus, R., &amp; Cotsarelis, G. (1999). The biology of hair follicles. <em>New England Journal of Medicine, 341</em>(7), 491–497. https://doi.org/10.1056/NEJM199908123410706</li>
+    <li><span>8.</span> Price, V. H. (1999). Treatment of hair loss. <em>New England Journal of Medicine, 341</em>(13), 964–973. https://doi.org/10.1056/NEJM199909233411307</li>
+    <li><span>9.</span> Ross, E. K., Vincenzi, C., &amp; Tosti, A. (2006). Videodermoscopy in the evaluation of hair and scalp disorders. <em>Journal of the American Academy of Dermatology, 55</em>(5), 799–806.</li>
+    <li><span>10.</span> Rudnicka, L., Olszewska, M., &amp; Rakowska, A. (Eds.). (2012). <em>Atlas of trichoscopy: Dermoscopy in hair and scalp disease</em>. Springer.</li>
+    <li><span>11.</span> Shapiro, J. (2007). <em>Hair loss: Principles of diagnosis and management of alopecia</em>. Martin Dunitz.</li>
+    <li><span>12.</span> Sinclair, R., Wewerinke, M., &amp; Jolley, D. (2005). Treatment of female pattern hair loss with oral antiandrogens. <em>British Journal of Dermatology, 152</em>(3), 466–473.</li>
+    <li><span>13.</span> Stenn, K. S., &amp; Paus, R. (2001). Controls of hair follicle cycling. <em>Physiological Reviews, 81</em>(1), 449–494. https://doi.org/10.1152/physrev.2001.81.1.449</li>
+    <li><span>14.</span> Trüeb, R. M. (2009). Telogen effluvium: Is there a need for a new classification? <em>Skin Appendage Disorders, 1</em>(1), 2–5. https://doi.org/10.1159/000366553</li>
+    <li><span>15.</span> Whiting, D. A. (1993). Diagnostic and predictive value of horizontal sections of scalp biopsy specimens in male pattern androgenetic alopecia. <em>Journal of the American Academy of Dermatology, 28</em>(5), 755–763.</li>
+  </ul>
+</div>
+
+<script>
+const cards = [
+  {cat:"Pilosebaceous Unit",q:"What are the three components of the pilosebaceous unit?",a:"1. Hair follicle\n2. Sebaceous gland\n3. Arrector pili muscle",hint:"FSA — Follicle, Sebaceous, Arrector"},
+  {cat:"Pilosebaceous Unit",q:"What type of gland is the sebaceous gland, and what does it secrete?",a:"A holocrine gland (entire cell disintegrates on secretion). Secretes sebum — triglycerides, wax esters, squalene, and fatty acids.",hint:"Holocrine = cell self-destructs"},
+  {cat:"Pilosebaceous Unit",q:"What is the innervation of the arrector pili muscle?",a:"Sympathetic adrenergic innervation. Contraction causes piloerection (cutis anserina / goosebumps). Vestigial in humans but clinically relevant in scarring alopecias.",hint:"Sympathetic → piloerection"},
+  {cat:"Follicle Zones",q:"Name the three zones of the scalp hair follicle from top to bottom.",a:"1. Infundibulum (follicular pore to sebaceous duct)\n2. Isthmus (sebaceous duct to arrector pili insertion)\n3. Lower follicle / Bulb (arrector insertion to papilla)",hint:"IIL — top to bottom"},
+  {cat:"Follicle Zones",q:"Which zone of the follicle contains the stem cell niche (bulge)?",a:"The isthmus — specifically the bulge region at the level of the arrector pili muscle insertion.",hint:"Isthmus = irreplaceable stem cells"},
+  {cat:"Follicle Zones",q:"Why does disease of the isthmus cause permanent alopecia?",a:"The bulge in the isthmus contains follicular stem cells. Their destruction removes the regenerative capacity — the follicle cannot re-enter anagen.",hint:"No stem cells = no regrowth"},
+  {cat:"Follicle Zones",q:"Which disease shows peribulbar lymphocytes — 'swarm of bees' on histology?",a:"Alopecia areata. CD8+ T cells attack the bulb (lower follicle), sparing the bulge — explaining potential for regrowth.",hint:"AA — swarm of bees — bulge spared"},
+  {cat:"Hair Shaft",q:"Name the three layers of the hair shaft from outside to inside.",a:"1. Cuticle (6–10 overlapping scales)\n2. Cortex (~80% volume, keratin + melanin)\n3. Medulla (central core, often absent in vellus)",hint:"CCM — pencil analogy"},
+  {cat:"Hair Shaft",q:"What two types of melanin are present in the cortex?",a:"Eumelanin → brown/black\nPhaeomelanin → red/yellow",hint:"Eu = brown-black; Phae = red-yellow"},
+  {cat:"Hair Shaft",q:"What hair shaft defect presents as white nodes on the shaft?",a:"Trichorrhexis nodosa — fracture of the cortex with cuticle disruption. Caused by chemical or physical trauma (bleaching, heat styling).",hint:"Most common shaft defect"},
+  {cat:"Hair Shaft",q:"What molecular structure gives the cortex its strength?",a:"Coiled α-keratin chains cross-linked by disulphide bonds, organised into macrofibrils. These bonds are broken by reducing agents in perms/relaxers.",hint:"Disulphide bonds = key"},
+  {cat:"Hair Cycle",q:"What are the four phases of the hair growth cycle?",a:"1. Anagen (growth)\n2. Catagen (regression)\n3. Telogen (rest)\n4. Exogen (shedding)",hint:"ACTE"},
+  {cat:"Hair Cycle",q:"What percentage of scalp hairs are normally in anagen, and how long does it last?",a:"85–90% in anagen. Duration: 2–6 years on the scalp.",hint:"90% active at any time"},
+  {cat:"Hair Cycle",q:"What is a 'club hair' and in which phase does it form?",a:"Forms in catagen — the papilla retracts, matrix ceases activity, and the base keratinises into a rounded club shape. Rests in telogen, shed in exogen.",hint:"Catagen → club; telogen → shed"},
+  {cat:"Hair Cycle",q:"A patient reports diffuse shedding 4 months after a severe febrile illness. Mechanism?",a:"Telogen effluvium. The stressor synchronised follicles into telogen. After the 90-day telogen duration, club hairs shed simultaneously. Regrowth expected in 6–12 months.",hint:"3-month lag rule"},
+  {cat:"Scalp Layers",q:"What does SCALP stand for?",a:"S — Skin (epidermis + dermis)\nC — Connective tissue (superficial fascia)\nA — Aponeurosis (galea)\nL — Loose areolar tissue (danger space)\nP — Pericranium (periosteum)",hint:"Follicles live in S and C"},
+  {cat:"Scalp Layers",q:"Why is the loose areolar (L) layer called the 'danger space'?",a:"Infections spread widely in this layer — no fascial barriers. Emissary veins connect this layer to intracranial sinuses, raising risk of intracranial spread.",hint:"L = lateral spread risk + intracranial connection"},
+  {cat:"Clinical",q:"If a patient has absent follicular ostia on examination, what does this mean?",a:"Scarring (cicatricial) alopecia. The follicular stem cells in the bulge have been destroyed and replaced by fibrous tissue. Loss is IRREVERSIBLE. Urgent referral to dermatology is required.",hint:"No ostia = no hope of regrowth = urgent referral"}
+];
+
+let deck=[...cards],current=0,flipped=false,scores={easy:0,ok:0,hard:0};
+function showCard(idx){
+  const c=deck[idx];
+  document.getElementById('fc-cat').textContent=c.cat;
+  document.getElementById('fc-q').textContent=c.q;
+  document.getElementById('fc-a').textContent=c.a;
+  document.getElementById('fc-hint').textContent=c.hint?'💡 '+c.hint:'';
+  document.getElementById('fc-inner').classList.remove('flipped');
+  flipped=false;
+  document.getElementById('fc-count').textContent=`Card ${idx+1} of ${deck.length}`;
+  document.getElementById('fc-bar').style.width=(idx/deck.length*100)+'%';
+  document.getElementById('fc-done').style.display='none';
+}
+function flipCard(){flipped=!flipped;document.getElementById('fc-inner').classList.toggle('flipped',flipped)}
+function rateCard(rating){
+  scores[rating]++;current++;
+  if(current>=deck.length){
+    document.getElementById('fc-done').style.display='block';
+    document.getElementById('fc-summary').textContent=`Easy: ${scores.easy} | Got it: ${scores.ok} | Hard: ${scores.hard}`;
+    document.getElementById('fc-bar').style.width='100%';
+    document.getElementById('fc-count').textContent='Complete!';
+    document.getElementById('fc-inner').classList.remove('flipped');
+    document.getElementById('fc-q').textContent='All cards reviewed. Reset or shuffle to continue.';
+    document.getElementById('fc-a').textContent='';
+    flipped=false;return;
+  }
+  showCard(current);
+}
+function shuffleCards(){deck=[...cards].sort(()=>Math.random()-.5);current=0;scores={easy:0,ok:0,hard:0};showCard(0);document.getElementById('fc-done').style.display='none';}
+function restartCards(){deck=[...cards];current=0;scores={easy:0,ok:0,hard:0};showCard(0);document.getElementById('fc-done').style.display='none';}
+const t=document.getElementById('all-cards-table');
+t.innerHTML='<tr><th>#</th><th>Category</th><th>Question</th></tr>'+cards.map((c,i)=>`<tr><td>${i+1}</td><td>${c.cat}</td><td>${c.q}</td></tr>`).join('');
+function showSec(name){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));
+  document.querySelectorAll('.nt').forEach(t=>t.classList.remove('on'));
+  document.getElementById('sec-'+name).classList.add('on');
+  const tabs=['overview','pilosebaceous','follicle','shaft','cycle','recall','flashcards','references'];
+  const idx=tabs.indexOf(name);
+  document.querySelectorAll('.nt')[idx].classList.add('on');
+}
+showCard(0);
+</script>
+<div class="ch-nav ch-nav-bottom">
+  <a href="chapter_01_introduction.html">← Ch. 1: Introduction</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_03_history_examination.html">Ch. 3: History &amp; Examination →</a>
+</div>
+<script>try{localStorage.setItem('tfgp_ch2','1')}catch(e){}</script>
+</body>
+</html>

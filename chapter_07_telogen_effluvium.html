@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 7 — Telogen Effluvium | Trichology for GP</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--ink:#18161A;--ink2:#3d3a42;--ink3:#7a7680;--bg:#F9F7F4;--bg2:#F2EFE9;--bg3:#E8E3DB;--rule:#D4CEC4;--ch-accent:#185FA5;--teal:#1a6b6b;--teal2:#e6f5f5;--gold:#9a7228;--gold2:#c49a3c;--goldbg:#fdf6e4;--coral:#b84a2a;--coralbg:#fdf0ec;--blue:#2a4e8c;--bluebg:#edf2fc;--green:#2a6a3a;--greenbg:#edf6ee;--purple:#5a2a8c;--purplebg:#f0eafc;--red:#aa2020;--redbg:#fceaea;--info:#185FA5;--infobg:#E6F1FB;--success:#3B6D11;--successbg:#EAF3DE;--warning:#854F0B;--warningbg:#FAEEDA;--danger:#A32D2D;--dangerbg:#FCEBEB}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.78;font-size:16.5px;max-width:940px;margin:0 auto;padding-bottom:80px}
+.ch-header{padding:44px 46px 32px;border-bottom:0.5px solid var(--rule);position:relative;overflow:hidden}
+.header-number{font-family:'Playfair Display',serif;font-size:132px;font-weight:700;color:rgba(0,0,0,0.04);position:absolute;right:32px;top:-10px;line-height:1;user-select:none}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--info);margin-bottom:12px}
+.ch-title{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.1;margin-bottom:8px;position:relative;z-index:1}
+.ch-sub{font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:var(--ink2);margin-bottom:20px}
+.nav{display:flex;border-bottom:1px solid var(--rule);padding:0 46px;position:sticky;top:0;z-index:200;background:var(--bg);overflow-x:auto;gap:0}
+.nav::-webkit-scrollbar{height:0}
+.nt{font-size:14px;color:var(--ink3);padding:12px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .18s;text-decoration:none}
+.nt:hover{color:var(--ink)}
+.nt.on{color:var(--info);border-bottom-color:var(--info);font-weight:500}
+.sec{display:none;padding:36px 46px 20px}
+.sec.on{display:block}
+h2{font-family:'Playfair Display',serif;font-size:27.5px;font-weight:600;margin:34px 0 13px;padding-bottom:9px;border-bottom:1px solid var(--rule)}
+h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:500;font-style:italic;color:var(--ink2);margin:22px 0 10px}
+p{margin-bottom:14px;color:var(--ink2);font-size:16.5px}
+strong{color:var(--ink);font-weight:500}
+.box-gp{background:var(--warningbg);border-left:3px solid var(--warning);padding:17px 22px;margin:22px 0;border-radius:0 10px 10px 0}
+.box-gp .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--warning);margin-bottom:7px}
+.box-gp p{font-style:italic;color:var(--ink2);margin:0;font-size:16px}
+.box-key{background:var(--infobg);border-left:3px solid var(--info);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-key .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:5px}
+.box-key p{margin:0;color:var(--blue);font-size:15.5px}
+.box-info{background:var(--infobg);border-left:3px solid var(--info);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-info .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:5px}
+.box-info p{margin:0;color:var(--blue);font-size:15.5px}
+.box-warn{background:var(--dangerbg);border-left:3px solid var(--danger);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-warn .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--danger);margin-bottom:5px}
+.box-warn p{margin:0;color:#5a1010;font-size:15.5px}
+.box-amber{background:var(--warningbg);border-left:3px solid var(--warning);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-amber .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--warning);margin-bottom:5px}
+.box-amber p{margin:0;color:#4a2800;font-size:15.5px}
+.dcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px;margin:24px 0}
+.dcard-title{font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+.dcard-cap{font-size:14.5px;font-style:italic;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.65}
+.dtable{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+.dtable th{background:var(--bg2);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule)}
+.dtable td{padding:11px 15px;border-bottom:1px solid var(--rule);vertical-align:top}
+.dtable tr:last-child td{border-bottom:none}
+.dtable td:first-child{font-weight:500;color:var(--ink)}
+.dtable tr:hover td{background:var(--bg)}
+.fcard{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.fcard .ftag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.fcard .ftitle{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.fcard .fdesc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+.trigger-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+.trigger-card{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:14px 12px;text-align:center}
+.trigger-letter{font-family:'Playfair Display',serif;font-size:35px;font-weight:600;margin-bottom:6px;line-height:1}
+.trigger-name{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.trigger-desc{font-size:11.5px;color:var(--ink3);line-height:1.45}
+.rcrd{background:var(--bg2);border:1px solid var(--rule);border-radius:12px;padding:22px}
+.rcrd h4{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.rcrd .mnem{font-size:22px;font-weight:600;letter-spacing:4px;color:var(--info);font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.rcrd ul{list-style:none;font-size:14.5px;line-height:2.1;color:var(--ink2)}
+.rcrd ul li::before{content:"→ ";color:var(--ink3)}
+.rcrd ul strong{color:var(--info)}
+/* Flashcards */
+.pbar-wrap{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.pbar{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.pfill{height:100%;background:var(--info);border-radius:2px;transition:width .4s}
+.pct{font-size:13px;color:var(--ink3);min-width:72px;text-align:right}
+.fcrd{height:210px;perspective:1000px;cursor:pointer;margin-bottom:14px}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .48s cubic-bezier(.4,0,.2,1)}
+.fc-inner.flip{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 32px;text-align:center}
+.fc-front{background:#fff;border:1px solid var(--rule)}
+.fc-front .fc-cat{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:10px}
+.fc-front .fc-q{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:500;color:var(--ink);line-height:1.45}
+.fc-back{background:var(--infobg);transform:rotateY(180deg)}
+.fc-back .fc-a{font-size:16px;color:var(--blue);line-height:1.7;white-space:pre-line}
+.fc-back .fc-tip{font-size:12px;color:var(--blue);margin-top:10px;opacity:.72}
+.hint-txt{font-size:13px;color:var(--ink3);text-align:center;margin-bottom:6px}
+.fc-btns{display:flex;gap:10px;justify-content:center}
+.fcbtn{font-family:'DM Sans',sans-serif;font-size:14.5px;padding:9px 20px;border-radius:8px;border:1px solid var(--rule);background:#fff;color:var(--ink2);cursor:pointer;transition:all .14s}
+.fcbtn:hover{background:var(--bg2)}
+.fcbtn.pri{background:var(--infobg);color:var(--blue);border-color:var(--info)}
+.fc-ctrl{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.fc-ctrl button{font-size:13px;color:var(--gold);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif}
+.fc-done{display:none;background:var(--successbg);border:1px solid #a0d080;border-radius:10px;padding:18px;text-align:center;margin-top:14px}
+.fc-done h3{font-family:'Playfair Display',serif;color:var(--green);font-size:20px;margin-bottom:6px}
+.fc-done p{color:#2a5a1a;font-size:14.5px;margin:0}
+.ref-list{list-style:none;margin:14px 0}
+.ref-list li{font-size:14.5px;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--rule);line-height:1.65}
+.ref-list li:last-child{border-bottom:none}
+.ref-list li .rn{font-weight:500;color:var(--ink);margin-right:5px}
+@media(max-width:640px){
+  .trigger-grid{grid-template-columns:1fr 1fr}
+  .ch-header,.nav,.sec{padding-left:20px;padding-right:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="ch-nav">
+  <a href="chapter_06_female_fphl.html">← Ch. 6: Female Pattern Hair Loss</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_08_alopecia_areata.html">Ch. 8: Alopecia Areata →</a>
+</div>
+
+<div class="ch-header">
+  <div class="header-number">7</div>
+  <div class="eyebrow">Trichology for GP · Chapter Seven</div>
+  <div class="ch-title">Telogen Effluvium</div>
+  <div class="ch-sub">Diffuse reactive shedding — diagnosing, reassuring, and resolving</div>
+</div>
+
+<div class="nav">
+  <div class="nt on" onclick="showSec('intro')">Overview</div>
+  <div class="nt" onclick="showSec('mechanism')">Mechanism</div>
+  <div class="nt" onclick="showSec('triggers')">Triggers</div>
+  <div class="nt" onclick="showSec('clinical')">Clinical Features</div>
+  <div class="nt" onclick="showSec('diagnosis')">Diagnosis</div>
+  <div class="nt" onclick="showSec('chronic')">Chronic TE</div>
+  <div class="nt" onclick="showSec('management')">Management</div>
+  <div class="nt" onclick="showSec('recall')">Quick Recall</div>
+  <div class="nt" onclick="showSec('flashcards')">Anki Cards</div>
+  <div class="nt" onclick="showSec('references')">References</div>
+</div>
+
+<!-- OVERVIEW -->
+<div class="sec on" id="sec-intro">
+  <div class="box-gp">
+    <div class="lbl">GP-Level Analogy</div>
+    <p>"Telogen effluvium is the hair equivalent of a factory shutdown. A major crisis — illness, surgery, crash diet, childbirth — signals the factory to suspend production and send all the workers home at once. Three months later, when those workers' contracts all expire at the same moment, the factory floor empties. The hair loss patients notice at month three was decided at month zero — and the factory is already re-opening."</p>
+  </div>
+  <p>Telogen effluvium (TE) is the <strong>most common cause of acute diffuse hair loss</strong> and one of the most frequently mismanaged presentations in general practice. It is characterised by excessive shedding of telogen (resting phase) club hairs, typically occurring 2–4 months after a triggering event.</p>
+  <p>TE is self-limiting in the acute form and requires no specific pharmacological treatment beyond identifying and correcting the underlying trigger. The GP's role is to <strong>diagnose accurately, identify the cause, correct reversible contributors, and provide reassurance</strong> — preventing the additional psychological distress of misdiagnosis and unnecessary treatment.</p>
+
+  <h2>Key epidemiological facts</h2>
+  <div class="grid3">
+    <div class="fcard"><div class="ftag" style="color:var(--info)">Prevalence</div><div class="ftitle">Most common acute shedding</div><div class="fdesc">Most frequent cause of acute diffuse hair loss. Affects women more than men due to higher prevalence of triggers (pregnancy, iron deficiency, thyroid disease).</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--warning)">Timeline</div><div class="ftitle">2–4 month lag</div><div class="fdesc">Trigger occurs at month 0. Shedding peaks at 2–4 months. Spontaneous recovery typically by 6–12 months after trigger removal.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--blue)">Prognosis</div><div class="ftitle">Excellent if trigger removed</div><div class="fdesc">Acute TE: near-complete recovery in 95% of cases once the trigger is removed. Chronic TE (&gt;6 months): requires thorough investigation and may be persistent.</div></div>
+  </div>
+</div>
+
+<!-- MECHANISM -->
+<div class="sec" id="sec-mechanism">
+  <h2>Mechanism of telogen effluvium</h2>
+  <p>TE occurs when a systemic stressor causes a <strong>synchronised, premature shift of anagen follicles into telogen</strong>. This results in a cohort of follicles all reaching the end of their telogen phase simultaneously — producing a wave of shedding 2–4 months later.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 7.1 — Timeline of telogen effluvium from trigger to recovery</div>
+    <svg width="100%" viewBox="0 0 680 240">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Timeline axis -->
+      <line x1="40" y1="120" x2="648" y2="120" stroke="#c8c2b8" stroke-width="1.5" marker-end="url(#ar)"/>
+      <!-- Month markers -->
+      <line x1="80" y1="112" x2="80" y2="128" stroke="#c8c2b8" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a7888" x="80" y="142" text-anchor="middle">Month 0</text>
+      <line x1="200" y1="112" x2="200" y2="128" stroke="#c8c2b8" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a7888" x="200" y="142" text-anchor="middle">Month 1–2</text>
+      <line x1="320" y1="112" x2="320" y2="128" stroke="#c8c2b8" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a7888" x="320" y="142" text-anchor="middle">Month 2–4</text>
+      <line x1="440" y1="112" x2="440" y2="128" stroke="#c8c2b8" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a7888" x="440" y="142" text-anchor="middle">Month 4–6</text>
+      <line x1="560" y1="112" x2="560" y2="128" stroke="#c8c2b8" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a7888" x="560" y="142" text-anchor="middle">Month 6–12</text>
+      <!-- Event 1: Trigger -->
+      <circle cx="80" cy="120" r="10" fill="#8a1818"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#fff" x="80" y="123" text-anchor="middle" dominant-baseline="central" font-weight="500">T</text>
+      <rect x="30" y="30" width="100" height="52" rx="8" fill="#fceaea" stroke="#8a1818" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="80" y="50" text-anchor="middle" dominant-baseline="central">TRIGGER</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="80" y="68" text-anchor="middle" dominant-baseline="central">Anagen → Telogen</text>
+      <line x1="80" y1="82" x2="80" y2="110" stroke="#8a1818" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <!-- Event 2: Silent phase -->
+      <rect x="148" y="30" width="104" height="52" rx="8" fill="#f6f4f0" stroke="#c8c2b8" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#3a3844" x="200" y="50" text-anchor="middle" dominant-baseline="central">Silent phase</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a7888" x="200" y="68" text-anchor="middle" dominant-baseline="central">Hairs in telogen</text>
+      <!-- Event 3: Shedding peak -->
+      <circle cx="320" cy="120" r="10" fill="#7a4a00"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#fff" x="320" y="123" text-anchor="middle" dominant-baseline="central" font-weight="500">S</text>
+      <rect x="268" y="30" width="104" height="52" rx="8" fill="#fdf0d8" stroke="#c49a3c" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="320" y="50" text-anchor="middle" dominant-baseline="central">SHEDDING PEAK</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="320" y="68" text-anchor="middle" dominant-baseline="central">100–300+ hairs/day</text>
+      <line x1="320" y1="82" x2="320" y2="110" stroke="#7a4a00" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <!-- Event 4: New anagen -->
+      <rect x="388" y="30" width="104" height="52" rx="8" fill="#e4f4ec" stroke="#1a5030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1a5030" x="440" y="50" text-anchor="middle" dominant-baseline="central">New anagen</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="440" y="68" text-anchor="middle" dominant-baseline="central">Regrowth begins</text>
+      <!-- Event 5: Recovery -->
+      <circle cx="560" cy="120" r="10" fill="#1a5030"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#fff" x="560" y="123" text-anchor="middle" dominant-baseline="central" font-weight="500">R</text>
+      <rect x="508" y="30" width="104" height="52" rx="8" fill="#e4f4ec" stroke="#1a5030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1a5030" x="560" y="50" text-anchor="middle" dominant-baseline="central">RECOVERY</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="560" y="68" text-anchor="middle" dominant-baseline="central">Normal density restored</text>
+      <line x1="560" y1="82" x2="560" y2="110" stroke="#1a5030" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <!-- Patient consults GP note -->
+      <rect x="250" y="160" width="180" height="44" rx="8" fill="#fdf0d8" stroke="#c49a3c" stroke-width="1.2"/>
+      <line x1="320" y1="130" x2="320" y2="158" stroke="#c49a3c" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="340" y="179" text-anchor="middle" dominant-baseline="central">Patient seeks GP here</text>
+      <text font-family="DM Sans,sans-serif" font-size="9" fill="#aa7020" x="340" y="194" text-anchor="middle" dominant-baseline="central">"but it started on its own!"</text>
+    </svg>
+    <div class="dcard-cap">Fig 7.1: TE timeline from trigger to recovery. The critical teaching point: when the patient presents with distressing shedding (month 2–4), the trigger happened 2–4 months earlier and the body has often already begun correcting itself. Regrowth begins before shedding even stops.</div>
+  </div>
+
+  <h3>Kligman's five types of telogen effluvium</h3>
+  <p>Kligman (1961) described five pathophysiological mechanisms producing TE. Understanding them helps identify the cause and predict the course.</p>
+  <table class="dtable">
+    <thead><tr><th>Type</th><th>Mechanism</th><th>Clinical example</th></tr></thead>
+    <tbody>
+      <tr><td>Immediate anagen release</td><td>Sudden premature termination of anagen → rapid telogen entry</td><td>High fever, acute severe illness, crash dieting</td></tr>
+      <tr><td>Delayed anagen release</td><td>Prolonged anagen (e.g. pregnancy) followed by synchronised release</td><td>Postpartum effluvium — most dramatic TE type</td></tr>
+      <tr><td>Short anagen effluvium</td><td>Constitutionally shortened anagen duration → rapid cycling</td><td>Chronic TE — hair never seems to grow long</td></tr>
+      <tr><td>Immediate telogen release</td><td>Early exogen — premature shedding of normal telogen hairs</td><td>Stopping minoxidil</td></tr>
+      <tr><td>Delayed telogen release</td><td>Prolonged telogen → delayed mass shedding in spring/summer</td><td>Seasonal shedding (physiological, minor)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box-gp">
+    <div class="lbl">GP Analogy — The 3-month rule</div>
+    <p>"When a patient tells you their hair started falling out in October, ask what happened in June. Telogen effluvium always points backwards in time. The crime was committed 2–4 months before the body reports it."</p>
+  </div>
+</div>
+
+<!-- TRIGGERS -->
+<div class="sec" id="sec-triggers">
+  <h2>Triggers — the CHIPS framework</h2>
+  <p>The most common triggers can be remembered with the <strong>CHIPS</strong> mnemonic. Always ask about events 2–4 months before the onset of shedding.</p>
+
+  <div class="trigger-grid">
+    <div class="trigger-card">
+      <div class="trigger-letter" style="color:#8a1818">C</div>
+      <div class="trigger-name">Childbirth / Hormonal</div>
+      <div class="trigger-desc">Postpartum (most dramatic TE). OCP cessation. Menopause. HRT changes.</div>
+    </div>
+    <div class="trigger-card">
+      <div class="trigger-letter" style="color:#7a4a00">H</div>
+      <div class="trigger-name">High fever / Illness</div>
+      <div class="trigger-desc">COVID-19, influenza, malaria, sepsis. Any systemic illness with fever &gt;38.5°C.</div>
+    </div>
+    <div class="trigger-card">
+      <div class="trigger-letter" style="color:#1a5030">I</div>
+      <div class="trigger-name">Iron / Nutritional</div>
+      <div class="trigger-desc">Iron deficiency (most common correctable cause in women). Rapid weight loss, crash dieting, protein malnutrition, post-bariatric surgery.</div>
+    </div>
+    <div class="trigger-card">
+      <div class="trigger-letter" style="color:#4a1a78">P</div>
+      <div class="trigger-name">Psychological / Physical stress</div>
+      <div class="trigger-desc">Major surgery, trauma, bereavement, job loss, relationship breakdown. CRH receptors on follicle mediate stress response.</div>
+    </div>
+  </div>
+
+  <p style="margin-top:4px">Plus <strong>S — Systemic disease</strong>: thyroid disease (most important — both hypo and hyper), SLE, inflammatory bowel disease, renal disease, hepatic disease, malignancy.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 7.2 — Common triggers mapped to onset timing</div>
+    <svg width="100%" viewBox="0 0 680 320">
+      <defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Category boxes -->
+      <rect x="20" y="20" width="195" height="275" rx="10" fill="#fceaea" stroke="#8a1818" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="117" y="40" text-anchor="middle">C — Hormonal / Childbirth</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="117" y="58" text-anchor="middle">• Postpartum (peak 3–6 mo)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="117" y="74" text-anchor="middle">• OCP cessation (1–3 mo)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="117" y="90" text-anchor="middle">• Menopause transition</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="117" y="106" text-anchor="middle">• Thyroid (hypo/hyper)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="117" y="122" text-anchor="middle">• Post-miscarriage/TOP</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="117" y="138" text-anchor="middle">• PCOS treatment changes</text>
+      <rect x="225" y="20" width="195" height="275" rx="10" fill="#fdf0d8" stroke="#c49a3c" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="322" y="40" text-anchor="middle">H + P — Illness / Stress</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="322" y="58" text-anchor="middle">• COVID-19 (very common)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="322" y="74" text-anchor="middle">• Influenza, high fever</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="322" y="90" text-anchor="middle">• Major surgery / GA</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="322" y="106" text-anchor="middle">• ICU admission</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="322" y="122" text-anchor="middle">• Bereavement</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="322" y="138" text-anchor="middle">• Severe psychological stress</text>
+      <rect x="430" y="20" width="230" height="275" rx="10" fill="#e4f4ec" stroke="#1a5030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1a5030" x="545" y="40" text-anchor="middle">I + S — Nutritional / Systemic</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="545" y="58" text-anchor="middle">• Iron deficiency (ferritin &lt;30)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="545" y="74" text-anchor="middle">• Crash diet / &gt;15% weight loss</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="545" y="90" text-anchor="middle">• Post-bariatric surgery</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="545" y="106" text-anchor="middle">• Protein malnutrition</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="545" y="122" text-anchor="middle">• Zinc, Vitamin D deficiency</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="545" y="138" text-anchor="middle">• Inflammatory bowel disease</text>
+      <!-- Drug table subset -->
+      <rect x="20" y="175" width="195" height="110" rx="8" fill="#f6f4f0" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3 2"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" font-weight="500" fill="#3a3844" x="117" y="190" text-anchor="middle">Drug-induced TE:</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="117" y="206" text-anchor="middle">Anticoagulants, retinoids</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="117" y="222" text-anchor="middle">Beta-blockers, lithium</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="117" y="238" text-anchor="middle">Antithyroid drugs</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="117" y="254" text-anchor="middle">Chemotherapy</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="117" y="270" text-anchor="middle">ACE inhibitors</text>
+      <rect x="225" y="175" width="195" height="110" rx="8" fill="#f6f4f0" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3 2"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" font-weight="500" fill="#3a3844" x="322" y="190" text-anchor="middle">Typical onset after trigger:</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="322" y="206" text-anchor="middle">Fever/illness → 6–8 weeks</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="322" y="222" text-anchor="middle">Postpartum → 3–6 months</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="322" y="238" text-anchor="middle">Surgery → 2–3 months</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="322" y="254" text-anchor="middle">Iron deficiency → ongoing</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5a5868" x="322" y="270" text-anchor="middle">OCP cessation → 1–4 months</text>
+    </svg>
+    <div class="dcard-cap">Fig 7.2: Common TE triggers grouped by category. Always ask about the 2–4 month lookback window. COVID-19 has become one of the most common triggers since 2020, with TE reported in 25–33% of patients post-infection.</div>
+  </div>
+
+  <h3>Drugs causing telogen effluvium</h3>
+  <table class="dtable">
+    <thead><tr><th>Drug class</th><th>Examples</th><th>Mechanism</th></tr></thead>
+    <tbody>
+      <tr><td>Anticoagulants</td><td>Warfarin, heparin, DOACs</td><td>Telogen induction — unknown exact mechanism</td></tr>
+      <tr><td>Retinoids</td><td>Isotretinoin, acitretin</td><td>Dose-dependent anagen arrest → TE at 2–3 months</td></tr>
+      <tr><td>Beta-blockers</td><td>Propranolol, atenolol, metoprolol</td><td>Unknown — possibly through catecholamine suppression</td></tr>
+      <tr><td>Antithyroid drugs</td><td>Carbimazole, propylthiouracil</td><td>Direct effect on thyroid-dependent hair cycle</td></tr>
+      <tr><td>Lithium</td><td>Lithium carbonate</td><td>Anagen shortening — dose-related</td></tr>
+      <tr><td>ACE inhibitors</td><td>Captopril, enalapril</td><td>Bradykinin-mediated follicular effect</td></tr>
+      <tr><td>Cytotoxic agents</td><td>Cyclophosphamide, taxanes</td><td>Anagen effluvium (different mechanism — matrix arrest)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- CLINICAL FEATURES -->
+<div class="sec" id="sec-clinical">
+  <h2>Clinical features</h2>
+  <p>TE has a characteristic clinical presentation that allows confident diagnosis in most cases. The combination of diffuse shedding, normal scalp, positive pull test, and a relevant preceding trigger is pathognomonic.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 7.3 — Clinical examination findings in acute TE</div>
+    <svg width="100%" viewBox="0 0 680 290">
+      <defs><marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Head top view -->
+      <ellipse cx="190" cy="145" rx="135" ry="148" fill="#f5dcc8" stroke="#c8906a" stroke-width="1.2"/>
+      <!-- Diffuse, uniform thinning -->
+      <ellipse cx="190" cy="48" rx="90" ry="32" fill="#2C2C2A" opacity="0.55"/>
+      <ellipse cx="68" cy="145" rx="21" ry="68" fill="#2C2C2A" opacity="0.55"/>
+      <ellipse cx="312" cy="145" rx="21" ry="68" fill="#2C2C2A" opacity="0.55"/>
+      <ellipse cx="190" cy="260" rx="72" ry="20" fill="#2C2C2A" opacity="0.48"/>
+      <!-- Crown — still has hair (diffuse, not patchy) -->
+      <ellipse cx="190" cy="130" rx="64" ry="60" fill="#2C2C2A" opacity="0.28"/>
+      <!-- Shed club hairs below -->
+      <line x1="110" y1="260" x2="108" y2="285" stroke="#8a6040" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="108" cy="287" rx="4" ry="3" fill="#b08060"/>
+      <line x1="140" y1="260" x2="142" y2="285" stroke="#8a6040" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="142" cy="287" rx="4" ry="3" fill="#b08060"/>
+      <line x1="190" y1="264" x2="190" y2="285" stroke="#8a6040" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="190" cy="287" rx="4" ry="3" fill="#b08060"/>
+      <line x1="240" y1="260" x2="238" y2="285" stroke="#8a6040" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="238" cy="287" rx="4" ry="3" fill="#b08060"/>
+      <!-- Labels -->
+      <line x1="190" y1="48" x2="392" y2="30" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="14" width="220" height="38" rx="6" fill="#fdf0d8" stroke="#c49a3c" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="504" y="29" text-anchor="middle" dominant-baseline="central">Diffuse, uniform thinning</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="504" y="44" text-anchor="middle" dominant-baseline="central">ALL zones — including occiput</text>
+      <line x1="312" y1="145" x2="392" y2="110" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="92" width="220" height="38" rx="6" fill="#e4f4ec" stroke="#1a5030" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1a5030" x="504" y="107" text-anchor="middle" dominant-baseline="central">Normal-looking scalp</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="504" y="122" text-anchor="middle" dominant-baseline="central">No inflammation, scale or fibrosis</text>
+      <line x1="250" y1="145" x2="394" y2="170" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="152" width="220" height="38" rx="6" fill="#fceaea" stroke="#8a1818" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="504" y="167" text-anchor="middle" dominant-baseline="central">Positive pull test ALL zones</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="504" y="182" text-anchor="middle" dominant-baseline="central">&gt;6 hairs — club bulbs (telogen)</text>
+      <line x1="190" y1="284" x2="394" y2="240" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="222" width="220" height="38" rx="6" fill="#e6eef8" stroke="#1e4060" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1e4060" x="504" y="237" text-anchor="middle" dominant-baseline="central">Shed hairs with club bulbs</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a5a80" x="504" y="252" text-anchor="middle" dominant-baseline="central">White/pigmented telogen roots</text>
+    </svg>
+    <div class="dcard-cap">Fig 7.3: Clinical examination in acute TE. Diffuse thinning across ALL zones including the occipital scalp (unlike AGA where occipital zone is spared) with shed hairs showing white club bulbs. The scalp surface is entirely normal.</div>
+  </div>
+
+  <h3>What the shed hair looks like</h3>
+  <div class="grid2">
+    <div class="fcard">
+      <div class="ftag" style="color:var(--info)">Telogen hair (TE)</div>
+      <div class="ftitle">Club bulb — white/pigmented root</div>
+      <div class="fdesc">A rounded, club-shaped, pale or pigmented bulb at the proximal end. The bulb is fully keratinised — no root sheath. This is normal telogen hair shed at exogen. Normal: up to 100/day. TE: 200–400+/day.</div>
+    </div>
+    <div class="fcard">
+      <div class="ftag" style="color:var(--danger)">Anagen hair (effluvium)</div>
+      <div class="ftitle">Tapered, fleshy anagen bulb</div>
+      <div class="fdesc">A tapered, gel-covered, fleshy root sheath still attached. Indicates anagen effluvium (chemotherapy, radiation) — a different and more serious mechanism. Not typical of TE.</div>
+    </div>
+  </div>
+
+  <h3>Patient-reported symptoms</h3>
+  <table class="dtable">
+    <thead><tr><th>Symptom</th><th>Typical in TE</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Hair on pillow, in shower drain</td><td>Yes — alarming quantity</td><td>Patients often count — 200–400/day common in acute TE</td></tr>
+      <tr><td>Scalp symptoms (itch, pain, scale)</td><td>Absent in uncomplicated TE</td><td>Symptoms suggest co-morbidity (sebderm, psoriasis) or alternative diagnosis</td></tr>
+      <tr><td>Diffuse scalp thinning visible</td><td>Moderate — visible when &gt;25% density lost</td><td>Less visible than AGA — uniform reduction rather than patterned</td></tr>
+      <tr><td>Ponytail thickness reduced</td><td>Yes — objective measure</td><td>Useful patient-reported objective marker; elastic band circumference</td></tr>
+      <tr><td>Anxiety about hair loss</td><td>Very common — often driving the consultation</td><td>Patients frequently convinced they will become bald — reassurance is key treatment</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- DIAGNOSIS -->
+<div class="sec" id="sec-diagnosis">
+  <h2>Diagnosis and investigation</h2>
+
+  <div class="box-key">
+    <div class="lbl">Diagnostic criteria</div>
+    <p>Acute TE diagnosis: <strong>Diffuse shedding + club bulbs on shed hairs + positive pull test all zones + identified trigger 2–4 months prior + normal scalp + no miniaturisation on trichoscopy.</strong> No further investigations needed if all criteria met and trigger is obvious.</p>
+  </div>
+
+  <h3>The FTBVZ blood panel for TE</h3>
+  <table class="dtable">
+    <thead><tr><th>Test</th><th>Target</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td><strong>F</strong>erritin</td><td>&gt;70 mcg/L for hair (not just lab range)</td><td>Iron deficiency — most common, most treatable contributor</td></tr>
+      <tr><td><strong>T</strong>SH + free T4</td><td>TSH 0.4–4.5 mIU/L</td><td>Both hypo and hyperthyroid cause TE. Screen all women</td></tr>
+      <tr><td><strong>B</strong>12 + folate</td><td>B12 &gt;200 ng/L; folate &gt;7 nmol/L</td><td>B12 deficiency (vegans, metformin users) + diet-related TE</td></tr>
+      <tr><td><strong>V</strong>itamin D (25-OH)</td><td>&gt;50 nmol/L</td><td>Deficiency associated with hair loss; easily corrected</td></tr>
+      <tr><td><strong>Z</strong>inc</td><td>&gt;10 µmol/L</td><td>Zinc deficiency — especially crash dieters, vegans</td></tr>
+      <tr><td>FBC</td><td>Hb &gt;120 g/L (F)</td><td>Anaemia (but Hb can be normal with low ferritin)</td></tr>
+      <tr><td>LFTs + urea/creatinine</td><td>Normal range</td><td>Systemic disease screen if no obvious trigger found</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Trichoscopy in TE</h3>
+  <table class="dtable">
+    <thead><tr><th>Finding</th><th>TE pattern</th><th>Contrast with AGA</th></tr></thead>
+    <tbody>
+      <tr><td>Hair shaft calibre</td><td>Uniform — all hairs same thickness</td><td>AGA: diversity — thick and miniaturised mixed</td></tr>
+      <tr><td>Follicular openings</td><td>Present — ostia visible, normal</td><td>AGA: single-hair units from companion loss</td></tr>
+      <tr><td>Miniaturisation ratio</td><td>&lt;10% — no significant miniaturisation</td><td>AGA: &gt;20% in vertex zone</td></tr>
+      <tr><td>Pull test</td><td>Positive in all zones including occiput</td><td>AGA: positive frontal/vertex, negative occiput</td></tr>
+      <tr><td>Yellow/black dots</td><td>Absent</td><td>AA: yellow + black dots prominent</td></tr>
+      <tr><td>Perifollicular changes</td><td>None</td><td>LPP/FFA: peripilar cast, erythema</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box-info">
+    <div class="lbl">TE or AGA — the most common diagnostic challenge</div>
+    <p>TE and FPHL/AGA frequently co-exist, particularly in women over 35. The key question: <strong>Is there calibre diversity?</strong> Trichoscopy uniform calibre = TE. Calibre diversity = AGA (with or without TE). Many women have both — treat both. Never dismiss "it's just TE" in a woman with diffuse thinning without checking for underlying miniaturisation.</p>
+  </div>
+</div>
+
+<!-- CHRONIC TE -->
+<div class="sec" id="sec-chronic">
+  <h2>Chronic telogen effluvium</h2>
+  <p>Chronic TE (CTE) is defined as diffuse hair shedding lasting <strong>more than 6 months</strong>. It is more common in middle-aged women and may fluctuate over years. The prognosis is more variable than acute TE and requires more thorough investigation.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 7.4 — Chronic TE: mechanism, presentation and differential</div>
+    <svg width="100%" viewBox="0 0 680 290">
+      <defs><marker id="ar4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Three column layout -->
+      <rect x="20" y="20" width="200" height="258" rx="10" fill="#fdf0d8" stroke="#c49a3c" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" font-weight="500" fill="#7a4a00" x="120" y="44" text-anchor="middle">Mechanisms</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="64">• Persistent trigger not found</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="82">• Short anagen syndrome</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="100">• Ongoing nutritional deficit</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="118">• Subclinical thyroid dysfunction</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="136">• Androgenetic component unmasked</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="154">• Chronic systemic inflammation</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="172">• Psychoneuroimmune axis</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="34" y="190">• Occult malignancy (rare)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a4a00" x="120" y="220" text-anchor="middle" font-style="italic">Duration: &gt;6 months</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a4a00" x="120" y="238" text-anchor="middle">Often waxes/wanes</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7a4a00" x="120" y="256" text-anchor="middle">More thorough Ix needed</text>
+      <rect x="238" y="20" width="200" height="258" rx="10" fill="#e4f4ec" stroke="#1a5030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" font-weight="500" fill="#1a5030" x="338" y="44" text-anchor="middle">Investigation additions</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="64">• Full FTBVZ panel</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="82">• ANA + anti-dsDNA (screen SLE)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="100">• Anti-TPO antibodies</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="118">• Free androgen index</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="136">• Fasting glucose + HbA1c</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="154">• CRP / ESR (inflammation)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="172">• Albumin (protein)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="252" y="190">• Consider trichoscopy ± biopsy</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#1a5030" x="338" y="220" text-anchor="middle" font-style="italic">Consider referral if:</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#1a5030" x="338" y="238" text-anchor="middle">No trigger after full screen</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#1a5030" x="338" y="256" text-anchor="middle">Or &gt;12 months duration</text>
+      <rect x="456" y="20" width="204" height="258" rx="10" fill="#fceaea" stroke="#8a1818" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" font-weight="500" fill="#8a1818" x="558" y="44" text-anchor="middle">CTE vs FPHL</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="470" y="64" font-weight="500">Feature CTE FPHL</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="470" y="82">Calibre Uniform Diverse</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="470" y="100">Miniat. None Yes (&gt;20%)</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="470" y="118">Shed ++++ Mild-mod</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="470" y="136">FHx +/- Often +</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="470" y="154">Pull test All zones Vertex/front</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="470" y="172">Scalp Normal Normal</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#8a1818" x="558" y="210" text-anchor="middle" font-style="italic">Often co-exist in women</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#8a1818" x="558" y="230" text-anchor="middle">Treat both simultaneously</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#8a1818" x="558" y="250" text-anchor="middle">Trichoscopy to distinguish</text>
+    </svg>
+    <div class="dcard-cap">Fig 7.4: Chronic TE: mechanisms, additional investigations, and the critical comparison with FPHL. These two conditions overlap significantly in middle-aged women and both can be present simultaneously.</div>
+  </div>
+
+  <div class="box-warn">
+    <div class="lbl">When CTE needs urgent investigation</div>
+    <p>CTE with systemic symptoms (weight loss, fatigue, night sweats, lymphadenopathy) should prompt screen for underlying malignancy, inflammatory disease, or systemic autoimmune condition. Do not attribute all CTE to "stress" or "hormones" without adequate investigation.</p>
+  </div>
+</div>
+
+<!-- MANAGEMENT -->
+<div class="sec" id="sec-management">
+  <h2>Management — the FRONT framework</h2>
+  <p>TE management follows the <strong>FRONT</strong> framework — a stepwise approach that covers the critical elements without over-medicalising a largely self-limiting condition.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 7.5 — FRONT management framework for telogen effluvium</div>
+    <svg width="100%" viewBox="0 0 680 300">
+      <!-- Step boxes -->
+      <rect x="18" y="20" width="118" height="260" rx="10" fill="#fceaea" stroke="#8a1818" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="28" font-weight="600" fill="#8a1818" x="77" y="62" text-anchor="middle">F</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="77" y="85" text-anchor="middle">Find &amp;</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="77" y="101" text-anchor="middle">Fix trigger</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="77" y="126" text-anchor="middle">Identify the</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="77" y="142" text-anchor="middle">cause first</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="77" y="162" text-anchor="middle">CHIPS screen</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa3030" x="77" y="178" text-anchor="middle">FTBVZ bloods</text>
+      <rect x="152" y="20" width="118" height="260" rx="10" fill="#fdf0d8" stroke="#c49a3c" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="28" font-weight="600" fill="#7a4a00" x="211" y="62" text-anchor="middle">R</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="211" y="85" text-anchor="middle">Replace</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="211" y="101" text-anchor="middle">deficiencies</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="211" y="126" text-anchor="middle">Iron to &gt;70</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="211" y="142" text-anchor="middle">Vit D &gt;50</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="211" y="158" text-anchor="middle">Zinc if low</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="211" y="174" text-anchor="middle">B12 if low</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#aa7020" x="211" y="190" text-anchor="middle">Thyroid Rx</text>
+      <rect x="286" y="20" width="118" height="260" rx="10" fill="#e4f4ec" stroke="#1a5030" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="28" font-weight="600" fill="#1a5030" x="345" y="62" text-anchor="middle">O</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1a5030" x="345" y="85" text-anchor="middle">Optimise</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1a5030" x="345" y="101" text-anchor="middle">nutrition</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="345" y="126" text-anchor="middle">Protein 1.2g/</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="345" y="142" text-anchor="middle">kg/day min</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="345" y="162" text-anchor="middle">Avoid crash</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="345" y="178" text-anchor="middle">dieting</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a7040" x="345" y="198" text-anchor="middle">Varied diet</text>
+      <rect x="420" y="20" width="118" height="260" rx="10" fill="#e6eef8" stroke="#1e4060" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="28" font-weight="600" fill="#1e4060" x="479" y="62" text-anchor="middle">N</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1e4060" x="479" y="85" text-anchor="middle">Normalise</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#1e4060" x="479" y="101" text-anchor="middle">expectations</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a5a80" x="479" y="126" text-anchor="middle">Recovery in</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a5a80" x="479" y="142" text-anchor="middle">6–12 months</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a5a80" x="479" y="162" text-anchor="middle">No baldness</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a5a80" x="479" y="178" text-anchor="middle">Photo record</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#2a5a80" x="479" y="194" text-anchor="middle">Review 3 mo</text>
+      <rect x="554" y="20" width="108" height="260" rx="10" fill="#f0eafc" stroke="#4a1a78" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="28" font-weight="600" fill="#4a1a78" x="608" y="62" text-anchor="middle">T</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#4a1a78" x="608" y="85" text-anchor="middle">Treat if</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#4a1a78" x="608" y="101" text-anchor="middle">co-existing</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7040aa" x="608" y="126" text-anchor="middle">FPHL found</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7040aa" x="608" y="142" text-anchor="middle">→ minoxidil</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7040aa" x="608" y="162" text-anchor="middle">CTE &gt;6 mo</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7040aa" x="608" y="178" text-anchor="middle">→ refer</text>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#7040aa" x="608" y="198" text-anchor="middle">Psych support</text>
+    </svg>
+    <div class="dcard-cap">Fig 7.5: FRONT management framework. The key principles: Find and fix the trigger first, Replace nutritional deficiencies, Optimise nutrition, Normalise the patient's expectations with evidence-based reassurance, and Treat any co-existing conditions (FPHL, CTE).</div>
+  </div>
+
+  <h3>Evidence-based reassurance — what to tell patients</h3>
+  <div class="grid2">
+    <div class="fcard">
+      <div class="ftag" style="color:var(--info)">What is happening</div>
+      <div class="fdesc">"Your hair follicles are still alive. This is a temporary shedding of resting hairs — the factory workers going home — not destruction of the follicles themselves. New hairs are already beginning to grow before the shedding even stops."</div>
+    </div>
+    <div class="fcard">
+      <div class="ftag" style="color:var(--info)">What will happen</div>
+      <div class="fdesc">"In the vast majority of cases, hair returns fully to its previous thickness within 6–12 months of the trigger being resolved. You will not go bald from telogen effluvium. The shedding you're seeing right now is the end of the process, not the beginning."</div>
+    </div>
+  </div>
+
+  <h3>Role of minoxidil in TE</h3>
+  <p>Minoxidil is <strong>not indicated as first-line treatment for acute TE</strong>. The condition is self-limiting and minoxidil does not accelerate telogen resolution. However, if TE has unmasked underlying AGA/FPHL (confirmed by trichoscopy showing miniaturisation), minoxidil is appropriate for the androgenetic component.</p>
+
+  <div class="box-amber">
+    <div class="lbl">Management Pitfall</div>
+    <p>Do not prescribe minoxidil for acute TE without evidence of co-existing FPHL. If a patient on minoxidil stops it (for any reason), they will experience a minoxidil-cessation TE on top of the original TE — compounding their distress and reinforcing incorrect beliefs about treatment.</p>
+  </div>
+</div>
+
+<!-- QUICK RECALL -->
+<div class="sec" id="sec-recall">
+  <h2>Quick Recall</h2>
+  <div class="recall-grid">
+    <div class="rcrd">
+      <h4>Triggers: CHIPS</h4>
+      <div class="mnem">C·H·I·P·S</div>
+      <ul>
+        <li><strong>C</strong>hildbirth / hormonal change</li>
+        <li><strong>H</strong>igh fever / systemic illness</li>
+        <li><strong>I</strong>ron/nutritional deficiency</li>
+        <li><strong>P</strong>sychological / physical stress</li>
+        <li><strong>S</strong>ystemic disease (thyroid #1)</li>
+        <li>All 3–4 months before shedding onset</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Blood panel: FTBVZ</h4>
+      <div class="mnem">F·T·B·V·Z</div>
+      <ul>
+        <li><strong>F</strong>erritin — target &gt;70 mcg/L</li>
+        <li><strong>T</strong>SH + T4 — thyroid screen</li>
+        <li><strong>B</strong>12 + folate</li>
+        <li><strong>V</strong>itamin D — target &gt;50 nmol/L</li>
+        <li><strong>Z</strong>inc</li>
+        <li>Plus FBC, LFTs if CTE</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Management: FRONT</h4>
+      <div class="mnem">F·R·O·N·T</div>
+      <ul>
+        <li><strong>F</strong>ind and fix the trigger</li>
+        <li><strong>R</strong>eplace deficiencies (Fe, Vit D, B12)</li>
+        <li><strong>O</strong>ptimise nutrition</li>
+        <li><strong>N</strong>ormalise expectations (6–12 mo)</li>
+        <li><strong>T</strong>reat co-existing FPHL if present</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>TE vs AGA trichoscopy</h4>
+      <div class="mnem" style="font-size:13px;letter-spacing:1px">KEY SPLIT</div>
+      <ul>
+        <li>TE = uniform calibre shafts</li>
+        <li>AGA/FPHL = calibre diversity</li>
+        <li>TE = pull test positive ALL zones</li>
+        <li>AGA = positive vertex, NOT occiput</li>
+        <li>Both often co-exist → treat both</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>GP Quick-Reference Action Card</h2>
+  <table class="dtable">
+    <thead><tr><th>Presentation</th><th>History key question</th><th>Exam finding</th><th>Investigation</th><th>Management</th></tr></thead>
+    <tbody>
+      <tr><td>Acute diffuse shedding, clear trigger</td><td>What happened 3 months ago?</td><td>Pull test + all zones; club bulbs; normal scalp</td><td>FTBVZ; clinical Dx if obvious</td><td>Fix trigger; supplement; reassure; review 3 months</td></tr>
+      <tr><td>Postpartum shedding, 3–5 months</td><td>When delivered? Breastfeeding (iron drain)?</td><td>As above; check ferritin</td><td>Ferritin, TFTs, FBC</td><td>Reassure; iron to &gt;70; review 6 months</td></tr>
+      <tr><td>Diffuse shedding + calibre diversity on derm.</td><td>FHx hair loss?</td><td>Miniaturisation &gt;20% on trichoscopy</td><td>FTBVZ; FAI</td><td>Treat both TE + FPHL (minoxidil + supplement)</td></tr>
+      <tr><td>Shedding &gt;6 months — no obvious trigger</td><td>Thorough CHIPS + systemic review</td><td>Trichoscopy; check for AGA</td><td>FTBVZ + ANA, anti-TPO, glucose, CRP</td><td>Treat findings; consider referral if no diagnosis</td></tr>
+      <tr><td>Acute shedding + systemic features (fatigue, weight loss)</td><td>Full systemic review</td><td>Lymphadenopathy? Organomegaly?</td><td>Full bloods including LFT, CRP, B12, TFTs, ANA</td><td>Exclude systemic disease before attributing to TE</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- FLASHCARDS -->
+<div class="sec" id="sec-flashcards">
+  <h2>Anki Flashcard Deck — Chapter 7</h2>
+  <p style="color:var(--ink3);font-size:15.5px;margin-bottom:18px">22 cards covering TE mechanism, triggers, clinical features, diagnosis, chronic TE, and management. Tap to flip.</p>
+  <div class="pbar-wrap">
+    <div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div>
+    <div class="pct" id="pct">Card 1 / 22</div>
+  </div>
+  <p class="hint-txt">tap card to flip</p>
+  <div class="fcrd" id="fcrd" onclick="flipFC()">
+    <div class="fc-inner" id="fci">
+      <div class="fc-front"><div class="fc-cat" id="fcat"></div><div class="fc-q" id="fq"></div></div>
+      <div class="fc-back"><div class="fc-a" id="fa"></div><div class="fc-tip" id="ftip"></div></div>
+    </div>
+  </div>
+  <div class="fc-btns">
+    <button class="fcbtn" onclick="rate('hard')">Hard</button>
+    <button class="fcbtn" onclick="rate('ok')">Got it</button>
+    <button class="fcbtn pri" onclick="rate('easy')">Easy</button>
+  </div>
+  <div class="fc-ctrl">
+    <button onclick="shuffleFC()">Shuffle</button>
+    <button onclick="restartFC()">Restart</button>
+  </div>
+  <div class="fc-done" id="fcdone"><h3>Deck complete</h3><p id="fcscore"></p></div>
+  <h3 style="margin-top:24px;margin-bottom:10px">All 22 cards</h3>
+  <table class="dtable" id="alltbl"></table>
+</div>
+
+<!-- REFERENCES -->
+<div class="sec" id="sec-references">
+  <h2>References</h2>
+  <p style="font-size:14.5px;color:var(--ink3);margin-bottom:16px">APA 7th edition format.</p>
+  <ul class="ref-list">
+    <li><span class="rn">1.</span> Asghar, F., Shamim, N., Farooque, U., Sheikh, H., &amp; Aqeel, R. (2020). Telogen effluvium: A review of the literature. <em>Cureus, 12</em>(5), e8320. https://doi.org/10.7759/cureus.8320</li>
+    <li><span class="rn">2.</span> Bhoyrul, B., Depasquale, C., &amp; Wall, D. (2020). The management of telogen effluvium: A survey of member practice of the Trichological Society. <em>Dermatologic Therapy, 33</em>(6), e14087. https://doi.org/10.1111/dth.14087</li>
+    <li><span class="rn">3.</span> Callender, V. D., McMichael, A. J., &amp; Cohen, G. F. (2004). Medical and surgical therapies for alopecias in black women. <em>Dermatologic Therapy, 17</em>(2), 164–176.</li>
+    <li><span class="rn">4.</span> Grover, C., &amp; Khurana, A. (2013). Telogen effluvium. <em>Indian Journal of Dermatology, Venereology and Leprology, 79</em>(5), 591–603. https://doi.org/10.4103/0378-6323.116731</li>
+    <li><span class="rn">5.</span> Harrison, S., &amp; Sinclair, R. (2002). Telogen effluvium. <em>Clinical and Experimental Dermatology, 27</em>(5), 389–395. https://doi.org/10.1046/j.1365-2230.2002.01080.x</li>
+    <li><span class="rn">6.</span> Headington, J. T. (1993). Telogen effluvium: New concepts and review. <em>Archives of Dermatology, 129</em>(3), 356–363. https://doi.org/10.1001/archderm.1993.01680240096017</li>
+    <li><span class="rn">7.</span> Kligman, A. M. (1961). Pathologic dynamics of human hair loss: I. Telogen effluvium. <em>Archives of Dermatology, 83</em>(2), 175–198. https://doi.org/10.1001/archderm.1961.01580140005002</li>
+    <li><span class="rn">8.</span> Mubki, T., Rudnicka, L., Olszewska, M., &amp; Shapiro, J. (2014). Evaluation and diagnosis of the hair loss patient: Part II. Trichoscopic and laboratory evaluations. <em>Journal of the American Academy of Dermatology, 71</em>(3), 431.e1–431.e11.</li>
+    <li><span class="rn">9.</span> Piraccini, B. M., Iorizzo, M., Rech, G., &amp; Tosti, A. (2003). Drug-induced hair disorders. <em>Current Drug Safety, 1</em>(3), 301–305.</li>
+    <li><span class="rn">10.</span> Ramos, P. M., &amp; Miot, H. A. (2015). Female pattern hair loss: A clinical and pathophysiological review. <em>Anais Brasileiros de Dermatologia, 90</em>(4), 529–543.</li>
+    <li><span class="rn">11.</span> Rebora, A. (2019). Telogen effluvium: An etiopathogenetic study with practical consequences. <em>International Journal of Dermatology, 58</em>(9), 1086–1092. https://doi.org/10.1111/ijd.14591</li>
+    <li><span class="rn">12.</span> Shapiro, J. (2007). <em>Hair loss: Principles of diagnosis and management of alopecia</em>. Martin Dunitz.</li>
+    <li><span class="rn">13.</span> Sinclair, R. D. (2007). Chronic telogen effluvium: A study of 5 patients over 7 years. <em>Journal of the American Academy of Dermatology, 56</em>(2 Suppl), S36–S38. https://doi.org/10.1016/j.jaad.2006.07.028</li>
+    <li><span class="rn">14.</span> Trüeb, R. M. (2009). Telogen effluvium: Is there a need for a new classification? <em>Skin Appendage Disorders, 1</em>(1), 2–5. https://doi.org/10.1159/000366553</li>
+    <li><span class="rn">15.</span> Whiting, D. A. (1996). Chronic telogen effluvium: Increased scalp hair shedding in middle-aged women. <em>Journal of the American Academy of Dermatology, 35</em>(6), 899–906.</li>
+    <li><span class="rn">16.</span> Wolff, H., Fischer, T. W., &amp; Blume-Peytavi, U. (2016). The diagnosis and treatment of hair and scalp diseases. <em>Deutsches Ärzteblatt International, 113</em>(21), 377–386.</li>
+  </ul>
+</div>
+
+<script>
+const cards=[
+  {cat:"Mechanism",q:"Define telogen effluvium and describe the fundamental mechanism.",a:"TE = excessive shedding of telogen (resting phase) club hairs due to a systemic stressor causing premature synchronised shift of anagen follicles into telogen. When the cohort reaches the end of telogen 2–4 months later, mass shedding occurs.",tip:"Anagen → telogen synchronised → mass shed 2–4 months later"},
+  {cat:"Mechanism",q:"What is the '3-month rule' in telogen effluvium?",a:"The trigger for TE occurs 2–4 months (average 3 months) before the peak shedding. The telogen phase lasts approximately 3 months, after which club hairs are shed. When a patient presents with distressing shedding, the cause happened 3 months earlier.",tip:"Shedding at month 3 = trigger at month 0"},
+  {cat:"Mechanism",q:"Describe Kligman's 'immediate anagen release' and 'delayed anagen release' types.",a:"Immediate anagen release: sudden premature termination of anagen → hairs rapidly enter telogen → shedding 2–3 months later. Triggers: high fever, crash diet.\nDelayed anagen release: prolonged anagen (e.g. pregnancy maintains follicles in anagen) followed by synchronised mass release postpartum — the most dramatic TE type.",tip:"Pregnancy = delayed anagen release = worst postpartum TE"},
+  {cat:"Triggers",q:"Name the five categories of TE triggers (CHIPS).",a:"C — Childbirth / hormonal (postpartum, OCP, menopause)\nH — High fever / systemic illness (COVID-19, influenza, surgery)\nI — Iron / nutritional deficiency\nP — Psychological / physical stress (surgery, bereavement)\nS — Systemic disease (thyroid #1, SLE, IBD)",tip:"CHIPS — always look 3–4 months back"},
+  {cat:"Triggers",q:"Which thyroid conditions cause TE and which is more common?",a:"Both hypothyroidism AND hyperthyroidism cause TE. Neither is more common — both impair the hair cycle through different mechanisms. TSH testing is mandatory in all patients with diffuse hair loss. Treating the thyroid condition is a key step in TE management.",tip:"Both hypo AND hyper cause TE — always check TSH"},
+  {cat:"Triggers",q:"Why has COVID-19 become a major TE trigger since 2020?",a:"Post-COVID TE (SARS-CoV-2 telogen effluvium) is estimated to affect 25–33% of COVID-19 patients. The combination of high fever, systemic inflammation, psychological stress, and nutritional disruption produces a multi-factorial TE. Typically peaks 2–3 months post-infection.",tip:"COVID-19: 25–33% post-infection TE. Multi-factorial"},
+  {cat:"Triggers",q:"Name four drug classes that cause telogen effluvium.",a:"1. Anticoagulants (warfarin, heparin, DOACs)\n2. Retinoids (isotretinoin, acitretin) — dose dependent\n3. Beta-blockers (propranolol, atenolol)\n4. Antithyroid drugs (carbimazole)\n(Also: lithium, ACE inhibitors)",tip:"ARAB: Anticoagulants, Retinoids, Antithyroids, Beta-blockers"},
+  {cat:"Clinical",q:"What are the five key clinical features of acute telogen effluvium?",a:"1. Diffuse shedding — all zones including occipital scalp\n2. Club (telogen) bulbs on shed hairs — white/pale root\n3. Positive pull test in ALL zones including occiput\n4. Normal scalp surface — no inflammation, scale, or scarring\n5. Identified trigger 2–4 months prior",tip:"Diffuse + club bulbs + all zones positive + normal scalp"},
+  {cat:"Clinical",q:"How does a telogen club hair appear and how does it differ from an anagen hair?",a:"Telogen club hair: rounded, smooth, pale/white or pigmented club-shaped bulb. Fully keratinised, no root sheath attached.\nAnagen hair: elongated, tapering root with gel-like root sheath still attached — indicates anagen effluvium (chemotherapy), not TE.",tip:"Club = telogen = TE. Fleshy tapered = anagen = chemo"},
+  {cat:"Clinical",q:"Why does the pull test remain positive in all scalp zones in TE but not in AGA?",a:"In TE, follicles across all scalp regions are synchronised in telogen. In AGA, only androgen-sensitive zones (frontal/vertex) show miniaturisation, while the occipital fringe retains androgen-resistant follicles that do not thin. Therefore: all zones positive = TE; positive vertex but negative occiput = AGA.",tip:"All zones positive including occiput = TE, not AGA"},
+  {cat:"Diagnosis",q:"What does FTBVZ stand for in the TE blood panel?",a:"F — Ferritin (target >70 mcg/L)\nT — TSH + free T4\nB — B12 + folate\nV — Vitamin D (25-OH, >50 nmol/L)\nZ — Zinc\n(Plus FBC, LFTs if chronic TE)",tip:"FTBVZ — the TE blood panel"},
+  {cat:"Diagnosis",q:"How does trichoscopy distinguish TE from FPHL?",a:"TE: UNIFORM hair shaft calibre — all hairs the same thickness. No miniaturisation (ratio <10%).\nFPHL: CALIBRE DIVERSITY — thick terminal + miniaturised vellus-like hairs. Miniaturisation ratio >20% in vertex zone.\nBoth can co-exist — trichoscopy identifies both simultaneously.",tip:"TE = uniform. FPHL = diverse. Both often present together"},
+  {cat:"Diagnosis",q:"When can acute TE be diagnosed without blood tests?",a:"When ALL criteria are met: diffuse shedding + positive pull test all zones + club bulbs + normal scalp + an obvious trigger identified 2–4 months prior + trichoscopy showing uniform calibre.\nIf any criterion is absent or atypical, FTBVZ panel is indicated.",tip:"Clear trigger + all criteria = clinical diagnosis acceptable"},
+  {cat:"Chronic TE",q:"Define chronic telogen effluvium and what distinguishes it from acute TE.",a:"CTE = diffuse hair shedding lasting >6 months. It tends to wax and wane. It requires more thorough investigation as the trigger may not be obvious. It may reflect persistent nutritional deficit, subclinical thyroid disease, short anagen syndrome, or co-existing FPHL.",tip:"CTE >6 months = more investigation, may persist"},
+  {cat:"Chronic TE",q:"Name three additional investigations needed in chronic TE beyond the standard FTBVZ.",a:"1. ANA + anti-dsDNA (screen for SLE/autoimmune)\n2. Anti-TPO antibodies (subclinical thyroid autoimmunity)\n3. CRP/ESR (chronic inflammation)\n(Also: free androgen index, HbA1c, albumin, consider biopsy)",tip:"CTE adds: ANA, anti-TPO, CRP to standard panel"},
+  {cat:"Chronic TE",q:"What systemic features in a CTE patient should prompt investigation for malignancy?",a:"CTE with: unexplained weight loss, night sweats, lymphadenopathy, fatigue, anaemia, or organomegaly = investigate for occult malignancy, lymphoma, or systemic inflammatory disease. Do not attribute all CTE to stress without adequate exclusion.",tip:"Weight loss + night sweats + lymphadenopathy = exclude malignancy"},
+  {cat:"Management",q:"What does FRONT stand for in TE management?",a:"F — Find and fix the trigger\nR — Replace deficiencies (Fe to >70, Vit D, B12, Zinc)\nO — Optimise nutrition (protein ≥1.2g/kg/day, no crash dieting)\nN — Normalise expectations (6–12 months recovery, no baldness)\nT — Treat co-existing conditions (FPHL → minoxidil; CTE → refer)",tip:"FRONT: Find, Replace, Optimise, Normalise, Treat"},
+  {cat:"Management",q:"Is minoxidil indicated as first-line treatment for acute telogen effluvium?",a:"No. Minoxidil is NOT first-line for acute TE — the condition is self-limiting and minoxidil does not accelerate telogen resolution. It is indicated only if trichoscopy confirms co-existing FPHL (miniaturisation ratio >20%). Prescribing minoxidil for pure TE risks a cessation-TE when the patient stops it.",tip:"Minoxidil: NOT for pure TE. Only if FPHL confirmed"},
+  {cat:"Management",q:"What is the expected timeline for recovery from acute TE after the trigger is removed?",a:"Full recovery typically occurs within 6–12 months of trigger removal and nutritional correction. Shedding begins to slow at 3–4 months post-trigger. Density is fully restored by 12 months in 95% of cases of acute TE.",tip:"6–12 months full recovery. 95% success if trigger removed"},
+  {cat:"Management",q:"What is the target ferritin level for treating iron deficiency in TE?",a:">70 mcg/L — the therapeutic target for hair loss, not just the laboratory reference range of >30 mcg/L. Many labs report ferritin as 'normal' from 12–30 mcg/L, but this level perpetuates TE. Supplement with ferrous sulfate 200 mg/day until ferritin >70, then reassess.",tip:"Ferritin >70, not >30. Supplement until >70"},
+  {cat:"Management",q:"What reassurance can the GP provide to a patient convinced they will go bald from TE?",a:"1. Follicles are not destroyed — they are alive and resting.\n2. Regrowth has already begun — before shedding even stops.\n3. You will not go bald from TE — complete baldness from TE does not occur.\n4. Recovery takes 6–12 months — this is expected and normal.\n5. This is the tail end of the process, not the beginning.",tip:"Not destructive. Already regrowing. No baldness. 6–12 months."},
+  {cat:"Mechanism",q:"What is postpartum telogen effluvium and why is it the most dramatic form of TE?",a:"Postpartum TE occurs 3–6 months after delivery. During pregnancy, high oestrogen and progesterone extend the anagen phase — more hairs stay in growth than normal. After delivery, oestrogen falls abruptly → all these extended-anagen hairs enter telogen simultaneously → mass exogen 3–6 months postpartum. This 'delayed anagen release' produces more dramatic shedding than other TE types.",tip:"Pregnancy = extended anagen → postpartum all shed at once"}
+];
+let deck=[...cards],cur=0,flipped=false,sc={easy:0,ok:0,hard:0};
+function showFC(i){const c=deck[i];document.getElementById('fcat').textContent=c.cat;document.getElementById('fq').textContent=c.q;document.getElementById('fa').textContent=c.a;document.getElementById('ftip').textContent=c.tip?'Tip: '+c.tip:'';document.getElementById('fci').classList.remove('flip');flipped=false;document.getElementById('pct').textContent='Card '+(i+1)+' / '+deck.length;document.getElementById('pfill').style.width=Math.round(i/deck.length*100)+'%';document.getElementById('fcdone').style.display='none';}
+function flipFC(){flipped=!flipped;document.getElementById('fci').classList.toggle('flip',flipped)}
+function rate(r){sc[r]++;cur++;if(cur>=deck.length){document.getElementById('fcdone').style.display='block';document.getElementById('fcscore').textContent='Easy: '+sc.easy+' | Got it: '+sc.ok+' | Hard: '+sc.hard;document.getElementById('pfill').style.width='100%';document.getElementById('pct').textContent='Complete';document.getElementById('fci').classList.remove('flip');document.getElementById('fq').textContent='All cards reviewed.';document.getElementById('fa').textContent='';return;}showFC(cur);}
+function shuffleFC(){deck=[...cards].sort(()=>Math.random()-.5);cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+function restartFC(){deck=[...cards];cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+document.getElementById('alltbl').innerHTML='<tr><th>#</th><th>Category</th><th>Question</th></tr>'+cards.map((c,i)=>'<tr><td>'+(i+1)+'</td><td>'+c.cat+'</td><td>'+c.q.substring(0,72)+(c.q.length>72?'…':'')+'</td></tr>').join('');
+function showSec(id){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nt').forEach(t=>t.classList.remove('on'));document.getElementById('sec-'+id).classList.add('on');const map={intro:0,mechanism:1,triggers:2,clinical:3,diagnosis:4,chronic:5,management:6,recall:7,flashcards:8,references:9};document.querySelectorAll('.nt')[map[id]].classList.add('on');}
+showFC(0);
+</script>
+<div class="ch-nav ch-nav-bottom">
+  <a href="chapter_06_female_fphl.html">← Ch. 6: Female Pattern Hair Loss</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_08_alopecia_areata.html">Ch. 8: Alopecia Areata →</a>
+</div>
+<script>try{localStorage.setItem('tfgp_ch7','1')}catch(e){}</script>
+</body>
+</html>

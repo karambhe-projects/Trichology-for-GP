@@ -1,0 +1,28 @@
+/* =========================================================
+   Trichology for GP — Shared Styles
+   Common structural CSS used across all chapter pages.
+   Each chapter defines its own :root variables, fonts, and
+   color-specific overrides in an inline <style> block.
+   ========================================================= */
+
+/* Reset */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ── Chapter Navigation Bar ── */
+.ch-nav{display:flex;justify-content:space-between;align-items:center;padding:10px 46px;font-size:14.5px;border-bottom:1px solid var(--rule);background:var(--bg)}
+.ch-nav a{color:var(--ink3);text-decoration:none;transition:color .15s}
+.ch-nav a:hover{color:var(--ink)}
+.ch-nav .ch-nav-disabled{color:var(--rule);pointer-events:none}
+.ch-nav .ch-nav-index{font-weight:500;color:var(--ch-accent,var(--ink))}
+.ch-nav-bottom{margin-top:40px;border-top:1px solid var(--rule);border-bottom:none}
+
+/* ── Grid Layouts ── */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:18px 0}
+.recall-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+
+/* ── Responsive ── */
+@media(max-width:640px){
+  .grid2,.grid3,.recall-grid{grid-template-columns:1fr}
+  .ch-nav{padding:10px 20px;font-size:13px}
+}

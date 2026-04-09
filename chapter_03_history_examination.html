@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3 — Hair History & Examination | Trichology for GP</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--ink:#18161A;--ink2:#3d3a42;--ink3:#7a7680;--bg:#F9F7F4;--bg2:#F2EFE9;--bg3:#E8E3DB;--rule:#D4CEC4;--ch-accent:#185FA5;--teal:#1a6b6b;--teal2:#e6f5f5;--gold:#9a7228;--gold2:#c49a3c;--goldbg:#fdf6e4;--coral:#b84a2a;--coralbg:#fdf0ec;--blue:#2a4e8c;--bluebg:#edf2fc;--green:#2a6a3a;--greenbg:#edf6ee;--purple:#5a2a8c;--purplebg:#f0eafc;--red:#aa2020;--redbg:#fceaea;--info:#185FA5;--infobg:#E6F1FB;--success:#3B6D11;--successbg:#EAF3DE;--warning:#854F0B;--warningbg:#FAEEDA;--danger:#A32D2D;--dangerbg:#FCEBEB;
+/* Aliases for inline styles referencing ch3-original variable names */
+--slate:var(--info);--slatebg:var(--infobg);--forest:var(--green);--forestbg:var(--greenbg);--amber:var(--warning);--amberbg:var(--warningbg);--rose:var(--danger);--rosebg:var(--dangerbg);--tealbg:var(--teal2)}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.78;font-size:16.5px;max-width:940px;margin:0 auto;padding-bottom:80px}
+.ch-header{padding:44px 46px 32px;border-bottom:0.5px solid var(--rule);position:relative;overflow:hidden}
+.header-number{font-family:'Playfair Display',serif;font-size:132px;font-weight:700;color:rgba(0,0,0,0.04);position:absolute;right:32px;top:-10px;line-height:1;user-select:none}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--info);margin-bottom:12px}
+.ch-title{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.1;margin-bottom:8px;position:relative;z-index:1}
+.ch-sub{font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:var(--ink2);margin-bottom:20px}
+.nav{display:flex;border-bottom:1px solid var(--rule);padding:0 46px;position:sticky;top:0;z-index:200;background:var(--bg);overflow-x:auto;gap:0}
+.nav::-webkit-scrollbar{height:0}
+.nt{font-size:14px;color:var(--ink3);padding:12px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .18s;text-decoration:none}
+.nt:hover{color:var(--ink)}
+.nt.on{color:var(--info);border-bottom-color:var(--info);font-weight:500}
+.sec{display:none;padding:36px 46px 20px}
+.sec.on{display:block}
+h2{font-family:'Playfair Display',serif;font-size:27.5px;font-weight:600;margin:34px 0 13px;padding-bottom:9px;border-bottom:1px solid var(--rule)}
+h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:500;font-style:italic;color:var(--ink2);margin:22px 0 10px}
+p{margin-bottom:14px;color:var(--ink2);font-size:16.5px}
+strong{color:var(--ink);font-weight:500}
+em{font-style:italic;color:var(--ink3)}
+.box-gp{background:var(--warningbg);border-left:3px solid var(--warning);padding:17px 22px;margin:22px 0;border-radius:0 10px 10px 0}
+.box-gp .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--warning);margin-bottom:7px}
+.box-gp p{font-style:italic;color:var(--ink2);margin:0;font-size:16px}
+.box-key{background:var(--infobg);border-left:3px solid var(--info);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-key .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:5px}
+.box-key p{margin:0;color:var(--blue);font-size:15.5px}
+.box-warn{background:var(--dangerbg);border-left:3px solid var(--danger);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-warn .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--danger);margin-bottom:5px}
+.box-warn p{margin:0;color:#5a1010;font-size:15.5px}
+.box-success{background:var(--successbg);border-left:3px solid var(--success);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-success .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--success);margin-bottom:5px}
+.box-success p{margin:0;color:#1a4a0a;font-size:15.5px}
+.dcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px;margin:24px 0}
+.dcard-title{font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+.dcard-cap{font-size:14.5px;font-style:italic;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.65}
+.dtable{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+.dtable th{background:var(--bg2);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule)}
+.dtable td{padding:11px 15px;border-bottom:1px solid var(--rule);vertical-align:top}
+.dtable tr:last-child td{border-bottom:none}
+.dtable td:first-child{font-weight:500;color:var(--ink)}
+.dtable tr:hover td{background:var(--bg)}
+.fcard{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.fcard:hover{border-color:var(--info)}
+.fcard .ftag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.fcard .ftitle{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.fcard .fdesc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+/* Ch3-specific: timeline */
+.timeline{margin:20px 0}
+.tl-item{display:flex;gap:18px;margin-bottom:18px;align-items:flex-start}
+.tl-dot{width:38px;height:38px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16.5px;font-weight:600;margin-top:2px}
+.tl-body .tl-title{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.tl-body .tl-desc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+.rcrd{background:var(--bg2);border:1px solid var(--rule);border-radius:12px;padding:22px}
+.rcrd h4{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.rcrd .mnem{font-size:22px;font-weight:600;letter-spacing:4px;color:var(--info);font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.rcrd ul{list-style:none;font-size:14.5px;line-height:2.1;color:var(--ink2)}
+.rcrd ul li::before{content:"→ ";color:var(--ink3)}
+.rcrd ul strong{color:var(--info)}
+/* Ch3-specific: exam finding cards */
+.exam-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.exam-card{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:16px;text-align:center}
+.exam-card .etitle{font-size:14.5px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.exam-card .edesc{font-size:13px;color:var(--ink3);line-height:1.55}
+.exam-card .ecolor{width:28px;height:28px;border-radius:50%;margin:0 auto 10px;border:2px solid rgba(0,0,0,0.12)}
+/* Flashcards */
+.pbar-wrap{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.pbar{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.pfill{height:100%;background:var(--info);border-radius:2px;transition:width .4s}
+.pct{font-size:13px;color:var(--ink3);min-width:72px;text-align:right}
+.fcrd{height:210px;perspective:1000px;cursor:pointer;margin-bottom:14px}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .48s cubic-bezier(.4,0,.2,1)}
+.fc-inner.flip{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 32px;text-align:center}
+.fc-front{background:#fff;border:1px solid var(--rule)}
+.fc-front .fc-cat{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:10px}
+.fc-front .fc-q{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:500;color:var(--ink);line-height:1.45}
+.fc-back{background:var(--infobg);transform:rotateY(180deg)}
+.fc-back .fc-a{font-size:16px;color:var(--blue);line-height:1.7;white-space:pre-line}
+.fc-back .fc-tip{font-size:12px;color:var(--blue);margin-top:10px;opacity:.72}
+.hint-txt{font-size:13px;color:var(--ink3);text-align:center;margin-bottom:6px}
+.fc-btns{display:flex;gap:10px;justify-content:center}
+.fcbtn{font-family:'DM Sans',sans-serif;font-size:14.5px;padding:9px 20px;border-radius:8px;border:1px solid var(--rule);background:#fff;color:var(--ink2);cursor:pointer;transition:all .14s}
+.fcbtn:hover{background:var(--bg2)}
+.fcbtn.pri{background:var(--infobg);color:var(--blue);border-color:var(--info)}
+.fc-ctrl{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.fc-ctrl button{font-size:13px;color:var(--gold);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif}
+.fc-done{display:none;background:var(--successbg);border:1px solid #a0d080;border-radius:10px;padding:18px;text-align:center;margin-top:14px}
+.fc-done h3{font-family:'Playfair Display',serif;color:var(--green);font-size:20px;margin-bottom:6px}
+.fc-done p{color:#2a5a1a;font-size:14.5px;margin:0}
+.ref-list{list-style:none;margin:14px 0}
+.ref-list li{font-size:14.5px;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--rule);line-height:1.65}
+.ref-list li:last-child{border-bottom:none}
+.ref-list li .rn{font-weight:500;color:var(--ink);margin-right:5px}
+@media(max-width:640px){.exam-grid{grid-template-columns:1fr}.ch-header,.nav,.sec{padding-left:20px;padding-right:20px}}
+</style>
+</head>
+<body>
+
+<div class="ch-nav">
+  <a href="chapter_02_anatomy.html">← Ch. 2: Hair &amp; Scalp Anatomy</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_04_trichoscopy.html">Ch. 4: Trichoscopy Basics →</a>
+</div>
+
+<div class="ch-header">
+  <div class="header-number">3</div>
+  <div class="eyebrow">Trichology for GP · Chapter Three</div>
+  <div class="ch-title">Hair History &amp; Examination</div>
+  <div class="ch-sub">A systematic approach to the trichology consultation</div>
+</div>
+
+<div class="nav">
+  <div class="nt on" onclick="showSec('intro')">Introduction</div>
+  <div class="nt" onclick="showSec('history')">Taking the History</div>
+  <div class="nt" onclick="showSec('exam')">Examination</div>
+  <div class="nt" onclick="showSec('tools')">Diagnostic Tools</div>
+  <div class="nt" onclick="showSec('patterns')">Pattern Recognition</div>
+  <div class="nt" onclick="showSec('recall')">Quick Recall</div>
+  <div class="nt" onclick="showSec('flashcards')">Anki Cards</div>
+  <div class="nt" onclick="showSec('references')">References</div>
+</div>
+
+<!-- ===== INTRODUCTION ===== -->
+<div class="sec on" id="sec-intro">
+  <div class="box-gp">
+    <div class="lbl">GP-Level Analogy</div>
+    <p>"A trichology consultation is like diagnosing a leaking pipe. You need to know <em>when</em> the leak started, <em>where</em> the water is going, <em>how fast</em> it's leaking, and <em>what changed</em> in the house beforehand. The history is your plumber's questionnaire; the examination is your hands on the pipes."</p>
+  </div>
+  <p>Hair loss is one of the most emotionally charged presentations in general practice. A <strong>structured, systematic approach</strong> distinguishes the confident trichologist from the overwhelmed GP. This chapter equips you with a reproducible consultation framework.</p>
+  <p>The key insight is this: most diagnoses in trichology are made <strong>by history alone</strong>, with examination confirming and refining. Investigations are the third step — not the first refuge of a confused clinician.</p>
+
+  <h2>The Trichology Consultation Structure</h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--tealbg);color:var(--teal)">1</div>
+      <div class="tl-body">
+        <div class="tl-title">Chief Complaint</div>
+        <div class="tl-desc">Is it shedding (hair coming out) or thinning (reduced density/calibre)? This single distinction shapes everything that follows.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--amberbg);color:var(--amber)">2</div>
+      <div class="tl-body">
+        <div class="tl-title">Detailed History (9 Domains)</div>
+        <div class="tl-desc">Onset, pattern, rate, triggers, systemic symptoms, medications, family history, diet, and scalp symptoms — each domain is a diagnostic filter.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--slatebg);color:var(--slate)">3</div>
+      <div class="tl-body">
+        <div class="tl-title">Systematic Examination (DICS)</div>
+        <div class="tl-desc">Scalp inspection (scarring/non-scarring), density and distribution, shaft calibre, pull test, and trichoscopy.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--forestbg);color:var(--forest)">4</div>
+      <div class="tl-body">
+        <div class="tl-title">Targeted Investigations</div>
+        <div class="tl-desc">Blood tests, trichoscopy, biopsy — ordered based on clinical hypothesis, not as a fishing expedition.</div>
+      </div>
+    </div>
+  </div>
+  <div class="box-key">
+    <div class="lbl">Founding Principle</div>
+    <p><strong>Shedding ≠ Thinning.</strong> Shedding = hair falling out (telogen effluvium, alopecia areata). Thinning = reduced shaft calibre/density (AGA, nutritional deficiency). Many patients conflate these — your first job is to separate them.</p>
+  </div>
+</div>
+
+<!-- ===== HISTORY ===== -->
+<div class="sec" id="sec-history">
+  <h2>Taking the Hair History — Nine Domains</h2>
+  <p>A complete hair history covers <strong>nine domains</strong>. Think of each as a diagnostic filter — positive answers narrow the differential, negative answers are equally informative. The mnemonic <strong>OPTICS-MFS</strong> covers all nine.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 3.1 — The nine domains of hair history (OPTICS-MFS)</div>
+    <svg width="100%" viewBox="0 0 680 380">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Centre hub -->
+      <ellipse cx="340" cy="195" rx="68" ry="44" fill="#e8f0f8" stroke="#2d4a6e" stroke-width="1.5"/>
+      <text font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#2d4a6e" x="340" y="190" text-anchor="middle">HAIR</text>
+      <text font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#2d4a6e" x="340" y="208" text-anchor="middle">HISTORY</text>
+      <!-- O: Onset (top) -->
+      <line x1="340" y1="151" x2="340" y2="96" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="292" y="60" width="96" height="36" rx="8" fill="#fdf3e0" stroke="#c49a3c" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#8a5c10" x="340" y="76" text-anchor="middle">O — Onset</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#c49a3c" x="340" y="90" text-anchor="middle">When did it start?</text>
+      <!-- P: Pattern (top-right) -->
+      <line x1="394" y1="168" x2="488" y2="118" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="456" y="82" width="106" height="36" rx="8" fill="#e8f0f8" stroke="#2d4a6e" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#2d4a6e" x="509" y="98" text-anchor="middle">P — Pattern</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#4a6e8e" x="509" y="112" text-anchor="middle">Diffuse or focal?</text>
+      <!-- T: Triggers (right) -->
+      <line x1="408" y1="195" x2="548" y2="195" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="550" y="177" width="112" height="36" rx="8" fill="#faeaee" stroke="#8a2040" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#8a2040" x="606" y="193" text-anchor="middle">T — Triggers</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#aa4060" x="606" y="207" text-anchor="middle">3–6 months prior?</text>
+      <!-- I: Intensity/shed vs thin (bottom-right) -->
+      <line x1="390" y1="224" x2="482" y2="272" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="452" y="274" width="116" height="36" rx="8" fill="#ede8f8" stroke="#4a2878" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#4a2878" x="510" y="290" text-anchor="middle">I — Intensity</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#6a48a0" x="510" y="304" text-anchor="middle">Shed vs thin?</text>
+      <!-- C: Co-morbidities (bottom) -->
+      <line x1="340" y1="239" x2="340" y2="304" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="282" y="306" width="116" height="36" rx="8" fill="#e6f4ec" stroke="#1e5c3a" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#1e5c3a" x="340" y="322" text-anchor="middle">C — Co-morbidities</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#2a7a50" x="340" y="336" text-anchor="middle">Thyroid, iron, hormones?</text>
+      <!-- S: Scalp Sx (bottom-left) -->
+      <line x1="290" y1="224" x2="198" y2="272" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="110" y="274" width="112" height="36" rx="8" fill="#fceaea" stroke="#922020" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#922020" x="166" y="290" text-anchor="middle">S — Scalp Sx</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#b23030" x="166" y="304" text-anchor="middle">Itch, pain, scaling?</text>
+      <!-- M: Medications (left) -->
+      <line x1="272" y1="195" x2="152" y2="195" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="18" y="177" width="132" height="36" rx="8" fill="#fdf3e0" stroke="#c49a3c" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#8a5c10" x="84" y="193" text-anchor="middle">M — Medications</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#aa7830" x="84" y="207" text-anchor="middle">New drugs in 3 mo?</text>
+      <!-- F: Family Hx (top-left) -->
+      <line x1="288" y1="168" x2="196" y2="118" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="66" y="82" width="130" height="36" rx="8" fill="#e6f4f4" stroke="#1a5c5c" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#1a5c5c" x="131" y="98" text-anchor="middle">F — Family Hx</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#2a7a7a" x="131" y="112" text-anchor="middle">AGA, alopecia areata?</text>
+      <!-- S: Shed hair (very top, offset) -->
+      <line x1="315" y1="151" x2="240" y2="50" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="174" y="20" width="130" height="36" rx="8" fill="#e8f0f8" stroke="#2d4a6e" stroke-width="1"/>
+      <text font-family="Inter,sans-serif" font-size="12" font-weight="500" fill="#2d4a6e" x="239" y="36" text-anchor="middle">S — Shed collection</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#4a6e8e" x="239" y="50" text-anchor="middle">Collect for 3 days</text>
+    </svg>
+    <div class="dcard-cap">Fig 3.1: The nine domains of trichology history — OPTICS-MFS. Each domain acts as a diagnostic filter. A combination of positive and negative responses narrows the differential to one or two conditions before examination begins.</div>
+  </div>
+
+  <h3>Domain 1 — Onset &amp; Duration</h3>
+  <p>Establish whether loss is <strong>acute (&lt;6 months)</strong> or <strong>chronic (≥6 months)</strong>. Acute onset suggests a precipitant event; chronic onset favours AGA, nutritional deficiency, or subacute systemic disease.</p>
+
+  <h3>Domain 2 — Pattern of Loss</h3>
+  <div class="grid2">
+    <div class="fcard"><div class="ftag" style="color:var(--slate)">Pattern A</div><div class="ftitle">Diffuse (generalised)</div><div class="fdesc">Uniform thinning across whole scalp. Think: telogen effluvium, thyroid disease, iron deficiency, diffuse AGA in women.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--amber)">Pattern B</div><div class="ftitle">Patterned / zonal</div><div class="fdesc">Frontotemporal recession, vertex thinning, discrete patches. Think: AGA, alopecia areata, traction, tinea capitis.</div></div>
+  </div>
+
+  <h3>Domain 3 — Rate of Loss</h3>
+  <p>More than <strong>100 hairs per day</strong> constitutes pathological shedding. Ask the patient to count hairs on the pillow each morning for 3 days, or to collect combing/washing fallout in a bag for quantification.</p>
+
+  <h3>Domain 4 — Shedding vs Thinning</h3>
+  <table class="dtable">
+    <thead><tr><th>Feature</th><th>Shedding predominant</th><th>Thinning predominant</th></tr></thead>
+    <tbody>
+      <tr><td>Chief complaint</td><td>"Hair is falling out"</td><td>"Hair looks thin / limp / fine"</td></tr>
+      <tr><td>Hairs on pillow/brush</td><td>Increased, often alarming</td><td>Normal or mildly increased</td></tr>
+      <tr><td>Shaft calibre</td><td>Normal calibre in shed hairs</td><td>Fine, miniaturised shafts</td></tr>
+      <tr><td>Typical diagnosis</td><td>Telogen effluvium, alopecia areata</td><td>AGA, nutritional deficiency</td></tr>
+      <tr><td>Bulb on shed hair</td><td>White/pigmented club bulb (telogen)</td><td>Miniaturised terminal or vellus-like</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Domain 5 — Triggers (the 3-month lookback)</h3>
+  <div class="grid2">
+    <div class="fcard"><div class="ftag" style="color:var(--danger)">Physical stress</div><div class="fdesc">Surgery, trauma, severe illness, high fever, COVID-19, crash dieting, rapid weight loss (&gt;15% body weight).</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--amber)">Hormonal</div><div class="fdesc">Postpartum (peaks 3–6 months after delivery), stopping OCP, menopause, PCOS, thyroid disturbance.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--slate)">Psychological</div><div class="fdesc">Bereavement, relationship breakdown, job loss. HPA axis activation via CRH receptors on the follicle.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--forest)">Nutritional</div><div class="fdesc">Iron deficiency (most common in women), zinc, vitamin D, B12 in vegans, protein malnutrition.</div></div>
+  </div>
+
+  <h3>Domain 6 — Medications (ask about the preceding 3–6 months)</h3>
+  <table class="dtable">
+    <thead><tr><th>Drug class</th><th>Mechanism</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td>Cytotoxic agents</td><td>Anagen effluvium — mitotic arrest in matrix</td><td>Cyclophosphamide, taxanes, methotrexate</td></tr>
+      <tr><td>Anticoagulants</td><td>Telogen effluvium</td><td>Warfarin, heparin, DOACs</td></tr>
+      <tr><td>Retinoids</td><td>Telogen effluvium (dose-dependent)</td><td>Isotretinoin, acitretin</td></tr>
+      <tr><td>Antithyroid drugs</td><td>Telogen effluvium</td><td>Carbimazole, propylthiouracil</td></tr>
+      <tr><td>Beta-blockers</td><td>Telogen effluvium</td><td>Propranolol, atenolol</td></tr>
+      <tr><td>Lithium</td><td>Telogen effluvium</td><td>Lithium carbonate</td></tr>
+      <tr><td>Oral contraceptives</td><td>TE on cessation; androgenic OCPs worsen AGA</td><td>Especially levonorgestrel-containing</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Domain 7 — Family History</h3>
+  <p>AGA has <strong>polygenic inheritance</strong> — ask about maternal AND paternal sides. Alopecia areata: 25% first-degree family history; association with HLA-DQ3 and autoimmune disease in family members.</p>
+
+  <h3>Domain 8 — Systemic Co-morbidities</h3>
+  <div class="grid2">
+    <div class="fcard"><div class="ftag" style="color:var(--slate)">Thyroid disease</div><div class="fdesc">Both hypo- and hyperthyroidism cause diffuse TE. Ask: weight change, cold intolerance, palpitations, fatigue, bowel change, menstrual irregularity.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--danger)">Iron deficiency</div><div class="fdesc">Fatigue, dyspnoea, pica, restless legs. Ferritin &lt;30 mcg/L is relevant even without anaemia — check ferritin, not just Hb.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--amber)">Hormonal/PCOS</div><div class="fdesc">Irregular cycles, acne, hirsutism, weight gain, acanthosis nigricans. Androgenic hair loss warrants androgen screen if features present.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--purple)">Autoimmune</div><div class="fdesc">Joint pain, rash, photosensitivity, oral ulcers, Raynaud's. SLE, LPP, discoid lupus all cause distinct patterns.</div></div>
+  </div>
+
+  <h3>Domain 9 — Scalp Symptoms</h3>
+  <table class="dtable">
+    <thead><tr><th>Symptom</th><th>Significance</th><th>Think</th></tr></thead>
+    <tbody>
+      <tr><td>Pruritus (itch)</td><td>Active inflammation</td><td>Seborrhoeic dermatitis, psoriasis, LPP</td></tr>
+      <tr><td>Pain/tenderness</td><td>Inflammation or nerve involvement</td><td>Active scarring alopecia (LPP, FFA), dissecting cellulitis</td></tr>
+      <tr><td>Scaling</td><td>Inflammatory condition</td><td>Psoriasis, seborrhoeic dermatitis, tinea capitis</td></tr>
+      <tr><td>Burning</td><td>Neuropathic or inflammatory</td><td>LPP (trichodynia), FFA — burning precedes patches</td></tr>
+      <tr><td>No symptoms</td><td>May indicate non-inflammatory process</td><td>AGA, telogen effluvium, nutritional</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box-warn">
+    <div class="lbl">Red Flag Symptoms in History</div>
+    <p>Rapid total loss over days–weeks · Scalp pain + loss of follicular ostia (scarring — urgent referral) · Systemic features (fever, arthralgia, rash) — consider SLE · Children with patchy loss + scalp scale — exclude tinea capitis before treating · Virilisation + rapid female hair loss — exclude androgen-secreting tumour</p>
+  </div>
+</div>
+
+<!-- ===== EXAMINATION ===== -->
+<div class="sec" id="sec-exam">
+  <h2>Systematic Scalp Examination — DICS</h2>
+  <p>Examination follows the <strong>DICS framework</strong>: <em>Distribution → Inflammation → Calibre → Scarring</em>. Good lighting is essential; a dermatoscope (trichoscopy) is strongly recommended.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 3.2 — Examination sequence and scalp zones (top view)</div>
+    <svg width="100%" viewBox="0 0 680 360">
+      <defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Scalp top view -->
+      <ellipse cx="210" cy="185" rx="145" ry="165" fill="#f5dcc8" stroke="#c8906a" stroke-width="1.5"/>
+      <!-- Frontal zone -->
+      <ellipse cx="210" cy="88" rx="82" ry="38" fill="#fdf3e0" stroke="#c49a3c" stroke-width="1.2" opacity="0.85"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#8a5c10" x="210" y="93" text-anchor="middle" font-weight="500">Frontal</text>
+      <!-- Vertex zone -->
+      <ellipse cx="210" cy="168" rx="58" ry="42" fill="#e8f0f8" stroke="#2d4a6e" stroke-width="1.2" opacity="0.85"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2d4a6e" x="210" y="173" text-anchor="middle" font-weight="500">Vertex</text>
+      <!-- Left temporal -->
+      <ellipse cx="96" cy="188" rx="40" ry="55" fill="#e6f4ec" stroke="#1e5c3a" stroke-width="1" opacity="0.75"/>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#1e5c3a" x="96" y="193" text-anchor="middle">Left temp.</text>
+      <!-- Right temporal -->
+      <ellipse cx="324" cy="188" rx="40" ry="55" fill="#e6f4ec" stroke="#1e5c3a" stroke-width="1" opacity="0.75"/>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#1e5c3a" x="324" y="193" text-anchor="middle">Right temp.</text>
+      <!-- Occipital -->
+      <ellipse cx="210" cy="292" rx="68" ry="38" fill="#ede8f8" stroke="#4a2878" stroke-width="1" opacity="0.75"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#4a2878" x="210" y="296" text-anchor="middle" font-weight="500">Occipital</text>
+      <!-- DICS Steps right side -->
+      <text font-family="Inter,sans-serif" font-size="12" fill="#666" x="420" y="28" font-weight="500" letter-spacing="0.5">DICS EXAMINATION SEQUENCE</text>
+      <line x1="416" y1="36" x2="668" y2="36" stroke="#ddd" stroke-width="0.8"/>
+      <rect x="416" y="44" width="248" height="52" rx="8" fill="#fdf3e0" stroke="#c49a3c" stroke-width="0.8"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#8a5c10" x="430" y="63" font-weight="500">D — Distribution</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#aa7830" x="430" y="79">Diffuse or patterned? Which zones?</text>
+      <rect x="416" y="104" width="248" height="52" rx="8" fill="#e6f4f4" stroke="#1a5c5c" stroke-width="0.8"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a5c5c" x="430" y="123" font-weight="500">I — Inflammation</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#2a8080" x="430" y="139">Erythema, scaling, pustules, crusting?</text>
+      <rect x="416" y="164" width="248" height="52" rx="8" fill="#e8f0f8" stroke="#2d4a6e" stroke-width="0.8"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2d4a6e" x="430" y="183" font-weight="500">C — Calibre &amp; Density</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#3a5e8e" x="430" y="199">Miniaturisation, vellus ratio, density</text>
+      <rect x="416" y="224" width="248" height="52" rx="8" fill="#fceaea" stroke="#922020" stroke-width="0.8"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#922020" x="430" y="243" font-weight="500">S — Scarring vs Non-scarring</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#b23030" x="430" y="259">Follicular ostia present or absent?</text>
+      <rect x="416" y="284" width="248" height="52" rx="8" fill="#e6f4ec" stroke="#1e5c3a" stroke-width="0.8"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1e5c3a" x="430" y="303" font-weight="500">+ Pull Test &amp; Shaft Exam</text>
+      <text font-family="Inter,sans-serif" font-size="10" fill="#2a7a50" x="430" y="319">&gt;6 hairs positive; examine bulb</text>
+    </svg>
+    <div class="dcard-cap">Fig 3.2: The DICS examination sequence (right) and the five scalp zones (left). Always examine all five zones even when the patient only reports loss in one area.</div>
+  </div>
+
+  <h3>Step 1 — Distribution</h3>
+  <p>Examine in good lighting with hair parted systematically in multiple directions. Compare <strong>frontal density to occipital density</strong> — in AGA the occipital zone is preserved. In diffuse TE, all zones are equally affected.</p>
+
+  <h3>Step 2 — Inflammation</h3>
+  <div class="exam-grid">
+    <div class="exam-card"><div class="ecolor" style="background:#e84040"></div><div class="etitle">Perifollicular erythema</div><div class="edesc">Active LPP, FFA, or early alopecia areata. A sign of active scarring — urgent.</div></div>
+    <div class="exam-card"><div class="ecolor" style="background:#f0f0f0;border:2px solid #aaa"></div><div class="etitle">Perifollicular scale</div><div class="edesc">White/grey scale on shaft — "matchstick sign." Hallmark of lichen planopilaris.</div></div>
+    <div class="exam-card"><div class="ecolor" style="background:#f0d060"></div><div class="etitle">Yellow scale/crust</div><div class="edesc">Diffuse yellow greasy scale: seborrhoeic dermatitis. Focal yellow pustules: folliculitis decalvans.</div></div>
+    <div class="exam-card"><div class="ecolor" style="background:#d0c8f0"></div><div class="etitle">Silver/brown scale</div><div class="edesc">Silver plaques with hair parting: psoriasis. Thick amiantum scale: pityriasis amiantacea.</div></div>
+    <div class="exam-card"><div class="ecolor" style="background:#f8f8f8;border:2px solid #e0d0c0"></div><div class="etitle">Pale, smooth scalp</div><div class="edesc">No follicular openings. End-stage scarring — irreversible. Follicles replaced by fibrous tissue.</div></div>
+    <div class="exam-card"><div class="ecolor" style="background:#c8e8c8"></div><div class="etitle">Normal-appearing scalp</div><div class="edesc">No inflammation, ostia visible. Typical of AGA, TE, nutritional — non-scarring.</div></div>
+  </div>
+
+  <h3>Step 3 — Hair Density &amp; Shaft Calibre</h3>
+  <p>Normal density: <strong>200–300 hairs/cm²</strong>. Visible thinning only apparent after <strong>&gt;50% density loss</strong>. Miniaturisation (terminal → vellus-like) is the hallmark of AGA. A miniaturisation ratio &gt;20% in the frontal or vertex zone is diagnostic in the right clinical context.</p>
+
+  <h3>Step 4 — Scarring vs Non-Scarring</h3>
+  <div class="box-warn">
+    <div class="lbl">Critical Distinction</div>
+    <p>The most important examination finding in trichology. <strong>Follicular ostia present = non-scarring = potentially reversible.</strong> Follicular ostia absent = scarring = irreversible. This one finding determines urgency of referral.</p>
+  </div>
+  <table class="dtable">
+    <thead><tr><th>Feature</th><th>Non-scarring</th><th>Scarring</th></tr></thead>
+    <tbody>
+      <tr><td>Follicular ostia</td><td>Present (visible pores)</td><td>Absent — smooth, pale, atrophic skin</td></tr>
+      <tr><td>Reversibility</td><td>Potentially reversible</td><td>Irreversible (stem cell destruction)</td></tr>
+      <tr><td>Examples</td><td>AGA, TE, alopecia areata</td><td>LPP, FFA, discoid lupus</td></tr>
+      <tr><td>Action</td><td>Investigate, treat, monitor</td><td>Urgent referral — prevent further loss</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Step 5 — The Pull Test</h3>
+  <p>Grasp <strong>40–60 hairs</strong> near the scalp and apply firm traction. &gt;6 hairs extracted = positive (active effluvium). Perform in three regions: frontal, vertex, occipital. Positive in all zones = diffuse TE. Positive only frontal/vertex, negative occiput = AGA. Examine bulb: white club = telogen; fleshy anagen bulb = anagen effluvium.</p>
+
+  <h3>Step 6 — Shaft Examination</h3>
+  <table class="dtable">
+    <thead><tr><th>Shaft finding</th><th>Description</th><th>Diagnosis</th></tr></thead>
+    <tbody>
+      <tr><td>Exclamation-mark hairs</td><td>Narrow depigmented base, dark tip</td><td>Alopecia areata (pathognomonic)</td></tr>
+      <tr><td>Trichorrhexis nodosa</td><td>White nodes — cortex fracture</td><td>Chemical/thermal damage</td></tr>
+      <tr><td>Broken hairs at different lengths</td><td>Irregular stubble</td><td>Tinea capitis, trichotillomania</td></tr>
+      <tr><td>Hair casts (pseudo-nits)</td><td>White cylinders around shaft, movable</td><td>Psoriasis, seborrhoeic dermatitis</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== TOOLS ===== -->
+<div class="sec" id="sec-tools">
+  <h2>Diagnostic Tools</h2>
+  <div class="grid2">
+    <div class="fcard"><div class="ftag" style="color:var(--forest)">Gold standard</div><div class="ftitle">Dermoscopy (Trichoscopy)</div><div class="fdesc">10–20× magnification. Identifies: yellow/black dots (AA), peripilar casts (LPP), honeycomb pattern (AGA), comma hairs (tinea). Strongly recommended in all trichology consultations.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--slate)">Quantification</div><div class="ftitle">60-Second Hair Count (Wash Test)</div><div class="fdesc">Patient counts hairs shed after standardised wash and 24-hour collection. Normal: &lt;100/day. TE: often 200–400/day. Useful for monitoring treatment response.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--amber)">Monitoring</div><div class="ftitle">Global Photography</div><div class="fdesc">Standardised photographs at baseline and follow-up using defined scalp zones and fixed camera distance. Essential for documenting treatment response.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--danger)">Gold standard scarring Dx</div><div class="ftitle">Scalp Biopsy</div><div class="fdesc">4 mm punch biopsy in 2 planes (vertical + horizontal). Gold standard for scarring alopecia. Should be taken from active edge — not burnt-out centre.</div></div>
+  </div>
+
+  <h3>Blood Test Reference Guide</h3>
+  <table class="dtable">
+    <thead><tr><th>Test</th><th>Threshold</th><th>Associated condition</th></tr></thead>
+    <tbody>
+      <tr><td>Ferritin</td><td>&lt;30 mcg/L (relevant); &lt;70 mcg/L (optimal for hair)</td><td>Iron deficiency TE, diffuse hair loss in women</td></tr>
+      <tr><td>TSH</td><td>&gt;4.5 or &lt;0.4 mIU/L</td><td>Hypo/hyperthyroid TE</td></tr>
+      <tr><td>25-OH Vitamin D</td><td>&lt;50 nmol/L</td><td>Diffuse loss; possible AA association</td></tr>
+      <tr><td>Zinc</td><td>&lt;10 µmol/L</td><td>Diffuse loss, brittle hair</td></tr>
+      <tr><td>Free androgen index</td><td>&gt;5 in women</td><td>Female AGA, PCOS-related hair loss</td></tr>
+      <tr><td>ANA</td><td>Titre &gt;1:80 with clinical features</td><td>Discoid lupus, SLE, mixed CTD</td></tr>
+      <tr><td>FBC</td><td>Hb &lt;120 g/L (F), &lt;130 g/L (M)</td><td>Anaemia, nutritional deficiency</td></tr>
+    </tbody>
+  </table>
+  <div class="box-key">
+    <div class="lbl">Key Principle</div>
+    <p>Always check <strong>ferritin</strong> (not just Hb) in women with diffuse hair loss. Ferritin &lt;70 mcg/L can cause or perpetuate hair loss even when haemoglobin is normal. Treat to &gt;70 mcg/L, not just above the laboratory reference range.</p>
+  </div>
+</div>
+
+<!-- ===== PATTERN RECOGNITION ===== -->
+<div class="sec" id="sec-patterns">
+  <h2>Pattern Recognition: History + Exam Combinations</h2>
+  <p>The following classic vignettes show how history and examination combine to point to a specific diagnosis.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 3.3 — Differential diagnosis by clinical pattern</div>
+    <svg width="100%" viewBox="0 0 680 400">
+      <!-- Column headers -->
+      <rect x="20" y="20" width="648" height="32" rx="6" fill="#eee8de"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#666" x="110" y="40" font-weight="500" letter-spacing="0.5">PRESENTATION</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#666" x="290" y="40" font-weight="500" letter-spacing="0.5">KEY HISTORY</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#666" x="480" y="40" font-weight="500" letter-spacing="0.5">KEY EXAM FINDING</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#666" x="630" y="40" text-anchor="middle" font-weight="500" letter-spacing="0.5">Dx</text>
+      <!-- Row 1: AGA -->
+      <rect x="20" y="60" width="648" height="48" rx="4" fill="#e6f4ec" stroke="#9fd4b0" stroke-width="0.5"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a4a2a" x="30" y="78">Gradual frontotemporal</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a4a2a" x="30" y="96">recession, M or F</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a4a2a" x="230" y="78">Chronic, FHx, no systemic</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a4a2a" x="230" y="96">Sx, no shedding complaint</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a4a2a" x="430" y="78">Miniaturisation, follicular</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a4a2a" x="430" y="96">ostia present, quiet scalp</text>
+      <text font-family="Inter,sans-serif" font-size="12" fill="#1e5c3a" x="630" y="86" text-anchor="middle" font-weight="700">AGA</text>
+      <!-- Row 2: TE -->
+      <rect x="20" y="116" width="648" height="48" rx="4" fill="#fdf3e0" stroke="#d4c090" stroke-width="0.5"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a3a00" x="30" y="134">Acute diffuse shedding,</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a3a00" x="30" y="152">onset 2–3 months prior</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a3a00" x="230" y="134">Illness/surgery/childbirth</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a3a00" x="230" y="152">3 months earlier</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a3a00" x="430" y="134">Diffuse positive pull test,</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a3a00" x="430" y="152">normal scalp, club bulbs</text>
+      <text font-family="Inter,sans-serif" font-size="12" fill="#8a5c10" x="630" y="142" text-anchor="middle" font-weight="700">TE</text>
+      <!-- Row 3: AA -->
+      <rect x="20" y="172" width="648" height="48" rx="4" fill="#e8f0f8" stroke="#9ab0d4" stroke-width="0.5"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a2a4a" x="30" y="190">Discrete smooth oval</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a2a4a" x="30" y="208">patches, sudden onset</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a2a4a" x="230" y="190">No systemic illness; FHx</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a2a4a" x="230" y="208">autoimmune; thyroid Hx</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a2a4a" x="430" y="190">Exclamation hairs, yellow dots,</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#1a2a4a" x="430" y="208">smooth scalp, ostia visible</text>
+      <text font-family="Inter,sans-serif" font-size="12" fill="#2d4a6e" x="630" y="198" text-anchor="middle" font-weight="700">AA</text>
+      <!-- Row 4: FFA -->
+      <rect x="20" y="228" width="648" height="48" rx="4" fill="#fceaea" stroke="#d4a0a0" stroke-width="0.5"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a0a0a" x="30" y="246">Frontotemporal band</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a0a0a" x="30" y="264">loss, peri-hairline</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a0a0a" x="230" y="246">Post-menopausal F;</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a0a0a" x="230" y="264">burning/itch at hairline</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a0a0a" x="430" y="246">Perifollicular erythema/scale,</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#5a0a0a" x="430" y="264">absent ostia at margin</text>
+      <text font-family="Inter,sans-serif" font-size="12" fill="#922020" x="630" y="254" text-anchor="middle" font-weight="700">FFA</text>
+      <!-- Row 5: Tinea -->
+      <rect x="20" y="284" width="648" height="48" rx="4" fill="#f3f0e8" stroke="#c0b890" stroke-width="0.5"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#3a2a00" x="30" y="302">Patchy loss + scaling,</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#3a2a00" x="30" y="320">child &lt;12 yrs</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#3a2a00" x="230" y="302">School contact; pet</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#3a2a00" x="230" y="320">exposure; no family HL</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#3a2a00" x="430" y="302">Broken hairs, black dot,</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#3a2a00" x="430" y="320">posterior cervical LN</text>
+      <text font-family="Inter,sans-serif" font-size="12" fill="#6a4800" x="630" y="310" text-anchor="middle" font-weight="700">TC</text>
+      <!-- Row 6: TTM -->
+      <rect x="20" y="340" width="648" height="48" rx="4" fill="#ede8f8" stroke="#b090e0" stroke-width="0.5"/>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2a0a4a" x="30" y="358">Irregular patchy loss,</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2a0a4a" x="30" y="376">hairs at diff. lengths</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2a0a4a" x="230" y="358">Child/adolescent; stress;</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2a0a4a" x="230" y="376">denies pulling</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2a0a4a" x="430" y="358">Flame/tulip hairs; varied</text>
+      <text font-family="Inter,sans-serif" font-size="11" fill="#2a0a4a" x="430" y="376">breakage; no yellow dots</text>
+      <text font-family="Inter,sans-serif" font-size="12" fill="#4a2878" x="630" y="366" text-anchor="middle" font-weight="700">TTM</text>
+    </svg>
+    <div class="dcard-cap">Fig 3.3: Six common presentation patterns mapped to diagnosis. AGA = androgenetic alopecia, TE = telogen effluvium, AA = alopecia areata, FFA = frontal fibrosing alopecia, TC = tinea capitis, TTM = trichotillomania.</div>
+  </div>
+</div>
+
+<!-- ===== RECALL ===== -->
+<div class="sec" id="sec-recall">
+  <h2>Quick Recall</h2>
+  <div class="recall-grid">
+    <div class="rcrd">
+      <h4>History: OPTICS-MFS</h4>
+      <div class="mnem" style="font-size:16.5px;letter-spacing:2px">OPTICS-MFS</div>
+      <ul>
+        <li><strong>O</strong>nset — when? acute or chronic?</li>
+        <li><strong>P</strong>attern — diffuse, focal, frontal?</li>
+        <li><strong>T</strong>rigger — 3–6 months prior?</li>
+        <li><strong>I</strong>ntensity — shedding vs thinning?</li>
+        <li><strong>C</strong>o-morbidities — thyroid/iron/hormones?</li>
+        <li><strong>S</strong>calp Sx — itch/pain/scale?</li>
+        <li><strong>M</strong>edications — last 3–6 months?</li>
+        <li><strong>F</strong>amily history — parents/siblings?</li>
+        <li><strong>S</strong>hed hair — collect for 3 days</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Examination: DICS</h4>
+      <div class="mnem">DICS</div>
+      <ul>
+        <li><strong>D</strong>istribution — which zones? Diffuse?</li>
+        <li><strong>I</strong>nflammation — colour, scale, crust?</li>
+        <li><strong>C</strong>alibre — miniaturisation ratio?</li>
+        <li><strong>S</strong>carring — ostia present or absent?</li>
+        <li>Then: Pull test, shaft exam, trichoscopy</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Red Flags: SAFE</h4>
+      <div class="mnem">SAFE</div>
+      <ul>
+        <li><strong>S</strong>carring — no ostia, fibrosis</li>
+        <li><strong>A</strong>ccelerated total loss</li>
+        <li><strong>F</strong>ever + alopecia (systemic)</li>
+        <li><strong>E</strong>xclamation hairs + rapid extension</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Shedding vs Thinning</h4>
+      <div class="mnem" style="font-size:14.5px;letter-spacing:1px">KEY SPLIT</div>
+      <ul>
+        <li>Shedding = hair coming OUT (TE, AA)</li>
+        <li>Thinning = finer shafts (AGA, nutrition)</li>
+        <li>Both = mixed (chronic TE on AGA)</li>
+        <li>Ask: "Falling out OR getting finer?"</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>GP Quick-Reference Action Card</h2>
+  <table class="dtable">
+    <thead><tr><th>Presentation</th><th>First question</th><th>Key exam</th><th>First investigation</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>Diffuse shedding, female</td><td>Pregnant/postpartum? Illness 3 mo ago?</td><td>Pull test; thyroid signs</td><td>Ferritin, TFTs, FBC, Vit D</td><td>Treat deficiency; reassure TE</td></tr>
+      <tr><td>Frontotemporal recession, male</td><td>FHx? Gradual?</td><td>Miniaturisation, pull test (–)</td><td>Clinical only (classic)</td><td>Counsel AGA; offer minoxidil/finasteride</td></tr>
+      <tr><td>Patches, smooth scalp, child</td><td>School/pet contact? Scalp scale?</td><td>Broken hairs, posterior LN</td><td>Mycology swab; Wood's lamp</td><td>Systemic antifungal if tinea</td></tr>
+      <tr><td>Hairline recession + burning, F &gt;50</td><td>Eyebrow loss? Menopause?</td><td>Perifollicular cast/erythema</td><td>Dermoscopy; biopsy</td><td>Urgent referral — FFA</td></tr>
+      <tr><td>Irregular patch, child, denies pulling</td><td>Hairs of different lengths? Stress?</td><td>Flame/tulip hairs on derm.</td><td>Dermoscopy; coiled hairs</td><td>Trichotillomania — psychology</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== FLASHCARDS ===== -->
+<div class="sec" id="sec-flashcards">
+  <h2>Anki Flashcard Deck — Chapter 3</h2>
+  <p style="color:var(--ink3);font-size:15.5px;margin-bottom:18px">20 cards covering hair history and examination. Tap to flip. Rate to track recall.</p>
+  <div class="pbar-wrap">
+    <div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div>
+    <div class="pct" id="pct">Card 1 / 20</div>
+  </div>
+  <p class="hint-txt">tap card to flip</p>
+  <div class="fcrd" id="fcrd" onclick="flipFC()">
+    <div class="fc-inner" id="fci">
+      <div class="fc-front"><div class="fc-cat" id="fcat"></div><div class="fc-q" id="fq"></div></div>
+      <div class="fc-back"><div class="fc-a" id="fa"></div><div class="fc-tip" id="ftip"></div></div>
+    </div>
+  </div>
+  <div class="fc-btns">
+    <button class="fcbtn" onclick="rate('hard')">Hard</button>
+    <button class="fcbtn" onclick="rate('ok')">Got it</button>
+    <button class="fcbtn pri" onclick="rate('easy')">Easy</button>
+  </div>
+  <div class="fc-ctrl">
+    <button onclick="shuffleFC()">Shuffle</button>
+    <button onclick="restartFC()">Restart</button>
+  </div>
+  <div class="fc-done" id="fcdone"><h3>Deck complete</h3><p id="fcscore"></p></div>
+  <h3 style="margin-top:24px;margin-bottom:10px">All 20 cards</h3>
+  <table class="dtable" id="alltbl"></table>
+</div>
+
+<!-- ===== REFERENCES ===== -->
+<div class="sec" id="sec-references">
+  <h2>References</h2>
+  <p style="font-size:14.5px;color:var(--ink3);margin-bottom:16px">APA 7th edition format.</p>
+  <ul class="ref-list">
+    <li><span class="rn">1.</span> Blumeyer, A., Tosti, A., Messenger, A., et al. (2011). Evidence-based (S3) guideline for the treatment of androgenetic alopecia in women and in men. <em>Journal of the German Society of Dermatology, 9</em>(Suppl 6), S1–S57. https://doi.org/10.1111/j.1610-0379.2011.07802.x</li>
+    <li><span class="rn">2.</span> Camacho-Martínez, F. M. (2009). Hair loss in women. <em>Seminars in Cutaneous Medicine and Surgery, 28</em>(1), 19–32. https://doi.org/10.1016/j.sder.2009.01.001</li>
+    <li><span class="rn">3.</span> Dawber, R., &amp; Van Neste, D. (1995). <em>Hair and scalp disorders: Common presenting signs, differential diagnosis and treatment</em>. Martin Dunitz.</li>
+    <li><span class="rn">4.</span> Elston, D. M., McCollough, M. L., &amp; Warschaw, K. E. (1997). Elastic tissue in scars and alopecia. <em>Journal of Cutaneous Pathology, 24</em>(1), 67–71.</li>
+    <li><span class="rn">5.</span> Jain, N., Doshi, B., &amp; Khopkar, U. (2013). Trichoscopy in alopecias. <em>Indian Journal of Dermatology, Venereology and Leprology, 79</em>(5), 587–605. https://doi.org/10.4103/0378-6323.116729</li>
+    <li><span class="rn">6.</span> Mubki, T., Rudnicka, L., Olszewska, M., &amp; Shapiro, J. (2014). Evaluation and diagnosis of the hair loss patient: Part I. History and clinical examination. <em>Journal of the American Academy of Dermatology, 71</em>(3), 415.e1–415.e15. https://doi.org/10.1016/j.jaad.2014.04.070</li>
+    <li><span class="rn">7.</span> Mubki, T., Rudnicka, L., Olszewska, M., &amp; Shapiro, J. (2014). Evaluation and diagnosis of the hair loss patient: Part II. Trichoscopic and laboratory evaluations. <em>Journal of the American Academy of Dermatology, 71</em>(3), 431.e1–431.e11. https://doi.org/10.1016/j.jaad.2014.05.008</li>
+    <li><span class="rn">8.</span> Olsen, E. A. (1999). Female pattern hair loss. <em>Journal of the American Academy of Dermatology, 41</em>(3 Pt 2), S1–S19.</li>
+    <li><span class="rn">9.</span> Price, V. H. (1999). Treatment of hair loss. <em>New England Journal of Medicine, 341</em>(13), 964–973.</li>
+    <li><span class="rn">10.</span> Ross, E. K., Vincenzi, C., &amp; Tosti, A. (2006). Videodermoscopy in the evaluation of hair and scalp disorders. <em>Journal of the American Academy of Dermatology, 55</em>(5), 799–806.</li>
+    <li><span class="rn">11.</span> Rudnicka, L., Olszewska, M., &amp; Rakowska, A. (Eds.). (2012). <em>Atlas of trichoscopy: Dermoscopy in hair and scalp disease</em>. Springer.</li>
+    <li><span class="rn">12.</span> Shapiro, J. (2007). <em>Hair loss: Principles of diagnosis and management of alopecia</em>. Martin Dunitz.</li>
+    <li><span class="rn">13.</span> Sinclair, R., Jolley, D., Mallari, R., &amp; Sherber, N. (2005). The reliability of horizontally sectioned scalp biopsies in the diagnosis of chronic diffuse telogen hair loss in women. <em>Journal of the American Academy of Dermatology, 53</em>(3), 469–476.</li>
+    <li><span class="rn">14.</span> Tosti, A., &amp; Piraccini, B. M. (2006). Diagnosis and treatment of hair disorders: An evidence-based atlas. Informa Healthcare.</li>
+    <li><span class="rn">15.</span> Whiting, D. A. (1993). Diagnostic and predictive value of horizontal sections of scalp biopsy specimens in male pattern androgenetic alopecia. <em>Journal of the American Academy of Dermatology, 28</em>(5), 755–763.</li>
+    <li><span class="rn">16.</span> Wolff, H., Fischer, T. W., &amp; Blume-Peytavi, U. (2016). The diagnosis and treatment of hair and scalp diseases. <em>Deutsches Ärzteblatt International, 113</em>(21), 377–386.</li>
+  </ul>
+</div>
+
+<script>
+const cards=[
+  {cat:"History",q:"What is the 3–6 month rule in trichology history?",a:"Triggers for telogen effluvium occur 3–6 months before shedding onset — that is the duration of the telogen phase. Always ask about events in that window, not just recent ones.",tip:"Postpartum: delivery → shedding peak 3 months later"},
+  {cat:"History",q:"What is the single most important opening distinction in a trichology consultation?",a:"Shedding vs thinning.\nShedding = hair falling out (TE, AA) — increased fallout.\nThinning = finer calibre shafts (AGA, nutritional) — calibre diversity.\nThis shapes the entire diagnostic pathway.",tip:"'Is your hair falling out, or getting finer?'"},
+  {cat:"History",q:"Name five drug classes that cause telogen effluvium.",a:"1. Anticoagulants (warfarin, DOACs)\n2. Retinoids (isotretinoin)\n3. Antithyroid drugs (carbimazole)\n4. Beta-blockers (propranolol)\n5. Lithium\n(Also: some OCPs on cessation)",tip:"Mnemonic: A-RABL"},
+  {cat:"History",q:"What four systemic conditions should be screened in every woman with diffuse hair loss?",a:"1. Iron deficiency (ferritin — not just Hb)\n2. Thyroid disease (TSH + T4)\n3. Hormonal causes (PCOS, menopause)\n4. Autoimmune disease (ANA if clinical features)",tip:"Ferritin <30 = relevant even without anaemia"},
+  {cat:"History",q:"What scalp symptom pattern suggests a scarring alopecia requiring urgent referral?",a:"Burning sensation or pain at the scalp margin (especially frontotemporal), associated with itch and perifollicular scaling. Characteristic of frontal fibrosing alopecia (FFA) and lichen planopilaris (LPP).",tip:"Burning + frontotemporal = FFA until proven otherwise"},
+  {cat:"History",q:"What is the OPTICS-MFS mnemonic?",a:"O — Onset\nP — Pattern\nT — Trigger (3–6 months)\nI — Intensity (shed vs thin)\nC — Co-morbidities (thyroid, iron)\nS — Scalp symptoms\nM — Medications\nF — Family history\nS — Shed hair collection",tip:"9 domains — cover all to avoid missing the diagnosis"},
+  {cat:"History",q:"A 28-year-old woman reports diffuse shedding 4 months after stopping her OCP. Mechanism?",a:"Two mechanisms: (1) Oestrogen withdrawal → delayed telogen release (synchronised anagen exit). (2) Androgenic OCPs (levonorgestrel) may have been suppressing underlying AGA — cessation unmasks it.",tip:"OCP cessation = 2 simultaneous mechanisms"},
+  {cat:"History",q:"What is the 'washbasin test' and what is the normal threshold?",a:"Patient counts hairs shed after a standardised wash. Normal: <100/day. >100/day = pathological shedding. A 3-day collection provides a more representative count than a single wash.",tip:"Patients reliably overestimate — always quantify"},
+  {cat:"Examination",q:"What does the DICS mnemonic stand for in scalp examination?",a:"D — Distribution (diffuse vs patterned, zones affected)\nI — Inflammation (erythema, scale, crust, pustules)\nC — Calibre (miniaturisation, vellus:terminal ratio)\nS — Scarring (follicular ostia present or absent)",tip:"DICS — the exam sequence for every scalp"},
+  {cat:"Examination",q:"What is the significance of absent follicular ostia on scalp examination?",a:"Absent follicular ostia = scarring (cicatricial) alopecia. Stem cells in the bulge have been destroyed and replaced by fibrous tissue. This is IRREVERSIBLE. Requires urgent dermatology referral to halt further progression.",tip:"No ostia = no hope of regrowth = refer urgently"},
+  {cat:"Examination",q:"How is the pull test performed and what constitutes a positive result?",a:"Grasp 40–60 hairs near the scalp between thumb and forefinger. Apply firm traction. Positive = >6 hairs extracted. Perform in 3 zones. Examine bulb: white club = telogen; fleshy bulb = anagen effluvium.",tip:"Perform in 3 zones — pattern tells you the diagnosis"},
+  {cat:"Examination",q:"What is hair miniaturisation and what percentage ratio is diagnostic of AGA?",a:"Miniaturisation = progressive conversion of terminal hairs (>0.06 mm, pigmented) to vellus-like hairs (<0.03 mm, unpigmented). A miniaturisation ratio >20% in frontal/vertex is diagnostic of AGA in the right context.",tip:"Visible thinning only when >50% density lost"},
+  {cat:"Examination",q:"What is the clinical difference between non-scarring and scarring alopecia on examination?",a:"Non-scarring: follicular ostia visible, skin texture normal, potentially reversible. Examples: AGA, TE, AA.\nScarring: follicular ostia absent, smooth atrophic/fibrotic skin, irreversible. Examples: LPP, FFA, DLE.",tip:"Touch the scalp — fibrosis has a different texture"},
+  {cat:"Examination",q:"What scalp finding is the hallmark of lichen planopilaris (LPP) on examination?",a:"Perifollicular erythema and perifollicular keratotic (tubular) scale — the 'matchstick sign' where scale climbs up the proximal hair shaft. Loss of follicular ostia in affected areas indicates scarring.",tip:"Match-stick scale + erythema = LPP until proven otherwise"},
+  {cat:"Examination",q:"A positive pull test in ALL zones including occiput indicates what?",a:"Active diffuse telogen effluvium. In AGA, the pull test is positive only in androgen-sensitive zones (frontal/vertex), NOT in the spared occiput. Diffuse positivity including the occiput distinguishes TE from AGA.",tip:"All zones positive including occiput = TE not AGA"},
+  {cat:"Tools",q:"What are the four investigations in the standard first-line trichology blood panel?",a:"1. Ferritin (target >70 mcg/L for hair)\n2. TSH + free T4\n3. FBC (Hb, MCV)\n4. Vitamin D (25-OH)\n(Also: zinc, B12 — 2nd line if suspected)",tip:"Ferritin >70, not just >30 — the hair threshold"},
+  {cat:"Tools",q:"Why must ferritin — not just haemoglobin — be checked in women with hair loss?",a:"Haemoglobin only falls late in iron deficiency — iron stores (ferritin) deplete first. Hair loss can occur with normal Hb but low ferritin (<30 mcg/L). Treat to >70 mcg/L, not just above laboratory reference range.",tip:"Check ferritin ALWAYS — Hb is the last to fall"},
+  {cat:"Pattern recognition",q:"A child has patchy hair loss with broken hairs and posterior cervical lymphadenopathy. What should NOT be prescribed without investigation?",a:"Do NOT prescribe topical antifungals — systemic treatment (griseofulvin or terbinafine) is required for tinea capitis. Confirm with mycology swab. Posterior cervical LN = tinea capitis until proven otherwise.",tip:"LN = tinea. Topicals fail — always oral treatment"},
+  {cat:"Pattern recognition",q:"What is the 3-step trichology investigation hierarchy?",a:"Step 1: History alone makes the diagnosis in ~80% of cases.\nStep 2: Examination (including trichoscopy) confirms and refines.\nStep 3: Targeted investigations — ordered based on hypothesis. Never a blanket panel.",tip:"History → Exam → Targeted tests. Not a fishing expedition"},
+  {cat:"Pattern recognition",q:"A 55-year-old post-menopausal woman has progressive frontotemporal hair loss with burning at the hairline. What must be excluded and what confirms it?",a:"Frontal fibrosing alopecia (FFA). Confirmed by: band of frontotemporal recession, perifollicular erythema and scale at the active margin, absent follicular ostia within the band, and often eyebrow/eyelash loss. Requires urgent dermatology referral.",tip:"FFA: post-menopausal + band recession + burning = refer now"}
+];
+let deck=[...cards],cur=0,flipped=false,sc={easy:0,ok:0,hard:0};
+function showFC(i){const c=deck[i];document.getElementById('fcat').textContent=c.cat;document.getElementById('fq').textContent=c.q;document.getElementById('fa').textContent=c.a;document.getElementById('ftip').textContent=c.tip?'Tip: '+c.tip:'';document.getElementById('fci').classList.remove('flip');flipped=false;document.getElementById('pct').textContent='Card '+(i+1)+' / '+deck.length;document.getElementById('pfill').style.width=Math.round(i/deck.length*100)+'%';document.getElementById('fcdone').style.display='none';}
+function flipFC(){flipped=!flipped;document.getElementById('fci').classList.toggle('flip',flipped)}
+function rate(r){sc[r]++;cur++;if(cur>=deck.length){document.getElementById('fcdone').style.display='block';document.getElementById('fcscore').textContent='Easy: '+sc.easy+' | Got it: '+sc.ok+' | Hard: '+sc.hard;document.getElementById('pfill').style.width='100%';document.getElementById('pct').textContent='Complete';document.getElementById('fci').classList.remove('flip');document.getElementById('fq').textContent='All cards reviewed.';document.getElementById('fa').textContent='';return;}showFC(cur);}
+function shuffleFC(){deck=[...cards].sort(()=>Math.random()-.5);cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+function restartFC(){deck=[...cards];cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+document.getElementById('alltbl').innerHTML='<tr><th>#</th><th>Category</th><th>Question</th></tr>'+cards.map((c,i)=>'<tr><td>'+(i+1)+'</td><td>'+c.cat+'</td><td>'+c.q.substring(0,72)+(c.q.length>72?'…':'')+'</td></tr>').join('');
+function showSec(id){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nt').forEach(t=>t.classList.remove('on'));document.getElementById('sec-'+id).classList.add('on');const map={intro:0,history:1,exam:2,tools:3,patterns:4,recall:5,flashcards:6,references:7};document.querySelectorAll('.nt')[map[id]].classList.add('on');}
+showFC(0);
+</script>
+<div class="ch-nav ch-nav-bottom">
+  <a href="chapter_02_anatomy.html">← Ch. 2: Hair &amp; Scalp Anatomy</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_04_trichoscopy.html">Ch. 4: Trichoscopy Basics →</a>
+</div>
+<script>try{localStorage.setItem('tfgp_ch3','1')}catch(e){}</script>
+</body>
+</html>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 4 — Trichoscopy Basics | Trichology for GP</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--ink:#18161A;--ink2:#3d3a42;--ink3:#7a7680;--bg:#F9F7F4;--bg2:#F2EFE9;--bg3:#E8E3DB;--rule:#D4CEC4;--ch-accent:#185FA5;--teal:#1a6b6b;--teal2:#e6f5f5;--gold:#9a7228;--gold2:#c49a3c;--goldbg:#fdf6e4;--coral:#b84a2a;--coralbg:#fdf0ec;--blue:#2a4e8c;--bluebg:#edf2fc;--green:#2a6a3a;--greenbg:#edf6ee;--purple:#5a2a8c;--purplebg:#f0eafc;--red:#aa2020;--redbg:#fceaea;--info:#185FA5;--infobg:#E6F1FB;--success:#3B6D11;--successbg:#EAF3DE;--warning:#854F0B;--warningbg:#FAEEDA;--danger:#A32D2D;--dangerbg:#FCEBEB}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.78;font-size:16.5px;max-width:940px;margin:0 auto;padding-bottom:80px}
+.ch-header{padding:44px 46px 32px;border-bottom:0.5px solid var(--rule);position:relative;overflow:hidden}
+.header-number{font-family:'Playfair Display',serif;font-size:132px;font-weight:700;color:rgba(0,0,0,0.04);position:absolute;right:32px;top:-10px;line-height:1;user-select:none}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--info);margin-bottom:12px}
+.ch-title{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.1;margin-bottom:8px;position:relative;z-index:1}
+.ch-sub{font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:var(--ink2);margin-bottom:20px}
+.nav{display:flex;border-bottom:1px solid var(--rule);padding:0 46px;position:sticky;top:0;z-index:200;background:var(--bg);overflow-x:auto;gap:0}
+.nav::-webkit-scrollbar{height:0}
+.nt{font-size:14px;color:var(--ink3);padding:12px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .18s;text-decoration:none}
+.nt:hover{color:var(--ink)}
+.nt.on{color:var(--info);border-bottom-color:var(--info);font-weight:500}
+.sec{display:none;padding:36px 46px 20px}
+.sec.on{display:block}
+h2{font-family:'Playfair Display',serif;font-size:27.5px;font-weight:600;margin:34px 0 13px;padding-bottom:9px;border-bottom:1px solid var(--rule)}
+h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:500;font-style:italic;color:var(--ink2);margin:22px 0 10px}
+p{margin-bottom:14px;color:var(--ink2);font-size:16.5px}
+strong{color:var(--ink);font-weight:500}
+.box-gp{background:var(--warningbg);border-left:3px solid var(--warning);padding:17px 22px;margin:22px 0;border-radius:0 10px 10px 0}
+.box-gp .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--warning);margin-bottom:7px}
+.box-gp p{font-style:italic;color:var(--ink2);margin:0;font-size:16px}
+.box-key{background:var(--infobg);border-left:3px solid var(--info);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-key .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:5px}
+.box-key p{margin:0;color:var(--blue);font-size:15.5px}
+.box-warn{background:var(--dangerbg);border-left:3px solid var(--danger);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-warn .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--danger);margin-bottom:5px}
+.box-warn p{margin:0;color:#5a1010;font-size:15.5px}
+.dcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px;margin:24px 0}
+.dcard-title{font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+.dcard-cap{font-size:14.5px;font-style:italic;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.65}
+.dtable{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+.dtable th{background:var(--bg2);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule)}
+.dtable td{padding:11px 15px;border-bottom:1px solid var(--rule);vertical-align:top}
+.dtable tr:last-child td{border-bottom:none}
+.dtable td:first-child{font-weight:500;color:var(--ink)}
+.dtable tr:hover td{background:var(--bg)}
+.fcard{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.fcard .ftag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.fcard .ftitle{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.fcard .fdesc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+/* Atlas grid */
+.atlas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.atlas-item{background:#fff;border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.atlas-img{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:var(--bg2)}
+.atlas-label{padding:10px 14px;font-size:14.5px;font-weight:500;color:var(--ink)}
+.atlas-dx{padding:0 14px 4px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.atlas-desc{padding:0 14px 12px;font-size:13px;color:var(--ink3);line-height:1.5}
+/* Dot pattern panels */
+.dot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.dot-panel{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px;text-align:center}
+.dot-panel .dp-swatch{width:56px;height:56px;border-radius:50%;margin:0 auto 10px;display:flex;align-items:center;justify-content:center}
+.dot-panel .dp-name{font-size:14.5px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.dot-panel .dp-dx{font-size:12px;color:var(--ink3);line-height:1.5}
+.rcrd{background:var(--bg2);border:1px solid var(--rule);border-radius:12px;padding:22px}
+.rcrd h4{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.rcrd .mnem{font-size:22px;font-weight:600;letter-spacing:4px;color:var(--info);font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.rcrd ul{list-style:none;font-size:14.5px;line-height:2.1;color:var(--ink2)}
+.rcrd ul li::before{content:"-> ";color:var(--ink3)}
+.rcrd ul strong{color:var(--info)}
+/* Flashcard */
+.pbar-wrap{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.pbar{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.pfill{height:100%;background:var(--info);border-radius:2px;transition:width .4s}
+.pct{font-size:13px;color:var(--ink3);min-width:72px;text-align:right}
+.fcrd{height:210px;perspective:1000px;cursor:pointer;margin-bottom:14px}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .48s cubic-bezier(.4,0,.2,1)}
+.fc-inner.flip{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 32px;text-align:center}
+.fc-front{background:#fff;border:1px solid var(--rule)}
+.fc-front .fc-cat{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:10px}
+.fc-front .fc-q{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:500;color:var(--ink);line-height:1.45}
+.fc-back{background:var(--infobg);transform:rotateY(180deg)}
+.fc-back .fc-a{font-size:16px;color:var(--blue);line-height:1.7;white-space:pre-line}
+.fc-back .fc-tip{font-size:12px;color:var(--blue);margin-top:10px;opacity:.72}
+.hint-txt{font-size:13px;color:var(--ink3);text-align:center;margin-bottom:6px}
+.fc-btns{display:flex;gap:10px;justify-content:center}
+.fcbtn{font-family:'DM Sans',sans-serif;font-size:14.5px;padding:9px 20px;border-radius:8px;border:1px solid var(--rule);background:#fff;color:var(--ink2);cursor:pointer;transition:all .14s}
+.fcbtn:hover{background:var(--bg2)}
+.fcbtn.pri{background:var(--infobg);color:var(--blue);border-color:var(--info)}
+.fc-ctrl{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.fc-ctrl button{font-size:13px;color:var(--gold);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif}
+.fc-done{display:none;background:var(--successbg);border:1px solid #a0d080;border-radius:10px;padding:18px;text-align:center;margin-top:14px}
+.fc-done h3{font-family:'Playfair Display',serif;color:var(--green);font-size:20px;margin-bottom:6px}
+.fc-done p{color:#2a5a1a;font-size:14.5px;margin:0}
+.ref-list{list-style:none;margin:14px 0}
+.ref-list li{font-size:14.5px;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--rule);line-height:1.65}
+.ref-list li:last-child{border-bottom:none}
+.ref-list li .rn{font-weight:500;color:var(--ink);margin-right:5px}
+@media(max-width:640px){.atlas-grid,.dot-grid{grid-template-columns:1fr 1fr}.ch-header,.nav,.sec{padding-left:20px;padding-right:20px}.header-number{font-size:88px}}
+</style>
+</head>
+<body>
+
+<div class="ch-nav">
+  <a href="chapter_03_history_examination.html">← Ch. 3: History &amp; Examination</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_05_male_aga.html">Ch. 5: Male Pattern Hair Loss →</a>
+</div>
+
+<div class="ch-header">
+  <div class="header-number">4</div>
+  <div class="eyebrow">Trichology for GP · Chapter Four</div>
+  <div class="ch-title">Trichoscopy Basics</div>
+  <div class="ch-sub">Dermoscopy of the scalp and hair — the GP's magnifying lens</div>
+</div>
+
+<div class="nav">
+  <div class="nt on" onclick="showSec('intro')">Introduction</div>
+  <div class="nt" onclick="showSec('technique')">Technique</div>
+  <div class="nt" onclick="showSec('findings')">Core Findings</div>
+  <div class="nt" onclick="showSec('atlas')">Pattern Atlas</div>
+  <div class="nt" onclick="showSec('diagnosis')">Diagnosis by Pattern</div>
+  <div class="nt" onclick="showSec('recall')">Quick Recall</div>
+  <div class="nt" onclick="showSec('flashcards')">Anki Cards</div>
+  <div class="nt" onclick="showSec('references')">References</div>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="sec on" id="sec-intro">
+  <div class="box-gp">
+    <div class="lbl">GP-Level Analogy</div>
+    <p>"Trichoscopy is to the trichologist what the stethoscope is to the cardiologist — it takes something invisible to the naked eye and makes it unmistakable. A £30 dermatoscope clips onto your smartphone and turns a guessing game into a pattern-recognition exercise."</p>
+  </div>
+  <p>Trichoscopy is the application of dermoscopy to the scalp and hair. Introduced formally by Rudnicka et al. in 2008, it has since become the single most impactful non-invasive tool in trichology. At 10–20× magnification, features invisible to the naked eye — follicular ostia, hair shaft calibre variation, perifollicular scale, vascular patterns — become instantly readable.</p>
+  <p>For the GP, trichoscopy offers three practical advantages: it <strong>narrows the differential diagnosis</strong> before investigations, it <strong>reveals active inflammation</strong> that physical examination misses, and it allows <strong>monitoring of treatment response</strong> over time without biopsy.</p>
+
+  <h2>What trichoscopy reveals</h2>
+  <div class="grid3">
+    <div class="fcard"><div class="ftag" style="color:var(--blue)">Hair shaft</div><div class="ftitle">Shaft morphology</div><div class="fdesc">Calibre variation, miniaturisation, breakage, torsion, beading, exclamation mark hairs, comma hairs.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--green)">Follicle</div><div class="ftitle">Follicular units</div><div class="fdesc">Number of hairs per unit, presence/absence of ostia, peripilar casts, yellow/black dots in follicular openings.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--red)">Scalp</div><div class="ftitle">Perifollicular changes</div><div class="fdesc">Erythema, scale pattern, fibrosis (white areas), vascular patterns, honeycomb pigmentation.</div></div>
+  </div>
+
+  <div class="box-key">
+    <div class="lbl">Equipment needed</div>
+    <p>A handheld dermatoscope with polarised light (10× preferred; 20× for detail). Smartphone-attachable models (£30–80) are adequate for GP-level trichoscopy. No gel required with polarised dermatoscopes. Contact dermoscopy with alcohol gives best follicular detail for scalp work.</p>
+  </div>
+
+  <p>Studies demonstrate that trichoscopy increases diagnostic accuracy for common alopecias from approximately <strong>70% (naked eye) to over 90%</strong> in experienced hands. For the GP, even basic pattern recognition — is there miniaturisation? are follicular ostia present? — fundamentally changes the diagnostic and management pathway.</p>
+</div>
+
+<!-- TECHNIQUE -->
+<div class="sec" id="sec-technique">
+  <h2>How to perform trichoscopy</h2>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 4.1 — Trichoscopy technique: five-step sequence</div>
+    <svg width="100%" viewBox="0 0 680 290">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Step boxes top row -->
+      <rect x="30" y="30" width="110" height="52" rx="8" fill="#f0ece4" stroke="#b8b0a4" stroke-width="0.8"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#3c3944" x="85" y="50" text-anchor="middle" dominant-baseline="central">Step 1</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#7c7984" x="85" y="68" text-anchor="middle" dominant-baseline="central">Prepare scalp</text>
+      <line x1="140" y1="56" x2="158" y2="56" stroke="#aaa" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="160" y="30" width="110" height="52" rx="8" fill="#e4f4f4" stroke="#1b6060" stroke-width="0.8"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#1b6060" x="215" y="50" text-anchor="middle" dominant-baseline="central">Step 2</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#2a8080" x="215" y="68" text-anchor="middle" dominant-baseline="central">Choose zones</text>
+      <line x1="270" y1="56" x2="288" y2="56" stroke="#aaa" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="290" y="30" width="110" height="52" rx="8" fill="#e8eef8" stroke="#234888" stroke-width="0.8"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#234888" x="345" y="50" text-anchor="middle" dominant-baseline="central">Step 3</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#3a5e9a" x="345" y="68" text-anchor="middle" dominant-baseline="central">Set magnification</text>
+      <line x1="400" y1="56" x2="418" y2="56" stroke="#aaa" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="420" y="30" width="110" height="52" rx="8" fill="#eee8f8" stroke="#4c2880" stroke-width="0.8"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#4c2880" x="475" y="50" text-anchor="middle" dominant-baseline="central">Step 4</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#6040a0" x="475" y="68" text-anchor="middle" dominant-baseline="central">Systematic scan</text>
+      <line x1="530" y1="56" x2="548" y2="56" stroke="#aaa" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="550" y="30" width="110" height="52" rx="8" fill="#faecea" stroke="#a83820" stroke-width="0.8"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#a83820" x="605" y="50" text-anchor="middle" dominant-baseline="central">Step 5</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#c84830" x="605" y="68" text-anchor="middle" dominant-baseline="central">Document</text>
+      <!-- Detail boxes -->
+      <line x1="85" y1="82" x2="85" y2="102" stroke="#ccc" stroke-width="0.6" stroke-dasharray="3 2"/>
+      <rect x="30" y="104" width="110" height="76" rx="6" fill="#f7f5f1" stroke="#ccc" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#3c3944" x="85" y="124" text-anchor="middle">Dry hair or</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#3c3944" x="85" y="140" text-anchor="middle">apply alcohol</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#3c3944" x="85" y="156" text-anchor="middle">or ultrasound gel</text>
+      <line x1="215" y1="82" x2="215" y2="102" stroke="#ccc" stroke-width="0.6" stroke-dasharray="3 2"/>
+      <rect x="160" y="104" width="110" height="76" rx="6" fill="#f7f5f1" stroke="#ccc" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#1b6060" x="215" y="124" text-anchor="middle">Frontal, vertex,</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#1b6060" x="215" y="140" text-anchor="middle">temporal, occipital.</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#1b6060" x="215" y="156" text-anchor="middle">Always compare zones</text>
+      <line x1="345" y1="82" x2="345" y2="102" stroke="#ccc" stroke-width="0.6" stroke-dasharray="3 2"/>
+      <rect x="290" y="104" width="110" height="76" rx="6" fill="#f7f5f1" stroke="#ccc" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#234888" x="345" y="124" text-anchor="middle">10× overview;</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#234888" x="345" y="140" text-anchor="middle">20× for shaft</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#234888" x="345" y="156" text-anchor="middle">detail and ostia</text>
+      <line x1="475" y1="82" x2="475" y2="102" stroke="#ccc" stroke-width="0.6" stroke-dasharray="3 2"/>
+      <rect x="420" y="104" width="110" height="76" rx="6" fill="#f7f5f1" stroke="#ccc" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#4c2880" x="475" y="124" text-anchor="middle">Dots → shafts →</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#4c2880" x="475" y="140" text-anchor="middle">perifollicular →</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#4c2880" x="475" y="156" text-anchor="middle">vascular pattern</text>
+      <line x1="605" y1="82" x2="605" y2="102" stroke="#ccc" stroke-width="0.6" stroke-dasharray="3 2"/>
+      <rect x="550" y="104" width="110" height="76" rx="6" fill="#f7f5f1" stroke="#ccc" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#a83820" x="605" y="124" text-anchor="middle">Photo each</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#a83820" x="605" y="140" text-anchor="middle">zone; label</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#a83820" x="605" y="156" text-anchor="middle">with date</text>
+      <!-- Scan order note -->
+      <rect x="30" y="196" width="628" height="52" rx="8" fill="none" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#3c3944" x="344" y="216" text-anchor="middle">Systematic scan order: yellow dots → black dots → shaft calibre → perifollicular scale/erythema → vascular pattern</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#5c5964" x="344" y="234" text-anchor="middle">Always compare: affected zone vs unaffected zone (e.g. vertex vs occipital in AGA)</text>
+    </svg>
+    <div class="dcard-cap">Fig 4.1: Five-step trichoscopy technique. Always compare two zones — the diagnostic finding is often the difference between affected and unaffected scalp, not an absolute finding in isolation.</div>
+  </div>
+
+  <h3>Contact vs non-contact dermoscopy</h3>
+  <table class="dtable">
+    <thead><tr><th>Mode</th><th>Technique</th><th>Best for</th><th>Limitation</th></tr></thead>
+    <tbody>
+      <tr><td>Non-contact (polarised)</td><td>Device held 1–2mm above scalp; no interface needed</td><td>Quick overview, any hair length</td><td>Slightly less follicular detail</td></tr>
+      <tr><td>Contact (with alcohol)</td><td>Alcohol pressed to scalp; hair parted</td><td>Vascular pattern, follicular ostia detail</td><td>Requires alcohol; slightly uncomfortable</td></tr>
+      <tr><td>Contact (with gel)</td><td>Ultrasound gel as interface</td><td>Best follicular detail, shaft examination</td><td>Difficult in thick hair; gel residue</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box-key">
+    <div class="lbl">GP Practical Tip</div>
+    <p>For a first trichoscopy encounter, use a polarised (non-contact) dermatoscope. Part the hair at the area of complaint, place the lens perpendicular to the scalp, and compare that zone with the occipital scalp. This single comparison answers the most important question: is there differential miniaturisation or follicular loss?</p>
+  </div>
+</div>
+
+<!-- CORE FINDINGS -->
+<div class="sec" id="sec-findings">
+  <h2>Core trichoscopy findings</h2>
+  <p>Trichoscopy findings are divided into four groups: hair shaft findings, dot patterns, perifollicular findings, and vascular patterns. Each group has disease-specific patterns that allow rapid diagnosis.</p>
+
+  <h3>Group 1 — Dot patterns (the most diagnostically powerful group)</h3>
+  <div class="dot-grid">
+    <div class="dot-panel">
+      <div class="dp-swatch" style="background:#FAC775;border:2px solid #BA7517"><span style="font-size:11px;font-weight:600;color:#412402">Y</span></div>
+      <div class="dp-name">Yellow dots</div>
+      <div class="dp-dx" style="color:#BA7517">AA · Advanced AGA</div>
+      <div class="dp-dx-desc" style="font-size:12px;color:#7c7984;padding:0 0 4px">Empty follicles filled with sebum/keratin</div>
+    </div>
+    <div class="dot-panel">
+      <div class="dp-swatch" style="background:#444441;border:2px solid #2C2C2A"><span style="font-size:11px;font-weight:600;color:#fff">B</span></div>
+      <div class="dp-name">Black dots</div>
+      <div class="dp-dx" style="color:#444441">AA · Tinea · TTM</div>
+      <div class="dp-dx-desc" style="font-size:12px;color:#7c7984;padding:0 0 4px">Hairs broken at scalp level</div>
+    </div>
+    <div class="dot-panel">
+      <div class="dp-swatch" style="background:#E1F5EE;border:2px solid #1D9E75"><span style="font-size:11px;font-weight:600;color:#085041">W</span></div>
+      <div class="dp-name">White dots</div>
+      <div class="dp-dx" style="color:#0F6E56">Scarring alopecia</div>
+      <div class="dp-dx-desc" style="font-size:12px;color:#7c7984;padding:0 0 4px">Fibrosis replacing follicular units — URGENT</div>
+    </div>
+    <div class="dot-panel">
+      <div class="dp-swatch" style="background:#F4C0D1;border:2px solid #D4537E"><span style="font-size:11px;font-weight:600;color:#72243E">R</span></div>
+      <div class="dp-name">Red/Pink dots</div>
+      <div class="dp-dx" style="color:#993556">DLE · Folliculitis</div>
+      <div class="dp-dx-desc" style="font-size:12px;color:#7c7984;padding:0 0 4px">Dilated infundibula with inflammation</div>
+    </div>
+  </div>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 4.2 — Hair shaft patterns in trichoscopy (schematic)</div>
+    <svg width="100%" viewBox="0 0 680 280">
+      <!-- Panel backgrounds -->
+      <rect x="18" y="20" width="86" height="180" rx="8" fill="#f0ece4" stroke="#ccc" stroke-width="0.5"/>
+      <rect x="116" y="20" width="86" height="180" rx="8" fill="#e6f4ec" stroke="#9fd4b0" stroke-width="0.8"/>
+      <rect x="214" y="20" width="86" height="180" rx="8" fill="#e6f4ec" stroke="#9fd4b0" stroke-width="0.8"/>
+      <rect x="312" y="20" width="86" height="180" rx="8" fill="#e6f4ec" stroke="#9fd4b0" stroke-width="0.8"/>
+      <rect x="410" y="20" width="86" height="180" rx="8" fill="#fceaea" stroke="#e09090" stroke-width="0.8"/>
+      <rect x="508" y="20" width="152" height="180" rx="8" fill="#fdf0dc" stroke="#d4a060" stroke-width="0.8"/>
+      <!-- Labels -->
+      <text font-family="Outfit,sans-serif" font-size="10" font-weight="500" fill="#3c3944" x="61" y="36" text-anchor="middle">Normal</text>
+      <text font-family="Outfit,sans-serif" font-size="10" font-weight="500" fill="#1e5c38" x="159" y="36" text-anchor="middle">Exclamation</text>
+      <text font-family="Outfit,sans-serif" font-size="10" font-weight="500" fill="#1e5c38" x="257" y="36" text-anchor="middle">Comma hair</text>
+      <text font-family="Outfit,sans-serif" font-size="10" font-weight="500" fill="#1e5c38" x="355" y="36" text-anchor="middle">Corkscrew</text>
+      <text font-family="Outfit,sans-serif" font-size="10" font-weight="500" fill="#902020" x="453" y="36" text-anchor="middle">Flame/Tulip</text>
+      <text font-family="Outfit,sans-serif" font-size="10" font-weight="500" fill="#8a5a10" x="584" y="36" text-anchor="middle">Trichorrhexis</text>
+      <!-- Normal terminal -->
+      <rect x="56" y="48" width="10" height="120" rx="4" fill="#2C2C2A"/>
+      <!-- Exclamation mark -->
+      <rect x="152" y="92" width="7" height="80" rx="3" fill="#2C2C2A"/>
+      <rect x="152" y="48" width="4" height="40" rx="2" fill="#B4B2A9"/>
+      <!-- Comma hair -->
+      <path d="M257 54 Q274 100 252 168" fill="none" stroke="#2C2C2A" stroke-width="6" stroke-linecap="round"/>
+      <!-- Corkscrew -->
+      <path d="M355 52 Q372 80 355 108 Q338 136 355 164" fill="none" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>
+      <!-- Flame/Tulip -->
+      <path d="M449 52 Q464 88 449 128" fill="none" stroke="#E24B4A" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+      <path d="M447 52 Q432 88 447 128" fill="none" stroke="#A32D2D" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+      <!-- Trichorrhexis nodes -->
+      <rect x="578" y="48" width="8" height="45" rx="3" fill="#444441"/>
+      <ellipse cx="582" cy="96" rx="10" ry="4" fill="#EF9F27" stroke="#BA7517" stroke-width="0.8"/>
+      <rect x="578" y="100" width="8" height="45" rx="3" fill="#444441"/>
+      <ellipse cx="582" cy="148" rx="10" ry="4" fill="#EF9F27" stroke="#BA7517" stroke-width="0.8"/>
+      <!-- Diagnosis labels -->
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#5c5964" x="61" y="182" text-anchor="middle">Uniform dark</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#1e5c38" x="159" y="182" text-anchor="middle">AA (pathog.)</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#1e5c38" x="257" y="182" text-anchor="middle">Tinea capitis</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#1e5c38" x="355" y="182" text-anchor="middle">Tinea capitis</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#902020" x="453" y="182" text-anchor="middle">Trichotillomania</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#8a5a10" x="584" y="182" text-anchor="middle">Shaft damage</text>
+      <!-- Legend -->
+      <rect x="18" y="216" width="648" height="48" rx="8" fill="none" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#3c3944" x="344" y="236" text-anchor="middle" font-weight="500">Disease mapping:</text>
+      <text font-family="Outfit,sans-serif" font-size="10" fill="#5c5964" x="344" y="253" text-anchor="middle">Exclamation mark → AA (pathognomonic) | Comma + corkscrew → tinea capitis | Flame/tulip → trichotillomania</text>
+    </svg>
+    <div class="dcard-cap">Fig 4.2: Schematic of six hair shaft patterns seen on trichoscopy. The exclamation mark hair is pathognomonic of alopecia areata; comma and corkscrew hairs are characteristic of tinea capitis; flame/tulip hairs point to trichotillomania.</div>
+  </div>
+
+  <h3>Group 2 — Perifollicular findings</h3>
+  <table class="dtable">
+    <thead><tr><th>Finding</th><th>Appearance</th><th>Diagnosis</th><th>Urgency</th></tr></thead>
+    <tbody>
+      <tr><td>Peripilar cast (sleeve)</td><td>Tubular white/grey scale climbing proximal hair shaft</td><td>Lichen planopilaris, FFA</td><td>Urgent — active scarring</td></tr>
+      <tr><td>Perifollicular erythema</td><td>Pink/red halo around follicular opening</td><td>LPP, FFA, early active AA</td><td>Urgent if scarring features</td></tr>
+      <tr><td>Perifollicular fibrosis</td><td>White sheath surrounding follicle</td><td>End-stage LPP, FFA, DLE</td><td>Irreversible — refer</td></tr>
+      <tr><td>Honeycomb pattern</td><td>Regular pigmented hexagonal network</td><td>Normal in darker skin; AGA (relative)</td><td>Context-dependent</td></tr>
+      <tr><td>Targetoid pattern</td><td>Central white area, brown ring at follicular opening</td><td>Androgenetic alopecia</td><td>Non-urgent</td></tr>
+      <tr><td>Diffuse scale flakes</td><td>Large flat white flakes, not follicle-bound</td><td>Seborrhoeic dermatitis, psoriasis</td><td>Non-urgent</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Group 3 — Vascular patterns</h3>
+  <table class="dtable">
+    <thead><tr><th>Pattern</th><th>Description</th><th>Diagnosis</th></tr></thead>
+    <tbody>
+      <tr><td>Arborising vessels</td><td>Tree-like branching red vessels across scalp</td><td>Discoid lupus erythematosus (DLE)</td></tr>
+      <tr><td>Simple red loops</td><td>Small looped vessels at follicular openings</td><td>Alopecia areata (active)</td></tr>
+      <tr><td>Twisted red loops</td><td>Irregular twisted vessels perifollicularly</td><td>Psoriasis, seborrhoeic dermatitis</td></tr>
+      <tr><td>Glomerular vessels</td><td>Tortuous, glomerular-shaped vessels</td><td>Psoriasis (classic)</td></tr>
+      <tr><td>White/avascular areas</td><td>No vessels; white structureless zones</td><td>Scarring alopecia (burnt-out, fibrotic)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box-warn">
+    <div class="lbl">White dots = scarring — act now</div>
+    <p>On trichoscopy, white structureless areas replacing follicular openings represent fibrotic replacement of the follicle. This finding in any alopecia pattern indicates irreversible scarring. Refer to dermatology urgently — every week of delay means further permanent follicular loss.</p>
+  </div>
+</div>
+
+<!-- ATLAS -->
+<div class="sec" id="sec-atlas">
+  <h2>Trichoscopy pattern atlas</h2>
+  <p>The following illustrated panels represent the characteristic trichoscopy appearance of the six most common alopecia presentations.</p>
+
+  <div class="atlas-grid">
+    <div class="atlas-item">
+      <div class="atlas-img">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <rect width="160" height="160" fill="#f5f2ec"/>
+          <!-- AGA: thick + thin hairs, peripilar halo -->
+          <circle cx="38" cy="40" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <rect x="34" y="10" width="8" height="28" rx="3" fill="#2C2C2A"/>
+          <circle cx="90" cy="44" r="6" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <rect x="87" y="18" width="5" height="24" rx="2" fill="#2C2C2A"/>
+          <circle cx="140" cy="40" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <rect x="136" y="10" width="8" height="28" rx="3" fill="#2C2C2A"/>
+          <!-- miniaturised hairs -->
+          <circle cx="55" cy="100" r="6" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <rect x="53" y="76" width="3" height="22" rx="1" fill="#888780" opacity="0.6"/>
+          <circle cx="110" cy="96" r="6" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <rect x="108" y="74" width="3" height="20" rx="1" fill="#B4B2A9" opacity="0.5"/>
+          <!-- targetoid peripilar halo -->
+          <circle cx="80" cy="140" r="7" fill="#d4cec4" stroke="#a08060" stroke-width="1.2"/>
+          <circle cx="80" cy="140" r="4" fill="#e8c8a8" stroke="#888" stroke-width="0.5"/>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#5c5964" x="80" y="158" text-anchor="middle">calibre diversity</text>
+        </svg>
+      </div>
+      <div class="atlas-label">Androgenetic alopecia (AGA)</div>
+      <div class="atlas-dx" style="color:#1e5c38">Non-scarring</div>
+      <div class="atlas-desc">Hair calibre diversity: thick terminal + thin miniaturised hairs. Peripilar brown halo (targetoid sign). Yellow dots in advanced cases.</div>
+    </div>
+
+    <div class="atlas-item">
+      <div class="atlas-img">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <rect width="160" height="160" fill="#f5f2ec"/>
+          <!-- AA: yellow dots + black dots + exclamation hairs -->
+          <circle cx="45" cy="70" r="16" fill="#FAC775" stroke="#BA7517" stroke-width="1.2"/>
+          <circle cx="95" cy="58" r="13" fill="#EF9F27" stroke="#854F0B" stroke-width="1"/>
+          <circle cx="128" cy="82" r="16" fill="#FAC775" stroke="#BA7517" stroke-width="1.2"/>
+          <circle cx="68" cy="118" r="14" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.8"/>
+          <!-- black dots -->
+          <circle cx="38" cy="38" r="7" fill="#2C2C2A"/>
+          <circle cx="128" cy="38" r="5" fill="#444441"/>
+          <!-- exclamation hair -->
+          <rect x="72" y="22" width="4" height="30" rx="2" fill="#2C2C2A"/>
+          <rect x="72" y="18" width="2" height="5" rx="1" fill="#B4B2A9"/>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#854F0B" x="80" y="152" text-anchor="middle">yellow + black dots</text>
+        </svg>
+      </div>
+      <div class="atlas-label">Alopecia areata (AA)</div>
+      <div class="atlas-dx" style="color:#1e5c38">Non-scarring</div>
+      <div class="atlas-desc">Yellow dots (empty follicles with sebum) are the hallmark. Black dots at patch margin. Exclamation mark hairs (narrow base, dark tip) at active edge.</div>
+    </div>
+
+    <div class="atlas-item">
+      <div class="atlas-img">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <rect width="160" height="160" fill="#f5f2ec"/>
+          <!-- LPP: white dots (fibrosis) + peripilar cast + erythema -->
+          <circle cx="40" cy="60" r="10" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1.5"/>
+          <circle cx="90" cy="50" r="10" fill="#9FE1CB" stroke="#0F6E56" stroke-width="1.5"/>
+          <circle cx="130" cy="64" r="10" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1.5"/>
+          <circle cx="60" cy="110" r="10" fill="#9FE1CB" stroke="#0F6E56" stroke-width="1.5"/>
+          <circle cx="110" cy="108" r="10" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1.5"/>
+          <!-- peripilar cast on remaining hairs -->
+          <rect x="88" y="24" width="3" height="12" rx="1" fill="#B4B2A9" opacity="0.5"/>
+          <rect x="87" y="14" width="5" height="11" rx="2" fill="#e8e0d0" stroke="#ccc" stroke-width="0.5"/>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#085041" x="80" y="138" text-anchor="middle">white dots = fibrosis</text>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#7c7984" x="80" y="152" text-anchor="middle">no follicular ostia</text>
+        </svg>
+      </div>
+      <div class="atlas-label">Lichen planopilaris (LPP)</div>
+      <div class="atlas-dx" style="color:#902020">SCARRING — urgent</div>
+      <div class="atlas-desc">White dots replacing follicular openings (fibrosis). Perifollicular cast — tubular scale climbing the proximal shaft. Perifollicular erythema in active disease.</div>
+    </div>
+
+    <div class="atlas-item">
+      <div class="atlas-img">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <rect width="160" height="160" fill="#f5f2ec"/>
+          <!-- Tinea: comma + corkscrew hairs + black dots -->
+          <circle cx="45" cy="78" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M45 50 Q58 64 46 72" fill="none" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="95" cy="70" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M94 42 Q82 57 96 62" fill="none" stroke="#2C2C2A" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="135" cy="80" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M135 55 Q148 65 135 73" fill="none" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>
+          <!-- corkscrew -->
+          <circle cx="70" cy="128" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M70 102 Q82 112 70 120 Q58 128 70 136" fill="none" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>
+          <!-- black dots -->
+          <circle cx="118" cy="122" r="8" fill="#2C2C2A"/>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#3c3944" x="80" y="155" text-anchor="middle">comma + corkscrew hairs</text>
+        </svg>
+      </div>
+      <div class="atlas-label">Tinea capitis</div>
+      <div class="atlas-dx" style="color:#234888">Non-scarring</div>
+      <div class="atlas-desc">Comma hairs (short, curved, C-shaped) and corkscrew hairs are pathognomonic. Black dots (broken intrafollicular hairs). Mainly in children.</div>
+    </div>
+
+    <div class="atlas-item">
+      <div class="atlas-img">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <rect width="160" height="160" fill="#f5f2ec"/>
+          <!-- Trichotillomania: flame/tulip hairs, varied lengths, no yellow dots -->
+          <circle cx="40" cy="78" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M38 50 Q48 62 38 72" fill="none" stroke="#E24B4A" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+          <path d="M40 50 Q30 62 40 72" fill="none" stroke="#A32D2D" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+          <circle cx="95" cy="72" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M94 44 Q104 56 94 65" fill="none" stroke="#E24B4A" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+          <circle cx="135" cy="100" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M132 72 Q144 84 132 94" fill="none" stroke="#E24B4A" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+          <circle cx="60" cy="125" r="7" fill="#d4cec4" stroke="#888" stroke-width="0.8"/>
+          <path d="M58 100 Q68 110 58 118" fill="none" stroke="#A32D2D" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#A32D2D" x="80" y="147" text-anchor="middle">flame / tulip hairs</text>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#7c7984" x="80" y="158" text-anchor="middle">no yellow dots</text>
+        </svg>
+      </div>
+      <div class="atlas-label">Trichotillomania</div>
+      <div class="atlas-dx" style="color:#234888">Non-scarring</div>
+      <div class="atlas-desc">Flame hairs (tapered, frayed distally), tulip hairs (dark tulip-shaped tip), coiled hairs, hairs broken at different lengths. No yellow dots distinguishes from AA.</div>
+    </div>
+
+    <div class="atlas-item">
+      <div class="atlas-img">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <rect width="160" height="160" fill="#f5f2ec"/>
+          <!-- DLE: red/pink dots + arborising vessels -->
+          <circle cx="40" cy="65" r="10" fill="#F4C0D1" stroke="#D4537E" stroke-width="1.5"/>
+          <circle cx="90" cy="55" r="10" fill="#ED93B1" stroke="#993556" stroke-width="1.2"/>
+          <circle cx="130" cy="70" r="10" fill="#F4C0D1" stroke="#D4537E" stroke-width="1.5"/>
+          <circle cx="60" cy="112" r="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
+          <circle cx="112" cy="110" r="10" fill="#F4C0D1" stroke="#D4537E" stroke-width="1.5"/>
+          <!-- arborising vessels -->
+          <path d="M28 40 L48 58" stroke="#D4537E" stroke-width="1.5" opacity="0.7"/>
+          <path d="M28 40 L20 54" stroke="#D4537E" stroke-width="1" opacity="0.5"/>
+          <path d="M72 36 L90 48" stroke="#D4537E" stroke-width="1.5" opacity="0.7"/>
+          <path d="M72 36 L80 26" stroke="#D4537E" stroke-width="1" opacity="0.5"/>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#993556" x="80" y="140" text-anchor="middle">red/pink dots</text>
+          <text font-family="Outfit,sans-serif" font-size="9" fill="#7c7984" x="80" y="152" text-anchor="middle">arborising vessels</text>
+        </svg>
+      </div>
+      <div class="atlas-label">Discoid lupus (DLE)</div>
+      <div class="atlas-dx" style="color:#902020">SCARRING — urgent</div>
+      <div class="atlas-desc">Red/pink dots (dilated infundibula with inflammatory infiltrate) and arborising vessels. Follicular plugging and keratotic scale. Scarring in chronic disease.</div>
+    </div>
+  </div>
+</div>
+
+<!-- DIAGNOSIS BY PATTERN -->
+<div class="sec" id="sec-diagnosis">
+  <h2>Diagnosis by trichoscopy pattern</h2>
+  <p>The following table integrates hair shaft findings, dot patterns, and perifollicular findings for the six most common alopecias.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 4.3 — Trichoscopy diagnostic matrix</div>
+    <svg width="100%" viewBox="0 0 680 390">
+      <!-- Header row -->
+      <rect x="20" y="20" width="648" height="32" rx="6" fill="#eee8de"/>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#666" x="100" y="40" text-anchor="middle" font-weight="500">Diagnosis</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#666" x="248" y="40" text-anchor="middle" font-weight="500">Dot pattern</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#666" x="395" y="40" text-anchor="middle" font-weight="500">Shaft pattern</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#666" x="545" y="40" text-anchor="middle" font-weight="500">Perifollicular</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#666" x="645" y="40" text-anchor="middle" font-weight="500">Scar?</text>
+      <!-- Row 1: AGA -->
+      <rect x="20" y="60" width="648" height="50" rx="4" fill="#e6f4ec" stroke="#aadaaa" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#1a4a2a" x="100" y="88" text-anchor="middle" dominant-baseline="central">AGA</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1a5a2a" x="248" y="80" text-anchor="middle" dominant-baseline="central">Yellow dots (adv.)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1a5a2a" x="248" y="98" text-anchor="middle" dominant-baseline="central">Targetoid sign</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1a5a2a" x="395" y="80" text-anchor="middle" dominant-baseline="central">Calibre diversity</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1a5a2a" x="395" y="98" text-anchor="middle" dominant-baseline="central">Miniaturised shafts</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1a5a2a" x="545" y="88" text-anchor="middle" dominant-baseline="central">Brown peripilar halo</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1e5c38" x="645" y="88" text-anchor="middle" dominant-baseline="central">No</text>
+      <!-- Row 2: AA -->
+      <rect x="20" y="118" width="648" height="50" rx="4" fill="#fdf3e0" stroke="#d4c090" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#5a3a00" x="100" y="146" text-anchor="middle" dominant-baseline="central">Alopecia areata</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#7a5020" x="248" y="138" text-anchor="middle" dominant-baseline="central">Yellow + black dots</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#7a5020" x="248" y="156" text-anchor="middle" dominant-baseline="central">Red loops (vessels)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#7a5020" x="395" y="138" text-anchor="middle" dominant-baseline="central">Exclamation mark</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#7a5020" x="395" y="156" text-anchor="middle" dominant-baseline="central">Tapered hairs</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#7a5020" x="545" y="146" text-anchor="middle" dominant-baseline="central">None (acute)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#8a5c10" x="645" y="146" text-anchor="middle" dominant-baseline="central">No</text>
+      <!-- Row 3: LPP/FFA -->
+      <rect x="20" y="176" width="648" height="50" rx="4" fill="#fceaea" stroke="#d4a0a0" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#5a0a0a" x="100" y="204" text-anchor="middle" dominant-baseline="central">LPP / FFA</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#902020" x="248" y="196" text-anchor="middle" dominant-baseline="central">White dots (fibrosis)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#902020" x="248" y="214" text-anchor="middle" dominant-baseline="central">Absent ostia</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#902020" x="395" y="204" text-anchor="middle" dominant-baseline="central">Normal to thin</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#902020" x="545" y="196" text-anchor="middle" dominant-baseline="central">Peripilar cast (sleeve)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#902020" x="545" y="214" text-anchor="middle" dominant-baseline="central">Perifollicular erythema</text>
+      <text font-family="Outfit,sans-serif" font-size="12" fill="#902020" x="645" y="204" text-anchor="middle" dominant-baseline="central" font-weight="600">YES</text>
+      <!-- Row 4: Tinea -->
+      <rect x="20" y="234" width="648" height="50" rx="4" fill="#e4f4f4" stroke="#80d0d0" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#103838" x="100" y="262" text-anchor="middle" dominant-baseline="central">Tinea capitis</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1b6060" x="248" y="254" text-anchor="middle" dominant-baseline="central">Black dots</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1b6060" x="248" y="272" text-anchor="middle" dominant-baseline="central">Yellow diffuse scale</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1b6060" x="395" y="254" text-anchor="middle" dominant-baseline="central">Comma hairs</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1b6060" x="395" y="272" text-anchor="middle" dominant-baseline="central">Corkscrew hairs</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1b6060" x="545" y="262" text-anchor="middle" dominant-baseline="central">Scaling, kerion</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#1b6060" x="645" y="262" text-anchor="middle" dominant-baseline="central">No</text>
+      <!-- Row 5: TTM -->
+      <rect x="20" y="292" width="648" height="50" rx="4" fill="#faecea" stroke="#e0a8a0" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#4a1a10" x="100" y="320" text-anchor="middle" dominant-baseline="central">Trichotillomania</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#a83820" x="248" y="312" text-anchor="middle" dominant-baseline="central">No yellow dots</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#a83820" x="248" y="330" text-anchor="middle" dominant-baseline="central">Black dots (some)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#a83820" x="395" y="312" text-anchor="middle" dominant-baseline="central">Flame / tulip hairs</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#a83820" x="395" y="330" text-anchor="middle" dominant-baseline="central">Coiled, varied lengths</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#a83820" x="545" y="320" text-anchor="middle" dominant-baseline="central">Absent perifollicular changes</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#a83820" x="645" y="320" text-anchor="middle" dominant-baseline="central">No</text>
+      <!-- Row 6: DLE -->
+      <rect x="20" y="350" width="648" height="30" rx="4" fill="#faeaf0" stroke="#e0a0c0" stroke-width="0.5"/>
+      <text font-family="Outfit,sans-serif" font-size="12" font-weight="500" fill="#3a0a1a" x="100" y="368" text-anchor="middle" dominant-baseline="central">Discoid lupus (DLE)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#882050" x="248" y="368" text-anchor="middle" dominant-baseline="central">Red/pink dots; white dots (chronic)</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#882050" x="395" y="368" text-anchor="middle" dominant-baseline="central">Follicular plugging</text>
+      <text font-family="Outfit,sans-serif" font-size="11" fill="#882050" x="545" y="368" text-anchor="middle" dominant-baseline="central">Arborising vessels; scale</text>
+      <text font-family="Outfit,sans-serif" font-size="12" fill="#882050" x="645" y="368" text-anchor="middle" dominant-baseline="central" font-weight="600">YES</text>
+    </svg>
+    <div class="dcard-cap">Fig 4.3: Trichoscopy diagnostic matrix for the six most common alopecias. Rows marked YES for scarring (LPP/FFA and DLE) require urgent dermatology referral.</div>
+  </div>
+</div>
+
+<!-- QUICK RECALL -->
+<div class="sec" id="sec-recall">
+  <h2>Quick recall — mnemonics</h2>
+  <div class="recall-grid">
+    <div class="rcrd">
+      <h4>Dot colours: YBWR</h4>
+      <div class="mnem">Y·B·W·R</div>
+      <ul>
+        <li><strong>Y</strong>ellow = AA, advanced AGA (sebum/keratin)</li>
+        <li><strong>B</strong>lack = AA, tinea, trichotillomania</li>
+        <li><strong>W</strong>hite = scarring (fibrosis) → refer urgently</li>
+        <li><strong>R</strong>ed/pink = DLE, folliculitis (inflamed)</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Shaft patterns: MECT</h4>
+      <div class="mnem">M·E·C·T</div>
+      <ul>
+        <li><strong>M</strong>iniaturisation = AGA (calibre diversity)</li>
+        <li><strong>E</strong>xclamation mark = AA (pathognomonic)</li>
+        <li><strong>C</strong>omma + corkscrew = tinea capitis</li>
+        <li><strong>T</strong>ulip/flame = trichotillomania</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Perifollicular: CPFH</h4>
+      <div class="mnem">C·P·F·H</div>
+      <ul>
+        <li><strong>C</strong>ast (peripilar sleeve) = LPP, FFA</li>
+        <li><strong>P</strong>erifollicular erythema = active inflam.</li>
+        <li><strong>F</strong>ibrosis (white sheath) = end-stage scar</li>
+        <li><strong>H</strong>oneycomb = AGA / normal dark skin</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Scarring red flags: WACF</h4>
+      <div class="mnem">W·A·C·F</div>
+      <ul>
+        <li><strong>W</strong>hite dots in perifollicular area</li>
+        <li><strong>A</strong>bsent follicular ostia</li>
+        <li><strong>C</strong>ast on proximal hair shaft</li>
+        <li><strong>F</strong>ibrotic texture on palpation</li>
+        <li>Any one = urgent referral</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>GP quick-reference card</h2>
+  <table class="dtable">
+    <thead><tr><th>What you see</th><th>Think first</th><th>Confirm with</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>Calibre diversity + miniaturisation, quiet scalp</td><td>AGA</td><td>Clinical + family history</td><td>Counsel; offer treatment</td></tr>
+      <tr><td>Yellow dots + black dots + exclamation hairs</td><td>Alopecia areata</td><td>Clinical; autoimmune screen</td><td>Treat or refer</td></tr>
+      <tr><td>White dots + absent ostia + peripilar cast</td><td>LPP or FFA (scarring)</td><td>Biopsy to confirm</td><td>Urgent referral</td></tr>
+      <tr><td>Comma + corkscrew hairs + yellow scale</td><td>Tinea capitis</td><td>Mycology swab</td><td>Systemic antifungal</td></tr>
+      <tr><td>Flame/tulip hairs + varied breakage + no dots</td><td>Trichotillomania</td><td>Clinical history + dermoscopy</td><td>Psychology referral</td></tr>
+      <tr><td>Red/pink dots + arborising vessels + keratotic scale</td><td>Discoid lupus (DLE)</td><td>ANA, biopsy</td><td>Urgent referral</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- FLASHCARDS -->
+<div class="sec" id="sec-flashcards">
+  <h2>Anki Flashcard Deck — Chapter 4</h2>
+  <p style="color:var(--ink3);font-size:15.5px;margin-bottom:18px">20 cards covering trichoscopy findings, patterns, and diagnosis. Tap to flip.</p>
+  <div class="pbar-wrap">
+    <div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div>
+    <div class="pct" id="pct">Card 1 / 20</div>
+  </div>
+  <p class="hint-txt">tap card to flip</p>
+  <div class="fcrd" id="fcrd" onclick="flipFC()">
+    <div class="fc-inner" id="fci">
+      <div class="fc-front"><div class="fc-cat" id="fcat"></div><div class="fc-q" id="fq"></div></div>
+      <div class="fc-back"><div class="fc-a" id="fa"></div><div class="fc-tip" id="ftip"></div></div>
+    </div>
+  </div>
+  <div class="fc-btns">
+    <button class="fcbtn" onclick="rate('hard')">Hard</button>
+    <button class="fcbtn" onclick="rate('ok')">Got it</button>
+    <button class="fcbtn pri" onclick="rate('easy')">Easy</button>
+  </div>
+  <div class="fc-ctrl">
+    <button onclick="shuffleFC()">Shuffle</button>
+    <button onclick="restartFC()">Restart</button>
+  </div>
+  <div class="fc-done" id="fcdone"><h3>Deck complete</h3><p id="fcscore"></p></div>
+  <h3 style="margin-top:24px;margin-bottom:10px">All 20 cards</h3>
+  <table class="dtable" id="alltbl"></table>
+</div>
+
+<!-- REFERENCES -->
+<div class="sec" id="sec-references">
+  <h2>References</h2>
+  <p style="font-size:14.5px;color:var(--ink3);margin-bottom:16px">APA 7th edition format.</p>
+  <ul class="ref-list">
+    <li><span class="rn">1.</span> Arrazola, P., &amp; Gálvez, A. (2019). Trichoscopy: A simple diagnostic tool. <em>Actas Dermo-Sifiliográficas, 110</em>(3), 221–230. https://doi.org/10.1016/j.ad.2018.09.004</li>
+    <li><span class="rn">2.</span> Campos, J. G., Oliveira, C. M., Romero, S. A., &amp; Pinto, G. M. (2020). Trichoscopic findings in primary cicatricial alopecias. <em>Skin Appendage Disorders, 6</em>(4), 232–238. https://doi.org/10.1159/000507960</li>
+    <li><span class="rn">3.</span> Crispin, M. K., &amp; Tcheung, W. J. (2018). Trichoscopy for the general dermatologist. <em>Dermatologic Clinics, 36</em>(4), 467–480. https://doi.org/10.1016/j.det.2018.05.013</li>
+    <li><span class="rn">4.</span> Hughes, R., Chiaverini, C., Bahadoran, P., &amp; Lacour, J. P. (2011). Corkscrew hair: A new dermoscopic sign for diagnosis of tinea capitis in black children. <em>Archives of Dermatology, 147</em>(3), 355–356. https://doi.org/10.1001/archdermatol.2011.31</li>
+    <li><span class="rn">5.</span> Inui, S., Nakajima, T., &amp; Itami, S. (2010). Assessment of dermoscopy in androgenetic alopecia: Usefulness for evaluating miniaturization extent of hair follicles. <em>Journal of Dermatology, 37</em>(7), 620–625.</li>
+    <li><span class="rn">6.</span> Jain, N., Doshi, B., &amp; Khopkar, U. (2013). Trichoscopy in alopecias: Diagnosis by hair and scalp dermoscopy. <em>Indian Journal of Dermatology, Venereology and Leprology, 79</em>(5), 587–605. https://doi.org/10.4103/0378-6323.116729</li>
+    <li><span class="rn">7.</span> Miteva, M., &amp; Tosti, A. (2013). Dermoscopy guided scalp biopsy in cicatricial alopecia. <em>Journal of the European Academy of Dermatology and Venereology, 27</em>(10), 1299–1303. https://doi.org/10.1111/j.1468-3083.2012.04530.x</li>
+    <li><span class="rn">8.</span> Ross, E. K., Vincenzi, C., &amp; Tosti, A. (2006). Videodermoscopy in the evaluation of hair and scalp disorders. <em>Journal of the American Academy of Dermatology, 55</em>(5), 799–806.</li>
+    <li><span class="rn">9.</span> Rudnicka, L., Olszewska, M., Rakowska, A., Slowinska, M., &amp; Czuwara, J. (2008). Trichoscopy: A new method for diagnosing hair loss. <em>Journal of Drugs in Dermatology, 7</em>(7), 651–654.</li>
+    <li><span class="rn">10.</span> Rudnicka, L., Olszewska, M., &amp; Rakowska, A. (Eds.). (2012). <em>Atlas of trichoscopy: Dermoscopy in hair and scalp disease</em>. Springer.</li>
+    <li><span class="rn">11.</span> Slowinska, M., Rudnicka, L., Schwartz, R. A., et al. (2008). Comma hairs: A dermoscopic marker for tinea capitis. <em>Journal of the American Academy of Dermatology, 59</em>(5 Suppl), S77–S79.</li>
+    <li><span class="rn">12.</span> Starace, M., &amp; Piraccini, B. M. (2019). Trichoscopy: A guide to the diagnosis of alopecia. <em>Giornale Italiano di Dermatologia e Venereologia, 154</em>(2), 159–163.</li>
+    <li><span class="rn">13.</span> Tosti, A., Torres, F., &amp; Misciali, C. (2009). Follicular red dots: A new dermoscopic pattern observed in scalp discoid lupus erythematosus. <em>Archives of Dermatology, 145</em>(12), 1406–1409.</li>
+    <li><span class="rn">14.</span> Ye, Y., Zhao, Y., Guo, Z., &amp; Yu, H. (2020). Trichoscopy in evaluating disease activity in alopecia areata. <em>Clinical, Cosmetic and Investigational Dermatology, 13</em>, 575–581.</li>
+  </ul>
+</div>
+
+<script>
+const cards=[
+  {cat:"Basics",q:"What is trichoscopy and who introduced it formally?",a:"Trichoscopy is dermoscopy applied to the scalp and hair. Formally introduced by Rudnicka et al. in 2008. Uses 10–20× magnification to reveal follicular, perifollicular, shaft, and vascular features invisible to the naked eye.",tip:"Rudnicka 2008 = trichoscopy birth year"},
+  {cat:"Basics",q:"What magnification is recommended for GP-level trichoscopy?",a:"10× is adequate for overview (distribution, miniaturisation, dots). 20× provides better detail for shaft morphology, peripilar casts, and follicular ostia. Most handheld dermatoscopes offer at least 10×.",tip:"10× for overview; 20× for detail"},
+  {cat:"Basics",q:"What are the four groups of trichoscopy findings?",a:"1. Hair shaft patterns (calibre, morphology)\n2. Dot patterns (yellow, black, white, red)\n3. Perifollicular findings (scale, erythema, fibrosis, cast)\n4. Vascular patterns (loops, arborising, glomerular)",tip:"Shaft → Dots → Peri → Vessels"},
+  {cat:"Dots",q:"What do yellow dots represent on trichoscopy and which conditions cause them?",a:"Yellow dots = follicular infundibula filled with sebum and/or keratin (empty follicles). Most common in:\n• Alopecia areata (hallmark)\n• Advanced androgenetic alopecia (end-stage miniaturisation)",tip:"Yellow = empty follicle with sebum/keratin"},
+  {cat:"Dots",q:"What do black dots represent on trichoscopy?",a:"Black dots = hair shafts broken off at or below the scalp surface. Seen in:\n• Alopecia areata (dystrophic anagen hairs)\n• Tinea capitis (intrafollicular fungal breakage)\n• Trichotillomania (mechanical breakage)",tip:"Black = hair broken at scalp level"},
+  {cat:"Dots",q:"What do white dots indicate on trichoscopy — and what action do they require?",a:"White dots = fibrotic replacement of follicular units. This indicates IRREVERSIBLE scarring alopecia. Seen in LPP, FFA, DLE. Action: urgent dermatology referral.\nWhite dots = no regrowth possible.",tip:"White = fibrosis = irreversible = refer now"},
+  {cat:"Dots",q:"What do red/pink dots on trichoscopy suggest?",a:"Red/pink dots = dilated infundibula with inflammatory cell infiltrate. Characteristic of:\n• Discoid lupus erythematosus (DLE)\n• Early lichen planopilaris\n• Active folliculitis",tip:"Red/pink = active follicular inflammation"},
+  {cat:"Shaft patterns",q:"What is the exclamation mark hair and what is it pathognomonic for?",a:"An exclamation mark hair has a narrow, pale (depigmented) proximal shaft widening to a normal, pigmented distal end — resembling '!'. PATHOGNOMONIC for alopecia areata. Found at the active periphery of expanding patches.",tip:"'!' shaft = AA. Narrow base, dark tip"},
+  {cat:"Shaft patterns",q:"What shaft patterns are characteristic of tinea capitis?",a:"1. Comma hairs — short, C-shaped curved hairs (most specific)\n2. Corkscrew hairs — tightly coiled, spiral hairs\nComma and corkscrew hairs together are highly specific for dermatophyte infection.",tip:"Comma + corkscrew = tinea until proven otherwise"},
+  {cat:"Shaft patterns",q:"What trichoscopy shaft findings point to trichotillomania?",a:"1. Flame hairs — tapered, frayed, flame-shaped\n2. Tulip hairs — dark, tulip-shaped tip (broken distally)\n3. Coiled hairs\n4. Hairs broken at multiple different lengths\n5. Absence of yellow dots distinguishes from AA",tip:"Flame + tulip + varied lengths, NO yellow dots"},
+  {cat:"Shaft patterns",q:"What does hair calibre diversity indicate in trichoscopy?",a:"Calibre diversity — mixture of thick terminal and thin miniaturised shafts — is the hallmark of androgenetic alopecia. A miniaturisation ratio >20% in vertex/frontal zone is diagnostic of AGA in the appropriate context.",tip:"Thick + thin mix = AGA. >20% miniaturised = diagnostic"},
+  {cat:"Perifollicular",q:"What is a peripilar cast (sleeve sign) and what does it indicate?",a:"A peripilar cast is a tubular white/grey keratotic scale adhering to and climbing the proximal hair shaft. Characteristic of:\n• Lichen planopilaris (LPP)\n• Frontal fibrosing alopecia (FFA)\nIndicates active perifollicular inflammation with risk of permanent scarring.",tip:"Sleeve on shaft = LPP or FFA = urgent"},
+  {cat:"Perifollicular",q:"What is the honeycomb pattern in trichoscopy and when is it significant?",a:"Regular network of hexagonal pigmented lines between follicular units. In darker skin phototypes, it is a normal finding. In lighter skin, relative accentuation may indicate AGA. Does not alone indicate pathology.",tip:"Honeycomb = normal in dark skin; relative sign in AGA"},
+  {cat:"Vascular",q:"What vascular pattern on trichoscopy is characteristic of discoid lupus erythematosus?",a:"Arborising (tree-like branching) vessels running across the scalp surface are the characteristic vascular pattern of DLE. Combined with red/pink dots, keratotic scale, and follicular plugging, highly suggestive of DLE.",tip:"Arborising vessels + red dots = DLE"},
+  {cat:"Vascular",q:"What vascular patterns are associated with alopecia areata on trichoscopy?",a:"Simple red loops (small, regular looped vessels at follicular openings) are characteristic of active alopecia areata. They indicate perifollicular inflammation.",tip:"Simple red loops = AA activity"},
+  {cat:"Diagnosis",q:"Name the four trichoscopy findings that together are diagnostic of alopecia areata.",a:"1. Yellow dots (empty follicles)\n2. Black dots (broken dystrophic hairs)\n3. Exclamation mark hairs (at patch margin)\n4. Simple red loops (vascular, active disease)\nYellow dots + exclamation marks alone are sufficient for diagnosis in classic cases.",tip:"YBEL: Yellow, Black, Exclamation, Loops"},
+  {cat:"Diagnosis",q:"How do you distinguish FPHL from chronic telogen effluvium (CTE) on trichoscopy?",a:"FPHL: Hair calibre DIVERSITY (miniaturised + terminal hairs), miniaturisation ratio >20%, peripilar brown halo.\nCTE: UNIFORM calibre — no miniaturisation, diffuse positive pull test, normal-calibre hairs shed.\nMany women have both simultaneously.",tip:"FPHL = calibre mix. CTE = uniform calibre"},
+  {cat:"Diagnosis",q:"What is the systematic scan order recommended for trichoscopy?",a:"Yellow dots → Black dots → Shaft calibre/morphology → Perifollicular changes (scale, erythema, cast) → Vascular pattern.\nAlways compare two zones: affected vs unaffected (typically occipital vs vertex/frontal in AGA).",tip:"Dots first, then shafts, then peri, then vessels"},
+  {cat:"Clinical",q:"A patient with a smooth oval patch has yellow dots and exclamation mark hairs on trichoscopy. What is the diagnosis and are further investigations mandatory?",a:"Alopecia areata (AA). Trichoscopy alone is diagnostic in classic presentation. Further investigations (TFTs, ANA, ferritin) are recommended to screen for autoimmune associations but not required to confirm the diagnosis.",tip:"Classic AA: trichoscopy diagnoses, bloods screen"},
+  {cat:"Clinical",q:"What is the single most important trichoscopy finding that mandates urgent referral?",a:"White structureless areas replacing follicular openings — indicating fibrosis and irreversible destruction of follicular stem cells. This finding in any distribution means scarring alopecia. No treatment can restore lost follicles; referral is urgent.",tip:"White dots/structureless = refer urgently. Non-negotiable"}
+];
+let deck=[...cards],cur=0,flipped=false,sc={easy:0,ok:0,hard:0};
+function showFC(i){const c=deck[i];document.getElementById('fcat').textContent=c.cat;document.getElementById('fq').textContent=c.q;document.getElementById('fa').textContent=c.a;document.getElementById('ftip').textContent=c.tip?'Tip: '+c.tip:'';document.getElementById('fci').classList.remove('flip');flipped=false;document.getElementById('pct').textContent='Card '+(i+1)+' / '+deck.length;document.getElementById('pfill').style.width=Math.round(i/deck.length*100)+'%';document.getElementById('fcdone').style.display='none';}
+function flipFC(){flipped=!flipped;document.getElementById('fci').classList.toggle('flip',flipped)}
+function rate(r){sc[r]++;cur++;if(cur>=deck.length){document.getElementById('fcdone').style.display='block';document.getElementById('fcscore').textContent='Easy: '+sc.easy+' | Got it: '+sc.ok+' | Hard: '+sc.hard;document.getElementById('pfill').style.width='100%';document.getElementById('pct').textContent='Complete';document.getElementById('fci').classList.remove('flip');document.getElementById('fq').textContent='All cards reviewed.';document.getElementById('fa').textContent='';return;}showFC(cur);}
+function shuffleFC(){deck=[...cards].sort(()=>Math.random()-.5);cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+function restartFC(){deck=[...cards];cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+document.getElementById('alltbl').innerHTML='<tr><th>#</th><th>Category</th><th>Question</th></tr>'+cards.map((c,i)=>'<tr><td>'+(i+1)+'</td><td>'+c.cat+'</td><td>'+c.q.substring(0,72)+(c.q.length>72?'…':'')+'</td></tr>').join('');
+function showSec(id){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nt').forEach(t=>t.classList.remove('on'));document.getElementById('sec-'+id).classList.add('on');const map={intro:0,technique:1,findings:2,atlas:3,diagnosis:4,recall:5,flashcards:6,references:7};document.querySelectorAll('.nt')[map[id]].classList.add('on');}
+showFC(0);
+</script>
+<div class="ch-nav ch-nav-bottom">
+  <a href="chapter_03_history_examination.html">← Ch. 3: History &amp; Examination</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_05_male_aga.html">Ch. 5: Male Pattern Hair Loss →</a>
+</div>
+<script>try{localStorage.setItem('tfgp_ch4','1')}catch(e){}</script>
+</body>
+</html>

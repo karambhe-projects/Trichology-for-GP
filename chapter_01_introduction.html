@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1 — Introduction to Trichology | Trichology for GP</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--ink:#18161A;--ink2:#3d3a42;--ink3:#7a7680;--bg:#F9F7F4;--bg2:#F2EFE9;--bg3:#E8E3DB;--rule:#D4CEC4;--ch-accent:#185FA5;--teal:#1a6b6b;--teal2:#e6f5f5;--gold:#9a7228;--gold2:#c49a3c;--goldbg:#fdf6e4;--coral:#b84a2a;--coralbg:#fdf0ec;--blue:#2a4e8c;--bluebg:#edf2fc;--green:#2a6a3a;--greenbg:#edf6ee;--purple:#5a2a8c;--purplebg:#f0eafc;--red:#aa2020;--redbg:#fceaea;--info:#185FA5;--infobg:#E6F1FB;--success:#3B6D11;--successbg:#EAF3DE;--warning:#854F0B;--warningbg:#FAEEDA;--danger:#A32D2D;--dangerbg:#FCEBEB}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.78;font-size:16.5px;max-width:940px;margin:0 auto;padding-bottom:80px}
+.ch-header{padding:44px 46px 32px;border-bottom:0.5px solid var(--rule);position:relative;overflow:hidden}
+.header-number{font-family:'Playfair Display',serif;font-size:132px;font-weight:700;color:rgba(0,0,0,0.04);position:absolute;right:32px;top:-10px;line-height:1;user-select:none}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--info);margin-bottom:12px}
+.ch-title{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.1;margin-bottom:8px;position:relative;z-index:1}
+.ch-sub{font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:var(--ink2);margin-bottom:20px}
+.nav{display:flex;border-bottom:1px solid var(--rule);padding:0 46px;position:sticky;top:0;z-index:200;background:var(--bg);overflow-x:auto;gap:0}
+.nav::-webkit-scrollbar{height:0}
+.nt{font-size:14px;color:var(--ink3);padding:12px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .18s;text-decoration:none}
+.nt:hover{color:var(--ink)}
+.nt.on{color:var(--info);border-bottom-color:var(--info);font-weight:500}
+.sec{display:none;padding:36px 46px 20px}
+.sec.on{display:block}
+h2{font-family:'Playfair Display',serif;font-size:27.5px;font-weight:600;margin:34px 0 13px;padding-bottom:9px;border-bottom:1px solid var(--rule)}
+h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:500;font-style:italic;color:var(--ink2);margin:22px 0 10px}
+p{margin-bottom:14px;color:var(--ink2);font-size:16.5px}
+strong{color:var(--ink);font-weight:500}
+.box-gp{background:var(--warningbg);border-left:3px solid var(--warning);padding:17px 22px;margin:22px 0;border-radius:0 10px 10px 0}
+.box-gp .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--warning);margin-bottom:7px}
+.box-gp p{font-style:italic;color:var(--ink2);margin:0;font-size:16px}
+.box-key{background:var(--infobg);border-left:3px solid var(--info);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-key .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:5px}
+.box-key p{margin:0;color:var(--blue);font-size:15.5px}
+.box-warn{background:var(--dangerbg);border-left:3px solid var(--danger);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-warn .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--danger);margin-bottom:5px}
+.box-warn p{margin:0;color:#5a1010;font-size:15.5px}
+.box-success{background:var(--successbg);border-left:3px solid var(--success);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-success .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--success);margin-bottom:5px}
+.box-success p{margin:0;color:#1a4a0a;font-size:15.5px}
+.dcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px;margin:24px 0}
+.dcard-title{font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+.dcard-cap{font-size:14.5px;font-style:italic;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.65}
+.dtable{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+.dtable th{background:var(--bg2);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule)}
+.dtable td{padding:11px 15px;border-bottom:1px solid var(--rule);vertical-align:top}
+.dtable tr:last-child td{border-bottom:none}
+.dtable td:first-child{font-weight:500;color:var(--ink)}
+.dtable tr:hover td{background:var(--bg)}
+.fcard{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.fcard .ftag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.fcard .ftitle{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.fcard .fdesc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+.timeline-item{display:flex;gap:18px;margin-bottom:20px;align-items:flex-start}
+.tl-marker{width:38px;height:38px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15.5px;font-weight:600;font-family:'Playfair Display',serif;margin-top:2px;background:var(--bg2);color:var(--info)}
+.tl-body .tl-title{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.tl-body .tl-desc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+.big-stat{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.stat-box{flex:1;min-width:130px;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:16px;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:33px;font-weight:700;color:var(--info);margin-bottom:4px}
+.stat-lbl{font-size:13px;color:var(--ink3);line-height:1.4}
+.rcrd{background:var(--bg2);border:1px solid var(--rule);border-radius:12px;padding:22px}
+.rcrd h4{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.rcrd .mnem{font-size:22px;font-weight:600;letter-spacing:4px;color:var(--info);font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.rcrd ul{list-style:none;font-size:14.5px;line-height:2.1;color:var(--ink2)}
+.rcrd ul li::before{content:"→ ";color:var(--ink3)}
+.rcrd ul strong{color:var(--info)}
+/* Flashcard */
+.pbar-wrap{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.pbar{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.pfill{height:100%;background:var(--info);border-radius:2px;transition:width .4s}
+.pct{font-size:13px;color:var(--ink3);min-width:72px;text-align:right}
+.fcrd{height:210px;perspective:1000px;cursor:pointer;margin-bottom:14px}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .48s cubic-bezier(.4,0,.2,1)}
+.fc-inner.flip{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 32px;text-align:center}
+.fc-front{background:#fff;border:1px solid var(--rule)}
+.fc-front .fc-cat{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:10px}
+.fc-front .fc-q{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:500;color:var(--ink);line-height:1.45}
+.fc-back{background:var(--infobg);transform:rotateY(180deg)}
+.fc-back .fc-a{font-size:16px;color:var(--blue);line-height:1.7;white-space:pre-line}
+.fc-back .fc-tip{font-size:12px;color:var(--blue);margin-top:10px;opacity:.72}
+.hint-txt{font-size:13px;color:var(--ink3);text-align:center;margin-bottom:6px}
+.fc-btns{display:flex;gap:10px;justify-content:center}
+.fcbtn{font-family:'DM Sans',sans-serif;font-size:14.5px;padding:9px 20px;border-radius:8px;border:1px solid var(--rule);background:#fff;color:var(--ink2);cursor:pointer;transition:all .14s}
+.fcbtn:hover{background:var(--bg2)}
+.fcbtn.pri{background:var(--infobg);color:var(--blue);border-color:var(--info)}
+.fc-ctrl{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.fc-ctrl button{font-size:13px;color:var(--gold);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif}
+.fc-done{display:none;background:var(--successbg);border:1px solid #a0d080;border-radius:10px;padding:18px;text-align:center;margin-top:14px}
+.fc-done h3{font-family:'Playfair Display',serif;color:var(--green);font-size:20px;margin-bottom:6px}
+.fc-done p{color:#2a5a1a;font-size:14.5px;margin:0}
+.ref-list{list-style:none;margin:14px 0}
+.ref-list li{font-size:14.5px;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--rule);line-height:1.65}
+.ref-list li:last-child{border-bottom:none}
+.ref-list li .rn{font-weight:500;color:var(--ink);margin-right:5px}
+@media(max-width:640px){.ch-header,.nav,.sec{padding-left:20px;padding-right:20px}.header-number{font-size:88px}}
+</style>
+</head>
+<body>
+<div class="ch-nav">
+  <span class="ch-nav-disabled">← No previous chapter</span>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_02_anatomy.html">Ch. 2: Hair &amp; Scalp Anatomy →</a>
+</div>
+<div class="ch-header">
+  <div class="header-number">1</div>
+  <div class="eyebrow">Trichology for GP · Introductory Chapter</div>
+  <div class="ch-title">Introduction to Trichology</div>
+  <div class="ch-sub">Linking history, examination and trichoscopy — faster, better diagnoses</div>
+</div>
+<div class="nav">
+  <span class="nt on" onclick="showSec('what')">What is Trichology?</span>
+  <span class="nt" onclick="showSec('scope')">Why It Matters</span>
+  <span class="nt" onclick="showSec('triad')">Diagnostic Triad</span>
+  <span class="nt" onclick="showSec('classification')">Classification</span>
+  <span class="nt" onclick="showSec('framework')">Clinical Framework</span>
+  <span class="nt" onclick="showSec('gp')">GP Role</span>
+  <span class="nt" onclick="showSec('recall')">Quick Recall</span>
+  <span class="nt" onclick="showSec('flashcards')">Anki Cards</span>
+  <span class="nt" onclick="showSec('references')">References</span>
+</div>
+
+<div class="sec on" id="sec-what">
+  <div class="box-gp">
+    <div class="lbl">GP-Level Analogy</div>
+    <p>"Trichology is to hair what cardiology is to the heart — a discipline that takes a seemingly simple organ and reveals an extraordinarily complex system underneath. Just as the ECG made cardiac diagnosis systematic, trichoscopy makes hair diagnosis visual, reproducible, and teachable. You don't need to be a specialist. You need a framework."</p>
+  </div>
+  <p>Trichology is the <strong>medical and scientific study of hair and scalp disorders</strong>. In clinical practice, its defining value is the systematic ability to link what the patient tells you, what you see on examination, and what the dermatoscope reveals, into a diagnosis faster and more accurately than intuition alone allows.</p>
+  <p>The word derives from the Greek <em>trichos</em> (hair) + <em>logos</em> (study). Contemporary medical trichology is evidence-based, investigation-led, and increasingly therapeutically active, particularly following the advent of JAK inhibitors for alopecia areata and combination minoxidil-finasteride for androgenetic alopecia.</p>
+  <h2>Why trichology belongs in general practice</h2>
+  <p>Hair loss is among the <strong>top ten dermatological complaints</strong> presenting to GPs, yet fewer than 20% of GPs report confidence in its management. This is a gap trichology training can close.</p>
+  <div class="big-stat">
+    <div class="stat-box"><div class="stat-num">50%</div><div class="stat-lbl">of men affected by AGA by age 50</div></div>
+    <div class="stat-box"><div class="stat-num">40%</div><div class="stat-lbl">of women affected by FPHL by age 70</div></div>
+    <div class="stat-box"><div class="stat-num">2%</div><div class="stat-lbl">lifetime prevalence of alopecia areata</div></div>
+    <div class="stat-box"><div class="stat-num">&lt;20%</div><div class="stat-lbl">of GPs confident managing hair loss</div></div>
+    <div class="stat-box"><div class="stat-num">90%</div><div class="stat-lbl">of common alopecias diagnosable without biopsy</div></div>
+  </div>
+  <div class="box-key">
+    <div class="lbl">Core definition for GPs</div>
+    <p>Trichology in GP practice = the systematic use of <strong>history + scalp examination + trichoscopy</strong> to diagnose hair and scalp disorders, exclude contributing systemic causes, initiate appropriate treatment, and identify when specialist referral is required.</p>
+  </div>
+  <h2>A brief history of medical trichology</h2>
+  <div class="timeline-item"><div class="tl-marker">1</div><div class="tl-body"><div class="tl-title">1860s–1902 — Formal recognition</div><div class="tl-desc">The Institute of Trichologists founded in London (1902). Early focus on cosmetic hair and scalp treatments.</div></div></div>
+  <div class="timeline-item"><div class="tl-marker">2</div><div class="tl-body"><div class="tl-title">1950s–1980s — Medical foundations</div><div class="tl-desc">Kligman (1961) described telogen effluvium. Ludwig (1977) classified female pattern hair loss. Hamilton and Norwood classified male AGA.</div></div></div>
+  <div class="timeline-item"><div class="tl-marker">3</div><div class="tl-body"><div class="tl-title">1990s–2000s — Dermoscopy revolution</div><div class="tl-desc">Rudnicka et al. (2008) formally described trichoscopy, transforming non-invasive diagnosis.</div></div></div>
+  <div class="timeline-item"><div class="tl-marker">4</div><div class="tl-body"><div class="tl-title">2010s–2020s — Therapeutic revolution</div><div class="tl-desc">JAK inhibitors for alopecia areata (Xing 2014; King 2022). Combination minoxidil-finasteride trials. S3 guidelines published. Trichology enters evidence-based medicine.</div></div></div>
+</div>
+
+<div class="sec" id="sec-scope">
+  <h2>The scope of trichology in GP practice</h2>
+  <div class="grid3">
+    <div class="fcard"><div class="ftag" style="color:var(--info)">Diagnosis</div><div class="ftitle">Differential diagnosis</div><div class="fdesc">Distinguishing AGA, TE, AA, scarring alopecias, tinea capitis, and trichotillomania using history, examination, and trichoscopy.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--warning)">Investigation</div><div class="ftitle">Targeted investigation</div><div class="fdesc">Targeted blood panels (ferritin, TFTs, androgens) rather than blanket testing. Knowing when biopsy or referral is needed.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--success)">Treatment</div><div class="ftitle">Evidence-based treatment</div><div class="fdesc">Initiating topical/oral minoxidil, finasteride, and iron supplementation. Counselling on realistic expectations.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--danger)">Red flags</div><div class="ftitle">Urgent pathology</div><div class="fdesc">Identifying scarring alopecias, virilisation, systemic disease, and malignant scalp disease.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--ink3)">Counselling</div><div class="ftitle">Patient communication</div><div class="fdesc">Explaining the hair cycle, treatment timelines, and prognosis. Managing the psychological burden of hair loss.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--info)">Monitoring</div><div class="ftitle">Follow-up assessment</div><div class="fdesc">Standardised photography, trichoscopy at follow-up, repeat blood panels. Knowing when to escalate or refer.</div></div>
+  </div>
+  <h2>The psychological burden</h2>
+  <p>Hair loss has clinically significant associations with <strong>depression, anxiety, reduced self-esteem, social withdrawal, and reduced quality of life</strong> — comparable in magnitude to other chronic diseases. The GP who dismisses hair loss without investigation is not being reassuring — they are being inaccurate.</p>
+  <div class="box-warn">
+    <div class="lbl">Common GP errors in hair loss management</div>
+    <p>1. Diagnosing "stress hair loss" without investigation (missing iron deficiency, thyroid disease). 2. Reassuring a patient with scarring alopecia that it will "grow back." 3. Prescribing minoxidil for telogen effluvium without addressing the trigger. 4. Dismissing female hair loss as "normal ageing" without a ferritin check. 5. Failing to screen for autoimmune associations in alopecia areata.</p>
+  </div>
+</div>
+
+<div class="sec" id="sec-triad">
+  <h2>The trichology diagnostic triad</h2>
+  <p>The core clinical model of trichology is a <strong>three-step diagnostic triad</strong>: a structured history, a systematic scalp examination, and trichoscopy. These three elements, used together, allow confident diagnosis of over 90% of common hair and scalp conditions without biopsy.</p>
+  <div class="dcard">
+    <div class="dcard-title">Fig 1.1 — The trichology diagnostic triad</div>
+    <svg width="100%" viewBox="0 0 680 320">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- 1. History -->
+      <rect x="30" y="30" width="200" height="110" rx="12" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" font-weight="600" fill="#085041" x="130" y="56" text-anchor="middle">1 — History</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#0F6E56" x="130" y="76" text-anchor="middle">Onset, pattern, triggers</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#0F6E56" x="130" y="92" text-anchor="middle">Shedding vs thinning</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#0F6E56" x="130" y="108" text-anchor="middle">Medications, FHx, systemic</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#0F6E56" x="130" y="124" text-anchor="middle">Scalp symptoms</text>
+      <!-- 2. Examination -->
+      <rect x="30" y="175" width="200" height="110" rx="12" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" font-weight="600" fill="#412402" x="130" y="201" text-anchor="middle">2 — Examination</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#633806" x="130" y="221" text-anchor="middle">DICS framework</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#633806" x="130" y="237" text-anchor="middle">Inflammation, Calibre</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#633806" x="130" y="253" text-anchor="middle">Scarring vs non-scarring</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#633806" x="130" y="269" text-anchor="middle">Pull test, shaft exam</text>
+      <!-- 3. Trichoscopy -->
+      <rect x="280" y="100" width="210" height="135" rx="12" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" font-weight="600" fill="#26215C" x="385" y="126" text-anchor="middle">3 — Trichoscopy</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#3C3489" x="385" y="146" text-anchor="middle">Dot patterns (YBWR)</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#3C3489" x="385" y="162" text-anchor="middle">Shaft morphology</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#3C3489" x="385" y="178" text-anchor="middle">Perifollicular changes</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#3C3489" x="385" y="194" text-anchor="middle">Miniaturisation ratio</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#3C3489" x="385" y="210" text-anchor="middle">Activity assessment</text>
+      <!-- Diagnosis -->
+      <rect x="530" y="130" width="130" height="70" rx="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="14" font-weight="600" fill="#042C53" x="595" y="158" text-anchor="middle">DIAGNOSIS</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#185FA5" x="595" y="176" text-anchor="middle">&gt;90% without biopsy</text>
+      <!-- Arrows -->
+      <line x1="230" y1="85" x2="278" y2="148" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ar)"/>
+      <line x1="230" y1="230" x2="278" y2="182" stroke="#BA7517" stroke-width="1.2" marker-end="url(#ar)"/>
+      <line x1="490" y1="168" x2="528" y2="168" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ar)"/>
+    </svg>
+    <div class="dcard-cap">Fig 1.1: The trichology diagnostic triad. History generates hypothesis; examination refines; trichoscopy confirms. This sequential approach produces diagnoses faster and more accurately than any single element alone.</div>
+  </div>
+  <h3>Step 1 — The structured history</h3>
+  <p>A trichology history has <strong>nine specific domains</strong> (OPTICS-MFS) designed to distinguish the most common diagnostic categories within the first five minutes. The single most useful opening question: <em>"Is your hair falling out or getting thinner?"</em></p>
+  <h3>Step 2 — Systematic scalp examination (DICS)</h3>
+  <p>DICS: <strong>Distribution</strong> (which zones? diffuse or patterned?), <strong>Inflammation</strong> (erythema, scale, crust?), <strong>Calibre</strong> (miniaturisation?), and <strong>Scarring</strong> (follicular ostia present or absent?).</p>
+  <h3>Step 3 — Trichoscopy</h3>
+  <p>At 10–20× magnification: dot patterns (yellow, black, white, red), shaft morphology (exclamation marks, comma hairs), perifollicular changes, and vascular patterns. Diagnostic accuracy exceeds 90% in experienced hands.</p>
+  <div class="box-gp">
+    <div class="lbl">GP Analogy — The Triad</div>
+    <p>"History is taking witness statements. Examination is surveying the crime scene. Trichoscopy is forensic analysis. You need all three. Forensics without a crime scene, and a crime scene without witnesses, produces guesswork."</p>
+  </div>
+</div>
+
+<div class="sec" id="sec-classification">
+  <h2>Classification of hair loss — the master map</h2>
+  <div class="dcard">
+    <div class="dcard-title">Fig 1.2 — Master classification of alopecia</div>
+    <svg width="100%" viewBox="0 0 680 320">
+      <defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Root -->
+      <rect x="256" y="20" width="168" height="44" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" font-weight="600" fill="#2C2C2A" x="340" y="46" text-anchor="middle" dominant-baseline="central">Hair loss (Alopecia)</text>
+      <!-- Branch lines -->
+      <line x1="310" y1="64" x2="200" y2="108" stroke="#888780" stroke-width="1" marker-end="url(#ar2)"/>
+      <line x1="370" y1="64" x2="480" y2="108" stroke="#888780" stroke-width="1" marker-end="url(#ar2)"/>
+      <!-- Non-scarring -->
+      <rect x="80" y="110" width="240" height="44" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" font-weight="600" fill="#173404" x="200" y="128" text-anchor="middle" dominant-baseline="central">Non-scarring alopecia</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#3B6D11" x="200" y="146" text-anchor="middle" dominant-baseline="central">Follicle intact — reversible</text>
+      <!-- Scarring -->
+      <rect x="360" y="110" width="240" height="44" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="13" font-weight="600" fill="#501313" x="480" y="128" text-anchor="middle" dominant-baseline="central">Scarring alopecia</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#A32D2D" x="480" y="146" text-anchor="middle" dominant-baseline="central">Follicle destroyed — irreversible</text>
+      <!-- Non-scarring subtypes -->
+      <line x1="156" y1="154" x2="90" y2="196" stroke="#639922" stroke-width="0.8" marker-end="url(#ar2)"/>
+      <line x1="200" y1="154" x2="200" y2="196" stroke="#639922" stroke-width="0.8" marker-end="url(#ar2)"/>
+      <line x1="244" y1="154" x2="310" y2="196" stroke="#639922" stroke-width="0.8" marker-end="url(#ar2)"/>
+      <rect x="30" y="198" width="120" height="40" rx="6" fill="#E1F5EE" stroke="#9FE1CB" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#085041" x="90" y="222" text-anchor="middle" dominant-baseline="central">Androgenetic</text>
+      <rect x="160" y="198" width="120" height="40" rx="6" fill="#FAEEDA" stroke="#FAC775" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#412402" x="220" y="222" text-anchor="middle" dominant-baseline="central">Reactive (TE)</text>
+      <rect x="290" y="198" width="120" height="40" rx="6" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#26215C" x="350" y="222" text-anchor="middle" dominant-baseline="central">Autoimmune (AA)</text>
+      <!-- Scarring subtypes -->
+      <line x1="430" y1="154" x2="400" y2="196" stroke="#E24B4A" stroke-width="0.8" marker-end="url(#ar2)"/>
+      <line x1="480" y1="154" x2="480" y2="196" stroke="#E24B4A" stroke-width="0.8" marker-end="url(#ar2)"/>
+      <line x1="530" y1="154" x2="560" y2="196" stroke="#E24B4A" stroke-width="0.8" marker-end="url(#ar2)"/>
+      <rect x="340" y="198" width="118" height="40" rx="6" fill="#FAECE7" stroke="#F0997B" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#4A1B0C" x="399" y="222" text-anchor="middle" dominant-baseline="central">LPP / FFA / DLE</text>
+      <rect x="468" y="198" width="118" height="40" rx="6" fill="#FCEBEB" stroke="#F09595" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" font-weight="500" fill="#501313" x="527" y="222" text-anchor="middle" dominant-baseline="central">Secondary (burns etc)</text>
+      <!-- Examples bottom -->
+      <rect x="30" y="252" width="120" height="36" rx="5" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5F5E5A" x="90" y="273" text-anchor="middle" dominant-baseline="central">MAGA, FPHL, DUPA</text>
+      <rect x="160" y="252" width="120" height="36" rx="5" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5F5E5A" x="220" y="273" text-anchor="middle" dominant-baseline="central">Acute TE, chronic TE</text>
+      <rect x="290" y="252" width="120" height="36" rx="5" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5F5E5A" x="350" y="273" text-anchor="middle" dominant-baseline="central">Patchy, totalis, universalis</text>
+      <rect x="340" y="252" width="118" height="36" rx="5" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+      <text font-family="DM Sans,sans-serif" font-size="10" fill="#5F5E5A" x="399" y="273" text-anchor="middle" dominant-baseline="central">Lymphocytic/neutrophilic</text>
+    </svg>
+    <div class="dcard-cap">Fig 1.2: Master classification of alopecia. The first branch point — scarring vs non-scarring — determines reversibility, urgency, and referral pathway.</div>
+  </div>
+  <h3>The scarring vs non-scarring distinction</h3>
+  <table class="dtable">
+    <thead><tr><th>Feature</th><th>Non-scarring</th><th>Scarring (cicatricial)</th></tr></thead>
+    <tbody>
+      <tr><td>Follicular ostia</td><td>Present and visible</td><td>Absent — smooth atrophic skin</td></tr>
+      <tr><td>Reversibility</td><td>Potentially reversible</td><td>Irreversible — stem cells destroyed</td></tr>
+      <tr><td>Urgency</td><td>Investigate and treat</td><td>Urgent referral — every week matters</td></tr>
+      <tr><td>Examples</td><td>AGA, TE, AA, tinea capitis</td><td>LPP, FFA, DLE, folliculitis decalvans</td></tr>
+      <tr><td>Trichoscopy</td><td>Follicular openings with hairs; dot patterns</td><td>White dots (fibrosis); absent follicular units</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="sec" id="sec-framework">
+  <h2>The trichology clinical value framework</h2>
+  <div class="dcard">
+    <div class="dcard-title">Fig 1.3 — From presentation to diagnosis: the trichology clinical pathway</div>
+    <svg width="100%" viewBox="0 0 680 280">
+      <defs><marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <rect x="250" y="20" width="180" height="44" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" font-weight="600" fill="#2C2C2A" x="340" y="46" text-anchor="middle" dominant-baseline="central">Patient presents: hair loss</text>
+      <line x1="340" y1="64" x2="340" y2="88" stroke="#888780" stroke-width="1" marker-end="url(#ar3)"/>
+      <rect x="200" y="90" width="280" height="48" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" font-weight="600" fill="#085041" x="340" y="108" text-anchor="middle" dominant-baseline="central">History filter → leading hypothesis</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#0F6E56" x="340" y="126" text-anchor="middle" dominant-baseline="central">Shedding/thinning? Pattern? Trigger? Systemic?</text>
+      <line x1="260" y1="138" x2="160" y2="162" stroke="#1D9E75" stroke-width="0.8" marker-end="url(#ar3)"/>
+      <line x1="340" y1="138" x2="340" y2="162" stroke="#1D9E75" stroke-width="0.8" marker-end="url(#ar3)"/>
+      <line x1="420" y1="138" x2="520" y2="162" stroke="#1D9E75" stroke-width="0.8" marker-end="url(#ar3)"/>
+      <rect x="80" y="164" width="160" height="32" rx="6" fill="#E1F5EE" stroke="#9FE1CB" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#085041" x="160" y="183" text-anchor="middle" dominant-baseline="central">Diffuse → TE likely</text>
+      <rect x="260" y="164" width="160" height="32" rx="6" fill="#FAEEDA" stroke="#FAC775" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#412402" x="340" y="183" text-anchor="middle" dominant-baseline="central">Patterned → AGA likely</text>
+      <rect x="440" y="164" width="160" height="32" rx="6" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.8"/>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#26215C" x="520" y="183" text-anchor="middle" dominant-baseline="central">Patches → AA likely</text>
+      <line x1="160" y1="196" x2="280" y2="224" stroke="#BA7517" stroke-width="0.8" marker-end="url(#ar3)"/>
+      <line x1="340" y1="196" x2="340" y2="224" stroke="#BA7517" stroke-width="0.8" marker-end="url(#ar3)"/>
+      <line x1="520" y1="196" x2="400" y2="224" stroke="#BA7517" stroke-width="0.8" marker-end="url(#ar3)"/>
+      <rect x="200" y="226" width="280" height="42" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/>
+      <text font-family="DM Sans,sans-serif" font-size="12" font-weight="600" fill="#412402" x="340" y="243" text-anchor="middle" dominant-baseline="central">Examination + Trichoscopy → Confirmed Dx</text>
+      <text font-family="DM Sans,sans-serif" font-size="11" fill="#633806" x="340" y="259" text-anchor="middle" dominant-baseline="central">DICS + YBWR dots + calibre + ostia → Diagnosis</text>
+    </svg>
+    <div class="dcard-cap">Fig 1.3: The clinical pathway from presentation to diagnosis. History generates hypothesis; examination and trichoscopy confirm.</div>
+  </div>
+  <div class="box-success">
+    <div class="lbl">What this book equips you to do</div>
+    <p>After completing this book: take a structured 9-domain history in 5 minutes · perform DICS examination · interpret basic trichoscopy · diagnose and treat AGA, FPHL, TE, and patchy AA · identify scarring alopecias and refer urgently · order targeted investigations · counsel patients accurately on prognosis.</p>
+  </div>
+</div>
+
+<div class="sec" id="sec-gp">
+  <h2>The GP's role: Diagnose, Initiate, Refer</h2>
+  <div class="grid3">
+    <div class="fcard">
+      <div class="ftag" style="color:var(--success)">GP manages independently</div>
+      <div class="ftitle">Common non-scarring alopecias</div>
+      <div class="fdesc">AGA / FPHL — minoxidil ± finasteride/spironolactone.<br><br>Acute TE — identify trigger, iron supplementation, reassure.<br><br>Patchy AA — autoimmune screen + intralesional triamcinolone.<br><br>Tinea capitis — systemic antifungal.</div>
+    </div>
+    <div class="fcard">
+      <div class="ftag" style="color:var(--warning)">GP initiates, then refers</div>
+      <div class="ftitle">Refractory or complex cases</div>
+      <div class="fdesc">AGA/FPHL not responding after 12 months.<br><br>Chronic TE (&gt;6 months) with no trigger.<br><br>Moderate-severe AA (ophiasis) — DPCP or JAK inhibitors.<br><br>Female HL with confirmed hyperandrogenism.</div>
+    </div>
+    <div class="fcard">
+      <div class="ftag" style="color:var(--danger)">Urgent referral</div>
+      <div class="ftitle">Scarring and complex alopecias</div>
+      <div class="fdesc">Any scarring alopecia (LPP, FFA, DLE) — urgent referral.<br><br>Alopecia totalis/universalis — JAK inhibitors.<br><br>Virilisation + rapid hair loss — androgen-secreting tumour.<br><br>Kerion in childhood — urgent antifungal.</div>
+    </div>
+  </div>
+  <h3>The trichology toolkit for the GP</h3>
+  <table class="dtable">
+    <thead><tr><th>Tool</th><th>Cost</th><th>Training</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>Structured history (9 domains)</td><td>None</td><td>1 hour reading</td><td>Generates diagnosis in 80% of cases</td></tr>
+      <tr><td>DICS examination framework</td><td>None</td><td>Single teaching session</td><td>Confirms or refines hypothesis</td></tr>
+      <tr><td>Polarised dermatoscope (10×)</td><td>£50–£300</td><td>2–4 hour workshop</td><td>Confirms diagnosis; monitors treatment</td></tr>
+      <tr><td>Smartphone dermoscope attachment</td><td>£30–£80</td><td>Minimal</td><td>Adequate for GP-level trichoscopy</td></tr>
+      <tr><td>Standardised photography</td><td>None</td><td>Positioning protocol</td><td>Objective monitoring over time</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="sec" id="sec-recall">
+  <h2>Quick recall — mnemonics</h2>
+  <div class="recall-grid">
+    <div class="rcrd"><h4>Trichology triad: HET</h4><div class="mnem">H·E·T</div><ul><li><strong>H</strong>istory — 9 domains, OPTICS-MFS</li><li><strong>E</strong>xamination — DICS framework</li><li><strong>T</strong>richoscopy — confirms + quantifies</li><li>Link all three → diagnosis without biopsy (90%)</li></ul></div>
+    <div class="rcrd"><h4>Classification: SNS</h4><div class="mnem">S·N·S</div><ul><li><strong>S</strong>carring = follicle destroyed, irreversible</li><li><strong>N</strong>on-scarring = follicle intact, reversible</li><li><strong>S</strong>econd question: patterned or diffuse?</li><li>First exam question: are ostia present?</li></ul></div>
+    <div class="rcrd"><h4>Examination: DICS</h4><div class="mnem">D·I·C·S</div><ul><li><strong>D</strong>istribution — diffuse or patterned?</li><li><strong>I</strong>nflammation — erythema, scale, crust?</li><li><strong>C</strong>alibre — miniaturisation ratio?</li><li><strong>S</strong>carring — ostia present or absent?</li></ul></div>
+    <div class="rcrd"><h4>GP role: DIR</h4><div class="mnem">D·I·R</div><ul><li><strong>D</strong>iagnose — AGA, TE, AA, tinea</li><li><strong>I</strong>nitiate — minoxidil, finasteride, iron, ILT</li><li><strong>R</strong>efer — scarring, AT/AU, refractory</li><li>When in doubt: trichoscopy first, biopsy rarely</li></ul></div>
+  </div>
+  <h2>Chapter map</h2>
+  <table class="dtable">
+    <thead><tr><th>Chapter</th><th>Topic</th><th>Key GP skill</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Introduction to trichology</td><td>Diagnostic framework, classification, scope</td></tr>
+      <tr><td>2</td><td>Hair and scalp anatomy</td><td>Follicle biology, hair cycle, PSU</td></tr>
+      <tr><td>3</td><td>Hair history and examination</td><td>9-domain history; DICS examination</td></tr>
+      <tr><td>4</td><td>Trichoscopy basics</td><td>Dot patterns YBWR, shaft morphology</td></tr>
+      <tr><td>5</td><td>Male pattern hair loss</td><td>Hamilton–Norwood; finasteride + minoxidil</td></tr>
+      <tr><td>6</td><td>Female pattern hair loss</td><td>Ludwig scale; multi-factorial; spironolactone</td></tr>
+      <tr><td>7</td><td>Telogen effluvium</td><td>3-month trigger rule; CHIPS; FTBVZ screen</td></tr>
+      <tr><td>8</td><td>Alopecia areata</td><td>YBET trichoscopy; JAK inhibitors; OCEAN prognosis</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="sec" id="sec-flashcards">
+  <h2>Anki Flashcard Deck</h2>
+  <p style="color:var(--ink3);font-size:15.5px;margin-bottom:18px">20 cards covering the core concepts of trichology. Tap to flip. Rate to track recall.</p>
+  <div class="pbar-wrap"><div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div><div class="pct" id="pct">Card 1 / 20</div></div>
+  <p class="hint-txt">tap card to flip</p>
+  <div class="fcrd" id="fcrd" onclick="flipFC()">
+    <div class="fc-inner" id="fci">
+      <div class="fc-front"><div class="fc-cat" id="fcat"></div><div class="fc-q" id="fq"></div></div>
+      <div class="fc-back"><div class="fc-a" id="fa"></div><div class="fc-tip" id="ftip"></div></div>
+    </div>
+  </div>
+  <div class="fc-btns">
+    <button class="fcbtn" onclick="rate('hard')">Hard</button>
+    <button class="fcbtn" onclick="rate('ok')">Got it</button>
+    <button class="fcbtn pri" onclick="rate('easy')">Easy</button>
+  </div>
+  <div class="fc-ctrl"><button onclick="shuffleFC()">Shuffle</button><button onclick="restartFC()">Restart</button></div>
+  <div class="fc-done" id="fcdone"><h3>Deck complete</h3><p id="fcscore"></p></div>
+  <h3 style="margin-top:24px;margin-bottom:10px">All 20 cards</h3>
+  <table class="dtable" id="alltbl"></table>
+</div>
+
+<div class="sec" id="sec-references">
+  <h2>References</h2>
+  <ul class="ref-list">
+    <li><span class="rn">1.</span> Blumeyer, A., Tosti, A., Messenger, A., et al. (2011). Evidence-based (S3) guideline for the treatment of androgenetic alopecia in women and in men. <em>Journal of the German Society of Dermatology, 9</em>(Suppl 6), S1–S57. https://doi.org/10.1111/j.1610-0379.2011.07802.x</li>
+    <li><span class="rn">2.</span> Gilhar, A., Etzioni, A., &amp; Paus, R. (2012). Alopecia areata. <em>New England Journal of Medicine, 366</em>(16), 1515–1525. https://doi.org/10.1056/NEJMra1103442</li>
+    <li><span class="rn">3.</span> Headington, J. T. (1993). Telogen effluvium: New concepts and review. <em>Archives of Dermatology, 129</em>(3), 356–363.</li>
+    <li><span class="rn">4.</span> Hunt, N., &amp; McHale, S. (2005). The psychological impact of alopecia. <em>British Medical Journal, 331</em>(7522), 951–953. https://doi.org/10.1136/bmj.331.7522.951</li>
+    <li><span class="rn">5.</span> Jain, N., Doshi, B., &amp; Khopkar, U. (2013). Trichoscopy in alopecias. <em>Indian Journal of Dermatology, Venereology and Leprology, 79</em>(5), 587–605.</li>
+    <li><span class="rn">6.</span> Kanti, V., Messenger, A., Dobos, G., et al. (2018). Evidence-based (S3) guideline for androgenetic alopecia — short version. <em>Journal of the European Academy of Dermatology and Venereology, 32</em>(1), 11–22.</li>
+    <li><span class="rn">7.</span> King, B., Ohyama, M., Kwon, O., et al. (2022). Two phase 3 trials of baricitinib for alopecia areata. <em>New England Journal of Medicine, 386</em>(18), 1687–1699.</li>
+    <li><span class="rn">8.</span> Kligman, A. M. (1961). Pathologic dynamics of human hair loss: Telogen effluvium. <em>Archives of Dermatology, 83</em>(2), 175–198.</li>
+    <li><span class="rn">9.</span> Ludwig, E. (1977). Classification of the types of androgenetic alopecia occurring in the female sex. <em>British Journal of Dermatology, 97</em>(3), 247–254.</li>
+    <li><span class="rn">10.</span> Mubki, T., Rudnicka, L., Olszewska, M., &amp; Shapiro, J. (2014). Evaluation and diagnosis of the hair loss patient: Part I. <em>Journal of the American Academy of Dermatology, 71</em>(3), 415.e1–415.e15.</li>
+    <li><span class="rn">11.</span> Norwood, O. T. (1975). Male pattern baldness: Classification and incidence. <em>Southern Medical Journal, 68</em>(11), 1359–1365.</li>
+    <li><span class="rn">12.</span> Price, V. H. (1999). Treatment of hair loss. <em>New England Journal of Medicine, 341</em>(13), 964–973.</li>
+    <li><span class="rn">13.</span> Rudnicka, L., Olszewska, M., Rakowska, A., et al. (2008). Trichoscopy: A new method for diagnosing hair loss. <em>Journal of Drugs in Dermatology, 7</em>(7), 651–654.</li>
+    <li><span class="rn">14.</span> Shapiro, J. (2007). <em>Hair loss: Principles of diagnosis and management of alopecia</em>. Martin Dunitz.</li>
+    <li><span class="rn">15.</span> Sinclair, R. (1999). Diffuse hair loss. <em>International Journal of Dermatology, 38</em>(Suppl 1), 8–18.</li>
+    <li><span class="rn">16.</span> Wolff, H., Fischer, T. W., &amp; Blume-Peytavi, U. (2016). The diagnosis and treatment of hair and scalp diseases. <em>Deutsches Ärzteblatt International, 113</em>(21), 377–386.</li>
+  </ul>
+</div>
+
+<script>
+const cards=[
+  {cat:"Definition",q:"What is the clinical definition of trichology relevant to GP practice?",a:"The systematic use of history + scalp examination + trichoscopy to diagnose hair and scalp disorders, exclude contributing systemic causes, initiate appropriate treatment, and identify when specialist referral is required.",tip:"HET: History, Examination, Trichoscopy"},
+  {cat:"Definition",q:"What are the three components of the trichology diagnostic triad?",a:"1. History — 9-domain structured history (OPTICS-MFS)\n2. Scalp examination — DICS framework\n3. Trichoscopy — 10–20× magnification confirming and quantifying\nTogether: >90% without biopsy.",tip:"HET: generates → refines → confirms"},
+  {cat:"Epidemiology",q:"What is the approximate prevalence of the three most common hair disorders?",a:"• AGA: ~50% of men by age 50; ~40% of women by age 70\n• TE: most common acute diffuse shedding\n• AA: ~2% lifetime global prevalence",tip:"50% men AGA; 40% women FPHL; 2% AA"},
+  {cat:"Classification",q:"What is the single most important binary distinction in alopecia classification?",a:"Scarring (cicatricial) vs non-scarring.\nNon-scarring: follicular ostia visible → reversible.\nScarring: ostia absent, fibrosis → irreversible → urgent referral.",tip:"Ostia present = reversible. Ostia absent = refer urgently"},
+  {cat:"Classification",q:"Name the three main sub-categories of non-scarring alopecia.",a:"1. Androgenetic — AGA, FPHL\n2. Reactive (effluvium) — TE, anagen effluvium\n3. Autoimmune — Alopecia areata",tip:"Non-scarring: Androgenetic, Reactive, Autoimmune — ARA"},
+  {cat:"Classification",q:"Name three primary cicatricial (scarring) alopecias.",a:"1. Lichen planopilaris (LPP)\n2. Frontal fibrosing alopecia (FFA)\n3. Discoid lupus erythematosus (DLE)\nAll require urgent dermatology referral.",tip:"LPP, FFA, DLE — all urgent referrals"},
+  {cat:"Examination",q:"What does the DICS framework stand for?",a:"D — Distribution: which zones? Diffuse or patterned?\nI — Inflammation: erythema, scale, crust?\nC — Calibre: miniaturisation?\nS — Scarring: follicular ostia present or absent?",tip:"DICS — learn it once, use it always"},
+  {cat:"Examination",q:"What is the single most diagnostically important examination finding in trichology?",a:"The presence or absence of follicular ostia.\nPresent = non-scarring — regrowth possible.\nAbsent = scarring — irreversible — urgent referral.",tip:"Ostia exam: the most important 10 seconds in trichology"},
+  {cat:"Trichoscopy",q:"What four dot colours are seen on trichoscopy (YBWR)?",a:"Y — Yellow dots: AA, advanced AGA\nB — Black dots: AA, tinea, trichotillomania\nW — White dots: scarring alopecia — urgent\nR — Red/pink dots: DLE, folliculitis",tip:"YBWR: Yellow=AA, Black=broken, White=scar, Red=inflamed"},
+  {cat:"Diagnosis",q:"What is the 'shedding vs thinning' distinction and why does it matter?",a:"Shedding = hair falling out (TE, AA) — increased fallout.\nThinning = finer shafts (AGA, nutritional) — calibre diversity on trichoscopy.\nThis single distinction shapes the entire diagnostic pathway.",tip:"'Falling out OR getting finer?' — the opener"},
+  {cat:"Diagnosis",q:"What percentage of common alopecias can be diagnosed without scalp biopsy?",a:"Over 90% — including AGA, FPHL, TE, and patchy AA — using history + examination + trichoscopy. Biopsy reserved for atypical presentations and suspected scarring alopecias.",tip:">90% without biopsy"},
+  {cat:"GP Role",q:"What three functions define the GP's role in trichology (DIR)?",a:"D — Diagnose: AGA, FPHL, TE, patchy AA, tinea\nI — Initiate: minoxidil, finasteride, iron, ILT\nR — Refer: scarring, AT/AU, refractory, virilisation",tip:"DIR: Diagnose, Initiate, Refer"},
+  {cat:"GP Role",q:"Name four common GP errors in hair loss management.",a:"1. 'Stress hair loss' without investigation\n2. Reassuring scarring alopecia patient about regrowth\n3. Minoxidil for TE without treating trigger\n4. 'Normal ageing' without ferritin check",tip:"Don't dismiss, don't miss iron, don't ignore ostia"},
+  {cat:"GP Role",q:"Which hair conditions should a GP manage independently?",a:"1. AGA / FPHL — minoxidil ± finasteride/spironolactone\n2. Acute TE — trigger + iron + reassure\n3. Patchy AA (<50%) — autoimmune screen + ILT\n4. Tinea capitis — systemic antifungal",tip:"AGA, TE, small AA patches, tinea — all GP-manageable"},
+  {cat:"GP Role",q:"What three presentations require urgent specialist referral?",a:"1. Scarring alopecia — absent follicular ostia\n2. Alopecia totalis/universalis — JAK inhibitors needed\n3. Rapid loss + virilisation — possible androgen-secreting tumour",tip:"Scarring, AT/AU, virilisation — all urgent"},
+  {cat:"Psychology",q:"Why is it inaccurate to dismiss hair loss as 'just cosmetic'?",a:"Hair loss is associated with depression, anxiety, reduced QoL, and social withdrawal comparable to chronic disease. Dismissal without investigation delays effective treatment and causes harm.",tip:"Hair loss QoL impact = comparable to chronic disease"},
+  {cat:"History",q:"What is the most important single opening question in a trichology history?",a:"'Is your hair falling out, or is it getting finer/thinner?' — separates effluvium (TE, AA) from miniaturisation (AGA, nutritional) patterns.",tip:"One question separates effluvium from miniaturisation"},
+  {cat:"Classification",q:"What is the difference between primary and secondary cicatricial alopecia?",a:"Primary CA: follicle is the primary target (LPP, FFA, DLE).\nSecondary CA: follicular destruction as consequence of another process (burns, radiation, infections).",tip:"Primary = follicle targeted. Secondary = collateral damage"},
+  {cat:"Framework",q:"What is the correct sequence of the trichology diagnostic pathway?",a:"1. History → leading hypothesis\n2. Examination (DICS) → refines to 1–2 diagnoses\n3. Trichoscopy → confirms and quantifies\n4. Targeted investigations (ferritin, TFTs) → based on hypothesis\n5. Biopsy → only if steps 1–4 insufficient",tip:"History → Exam → Trichoscopy → Tests → Biopsy. In order."},
+  {cat:"Definition",q:"Name three key therapeutic advances in modern trichology (post-2010).",a:"1. JAK inhibitors (baricitinib, ruxolitinib) — first licensed therapy for severe AA (King et al., 2022)\n2. Oral low-dose minoxidil — growing evidence base for AGA and TE\n3. Combination minoxidil + finasteride — synergistic AGA treatment with superior outcomes",tip:"JAK inhibitors = 2022 revolution in AA treatment"}
+];
+let deck=[...cards],cur=0,flipped=false,sc={easy:0,ok:0,hard:0};
+function showFC(i){const c=deck[i];document.getElementById('fcat').textContent=c.cat;document.getElementById('fq').textContent=c.q;document.getElementById('fa').textContent=c.a;document.getElementById('ftip').textContent=c.tip?'Tip: '+c.tip:'';document.getElementById('fci').classList.remove('flip');flipped=false;document.getElementById('pct').textContent='Card '+(i+1)+' / '+deck.length;document.getElementById('pfill').style.width=Math.round(i/deck.length*100)+'%';document.getElementById('fcdone').style.display='none';}
+function flipFC(){flipped=!flipped;document.getElementById('fci').classList.toggle('flip',flipped)}
+function rate(r){sc[r]++;cur++;if(cur>=deck.length){document.getElementById('fcdone').style.display='block';document.getElementById('fcscore').textContent='Easy: '+sc.easy+' | Got it: '+sc.ok+' | Hard: '+sc.hard;document.getElementById('pfill').style.width='100%';document.getElementById('pct').textContent='Complete';document.getElementById('fci').classList.remove('flip');document.getElementById('fq').textContent='All cards reviewed.';document.getElementById('fa').textContent='';return;}showFC(cur);}
+function shuffleFC(){deck=[...cards].sort(()=>Math.random()-.5);cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+function restartFC(){deck=[...cards];cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+document.getElementById('alltbl').innerHTML='<tr><th>#</th><th>Category</th><th>Question</th></tr>'+cards.map((c,i)=>'<tr><td>'+(i+1)+'</td><td>'+c.cat+'</td><td>'+c.q.substring(0,72)+(c.q.length>72?'…':'')+'</td></tr>').join('');
+function showSec(id){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nt').forEach(t=>t.classList.remove('on'));document.getElementById('sec-'+id).classList.add('on');const map={what:0,scope:1,triad:2,classification:3,framework:4,gp:5,recall:6,flashcards:7,references:8};document.querySelectorAll('.nt')[map[id]].classList.add('on');}
+showFC(0);
+</script>
+<div class="ch-nav ch-nav-bottom">
+  <span class="ch-nav-disabled">← No previous chapter</span>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <a href="chapter_02_anatomy.html">Ch. 2: Hair &amp; Scalp Anatomy →</a>
+</div>
+<script>try{localStorage.setItem('tfgp_ch1','1')}catch(e){}</script>
+</body>
+</html>

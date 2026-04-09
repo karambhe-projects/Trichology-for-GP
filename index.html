@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trichology for GP — Complete Chapter Index</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--ink:#18161A;--ink2:#3d3a42;--ink3:#7a7680;--bg:#F9F7F4;--bg2:#F2EFE9;--rule:#D4CEC4;--info:#185FA5;--infobg:#E6F1FB;--success:#3B6D11;--successbg:#EAF3DE;--warning:#854F0B;--warningbg:#FAEEDA;--danger:#A32D2D;--dangerbg:#FCEBEB;--gold:#9a7228;--gold2:#c49a3c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;font-size:16.5px;min-height:100vh}
+.cover{background:linear-gradient(135deg,#1c2a40 0%,#253850 30%,#2e4a64 60%,#e0e6ee 100%);color:#fff;padding:60px 52px 50px;position:relative;overflow:hidden}
+.cover::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v60M0 30h60' stroke='%23ffffff' stroke-width='.3' opacity='.04'/%3E%3C/svg%3E");pointer-events:none}
+.cover::after{content:'';position:absolute;right:-60px;top:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(100,160,220,0.12) 0%,transparent 70%)}
+.cover-eyebrow{font-size:12px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#d4aa4c;margin-bottom:18px;position:relative}
+.cover-title{font-family:'Playfair Display',serif;font-size:57px;font-weight:700;line-height:1.08;margin-bottom:12px;position:relative}
+.cover-sub{font-family:'Playfair Display',serif;font-size:24px;font-style:italic;color:rgba(255,255,255,0.7);margin-bottom:28px;position:relative}
+.cover-desc{font-size:16.5px;color:rgba(255,255,255,0.55);max-width:600px;line-height:1.8;position:relative}
+.cover-rule{width:60px;height:2px;background:linear-gradient(90deg,#c49a3c,transparent);margin:24px 0;position:relative}
+.cover-meta{display:flex;gap:32px;margin-top:8px;flex-wrap:wrap;position:relative}
+.cover-meta-item{text-align:center}
+.cover-meta-num{font-family:'Playfair Display',serif;font-size:37.5px;font-weight:700;color:#d4aa4c}
+.cover-meta-lbl{font-size:12px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+
+.main{max-width:900px;margin:0 auto;padding:48px 44px 80px}
+h1{font-family:'Playfair Display',serif;font-size:31px;font-weight:600;margin-bottom:8px}
+.section-intro{font-size:16.5px;color:var(--ink2);margin-bottom:32px;max-width:680px}
+
+.chapter-grid{display:grid;gap:16px}
+.ch-card{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:24px 26px;display:flex;gap:20px;align-items:flex-start;transition:box-shadow .2s,border-color .2s;text-decoration:none;color:inherit}
+.ch-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.08);border-color:#b8b0a4}
+.ch-num{font-family:'Playfair Display',serif;font-size:48.5px;font-weight:700;color:rgba(0,0,0,0.07);line-height:1;flex-shrink:0;width:60px;text-align:center;margin-top:-4px}
+.ch-body{flex:1}
+.ch-eyebrow{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+.ch-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ch-sub{font-size:14.5px;color:var(--ink3);margin-bottom:10px;font-style:italic}
+.ch-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:12px;font-weight:500;padding:3px 10px;border-radius:20px}
+.tag-info{background:var(--infobg);color:var(--info)}
+.tag-success{background:var(--successbg);color:var(--success)}
+.tag-warning{background:var(--warningbg);color:var(--warning)}
+.tag-danger{background:var(--dangerbg);color:var(--danger)}
+.ch-status{display:flex;align-items:center;gap:6px;font-size:13px;margin-top:10px}
+.status-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.status-available{background:#639922}
+.status-text-available{color:var(--success);font-weight:500}
+.status-read{background:var(--info)}
+.status-text-read{color:var(--info);font-weight:500}
+
+.progress-bar{margin-top:32px;position:relative}
+.progress-label{font-size:13px;color:rgba(255,255,255,0.45);margin-bottom:8px;display:flex;justify-content:space-between}
+.progress-track{height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#c49a3c,#d4aa4c);border-radius:3px;transition:width .5s ease}
+.progress-reset{background:none;border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.45);font-size:12px;padding:4px 12px;border-radius:4px;cursor:pointer;margin-top:10px;font-family:'DM Sans',sans-serif;transition:all .15s}
+.progress-reset:hover{border-color:rgba(255,255,255,0.35);color:rgba(255,255,255,0.7)}
+
+.divider{height:1px;background:var(--rule);margin:40px 0}
+
+.how-to{background:var(--warningbg);border:1px solid #e0c080;border-radius:12px;padding:24px 28px;margin-bottom:36px}
+.how-to h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;margin-bottom:12px;color:#6a3800}
+.how-to p{font-size:15.5px;color:#7a4a10;margin-bottom:8px}
+.how-to p:last-child{margin-bottom:0}
+.how-to strong{color:#5a2800}
+
+.how-to summary{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:#6a3800;cursor:pointer;list-style:none}
+.how-to summary::-webkit-details-marker{display:none}
+.how-to summary::before{content:'▸ ';font-size:17.5px}
+.how-to[open] summary::before{content:'▾ '}
+.how-to p:first-of-type{margin-top:12px}
+
+.mnem-summary{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--ink);cursor:pointer;list-style:none}
+.mnem-summary::-webkit-details-marker{display:none}
+.mnem-summary::before{content:'▸ ';font-size:17.5px}
+details[open] > .mnem-summary::before{content:'▾ '}
+details[open] > .mnem-summary{margin-bottom:12px}
+
+@media(max-width:640px){.cover{padding:40px 24px 36px}.cover-title{font-size:39.5px}.main{padding:32px 20px 60px}.ch-card{flex-direction:column;gap:8px}.ch-num{font-size:35px;width:auto}}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="cover-eyebrow">Medical Reference · General Practice Education</div>
+  <div class="cover-title">Trichology<br>for GP</div>
+  <div class="cover-sub">A complete clinical guide to hair and scalp disorders</div>
+  <div class="cover-desc">Evidence-based, GP-level trichology covering diagnosis, examination, trichoscopy, and treatment of the most common hair and scalp conditions encountered in primary care. Each chapter includes original SVG diagrams, clinical reference tables, GP-level analogies, and Anki flashcard decks for long-term memory retention.</div>
+  <div class="cover-rule"></div>
+  <div class="cover-meta">
+    <div class="cover-meta-item"><div class="cover-meta-num">8</div><div class="cover-meta-lbl">Chapters</div></div>
+    <div class="cover-meta-item"><div class="cover-meta-num">160+</div><div class="cover-meta-lbl">Anki Cards</div></div>
+    <div class="cover-meta-item"><div class="cover-meta-num">40+</div><div class="cover-meta-lbl">Diagrams</div></div>
+    <div class="cover-meta-item"><div class="cover-meta-num">160+</div><div class="cover-meta-lbl">References</div></div>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-label"><span id="progress-text">Loading progress...</span><span id="progress-pct"></span></div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    <button class="progress-reset" id="progress-reset" style="display:none" onclick="resetProgress()">Reset progress</button>
+  </div>
+</div>
+
+<div class="main">
+
+  <details class="how-to">
+    <summary>How to use this resource</summary>
+    <p><strong>Standalone HTML files:</strong> Each chapter is a self-contained HTML file that opens in any browser — no internet connection required after initial font loading.</p>
+    <p><strong>Anki flashcards:</strong> Each chapter contains an interactive Anki-style flashcard deck. Rate cards as Hard / Got it / Easy to simulate spaced repetition.</p>
+    <p><strong>Navigation:</strong> Each chapter has a top navigation bar with tabs. All diagrams are original SVG illustrations — scalable and print-friendly.</p>
+    <p><strong>References:</strong> All chapters include full APA 7th edition references. Each chapter is independently citable.</p>
+  </details>
+
+  <h1>Chapters</h1>
+  <p class="section-intro">Each chapter below is a standalone interactive HTML file. Open any file in a browser to access the full chapter content, diagrams, and flashcard deck.</p>
+
+  <div class="chapter-grid">
+
+    <a class="ch-card" href="chapter_01_introduction.html" data-ch="1">
+      <div class="ch-num">1</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--info)">Introductory Chapter</div>
+        <div class="ch-title">Introduction to Trichology</div>
+        <div class="ch-sub">Linking history, examination and trichoscopy — faster, better diagnoses</div>
+        <div class="ch-tags">
+          <span class="tag tag-info">Diagnostic triad</span>
+          <span class="tag tag-info">Classification</span>
+          <span class="tag tag-info">GP framework</span>
+          <span class="tag tag-success">20 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+    <a class="ch-card" href="chapter_02_anatomy.html" data-ch="2">
+      <div class="ch-num">2</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--warning)">Anatomy</div>
+        <div class="ch-title">Hair and Scalp Anatomy</div>
+        <div class="ch-sub">From follicle to fibre — the pilosebaceous unit, follicle zones, and hair shaft</div>
+        <div class="ch-tags">
+          <span class="tag tag-warning">PSU anatomy</span>
+          <span class="tag tag-warning">Hair shaft CCM</span>
+          <span class="tag tag-warning">Hair cycle ACTE</span>
+          <span class="tag tag-success">18 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+    <a class="ch-card" href="chapter_03_history_examination.html" data-ch="3">
+      <div class="ch-num">3</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--success)">Clinical Skills</div>
+        <div class="ch-title">Hair History and Examination</div>
+        <div class="ch-sub">A systematic approach — the nine domains and the DICS examination framework</div>
+        <div class="ch-tags">
+          <span class="tag tag-success">OPTICS-MFS history</span>
+          <span class="tag tag-success">DICS examination</span>
+          <span class="tag tag-success">Pull test</span>
+          <span class="tag tag-success">20 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+    <a class="ch-card" href="chapter_04_trichoscopy.html" data-ch="4">
+      <div class="ch-num">4</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--info)">Diagnostic Tool</div>
+        <div class="ch-title">Trichoscopy Basics</div>
+        <div class="ch-sub">Dermoscopy of the scalp and hair — the GP's magnifying lens</div>
+        <div class="ch-tags">
+          <span class="tag tag-info">YBWR dot patterns</span>
+          <span class="tag tag-info">Shaft morphology</span>
+          <span class="tag tag-info">Pattern atlas</span>
+          <span class="tag tag-success">20 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+    <a class="ch-card" href="chapter_05_male_aga.html" data-ch="5">
+      <div class="ch-num">5</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--danger)">Androgenetic Alopecia</div>
+        <div class="ch-title">Male Pattern Hair Loss</div>
+        <div class="ch-sub">DHT-driven follicular miniaturisation — pathophysiology, staging and treatment</div>
+        <div class="ch-tags">
+          <span class="tag tag-danger">Hamilton–Norwood scale</span>
+          <span class="tag tag-danger">DHT pathway DART</span>
+          <span class="tag tag-danger">Finasteride/minoxidil</span>
+          <span class="tag tag-success">22 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+    <a class="ch-card" href="chapter_06_female_fphl.html" data-ch="6">
+      <div class="ch-num">6</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--danger)">Androgenetic Alopecia</div>
+        <div class="ch-title">Female Pattern Hair Loss</div>
+        <div class="ch-sub">Multi-factorial crown thinning — hormonal, nutritional, and androgenetic contributions</div>
+        <div class="ch-tags">
+          <span class="tag tag-danger">Ludwig / Sinclair scale</span>
+          <span class="tag tag-danger">DOTGP contributors</span>
+          <span class="tag tag-danger">Spironolactone</span>
+          <span class="tag tag-success">22 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+    <a class="ch-card" href="chapter_07_telogen_effluvium.html" data-ch="7">
+      <div class="ch-num">7</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--success)">Reactive Alopecia</div>
+        <div class="ch-title">Telogen Effluvium</div>
+        <div class="ch-sub">Diffuse reactive shedding — diagnosing, reassuring, and resolving</div>
+        <div class="ch-tags">
+          <span class="tag tag-success">CHIPS triggers</span>
+          <span class="tag tag-success">3-month lag rule</span>
+          <span class="tag tag-success">FTBVZ screen</span>
+          <span class="tag tag-success">22 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+    <a class="ch-card" href="chapter_08_alopecia_areata.html" data-ch="8">
+      <div class="ch-num">8</div>
+      <div class="ch-body">
+        <div class="ch-eyebrow" style="color:var(--warning)">Autoimmune Alopecia</div>
+        <div class="ch-title">Alopecia Areata</div>
+        <div class="ch-sub">Autoimmune non-scarring alopecia — from immune privilege to JAK inhibitors</div>
+        <div class="ch-tags">
+          <span class="tag tag-warning">YBET trichoscopy</span>
+          <span class="tag tag-warning">OCEAN prognosis</span>
+          <span class="tag tag-warning">JAK inhibitors</span>
+          <span class="tag tag-success">24 Anki cards</span>
+        </div>
+        <div class="ch-status"><div class="status-dot status-available"></div><span class="status-text-available">Available</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <details style="background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px 28px">
+    <summary class="mnem-summary">Key Mnemonics at a Glance</summary>
+    <table style="width:100%;border-collapse:collapse;font-size:15.5px">
+      <thead><tr><th style="text-align:left;padding:8px 12px;border-bottom:1px solid var(--rule);color:var(--ink3);font-size:12px;text-transform:uppercase;letter-spacing:1px">Mnemonic</th><th style="text-align:left;padding:8px 12px;border-bottom:1px solid var(--rule);color:var(--ink3);font-size:12px;text-transform:uppercase;letter-spacing:1px">Expands to</th><th style="text-align:left;padding:8px 12px;border-bottom:1px solid var(--rule);color:var(--ink3);font-size:12px;text-transform:uppercase;letter-spacing:1px">Chapter</th></tr></thead>
+      <tbody>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">HET</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">History, Examination, Trichoscopy — the diagnostic triad</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 1</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">SCALP</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">Skin, Connective tissue, Aponeurosis, Loose areolar, Pericranium</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 2</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">DICS</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">Distribution, Inflammation, Calibre, Scarring</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 3</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">YBWR</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">Yellow, Black, White, Red dots in trichoscopy</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 4</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">DART</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">DHT, Androgen receptor, Reductase (5-alpha), Terminal→vellus</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 5</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">DOTGP</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">DHT, Oestrogen, Thyroid, Genetics, PCOS/iron — FPHL contributors</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 6</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">CHIPS</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">Childbirth, High fever, Iron, Psychological, Systemic — TE triggers</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 7</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">YBET</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">Yellow dots, Black dots, Exclamation hairs, Terminal regrowth — AA trichoscopy</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 8</td></tr>
+        <tr><td style="padding:9px 12px;border-bottom:1px solid var(--rule);font-weight:500;color:var(--info)">OCEAN</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink2)">Ophiasis, Childhood onset, Extensive nails, Atopy, No response — AA poor prognosis</td><td style="padding:9px 12px;border-bottom:1px solid var(--rule);color:var(--ink3)">Ch. 8</td></tr>
+        <tr><td style="padding:9px 12px;font-weight:500;color:var(--info)">AVATAR</td><td style="padding:9px 12px;color:var(--ink2)">Atopy, Vitiligo, Autoimmune thyroid, T1DM, ANA, RA — AA associations</td><td style="padding:9px 12px;color:var(--ink3)">Ch. 8</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <div style="margin-top:40px;padding:20px 0;border-top:1px solid var(--rule);text-align:center;font-size:13px;color:var(--ink3)">
+    <strong style="color:var(--ink)">Trichology for GP</strong> · &copy; 2026 Jayant Karambhe and Samanvay Karambhe · <a href="legal-notice.html" style="color:var(--info);text-decoration:none">CC BY-NC-ND 4.0</a> · All content for educational purposes only · Always apply clinical judgement in individual patient care
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var total=8;
+  var read=0;
+  try{
+    for(var i=1;i<=total;i++){
+      if(localStorage.getItem('tfgp_ch'+i)){
+        read++;
+        // Update chapter card status
+        var card=document.querySelector('.ch-card[data-ch="'+i+'"]');
+        if(card){
+          var st=card.querySelector('.ch-status');
+          if(st) st.innerHTML='<div class="status-dot status-read"></div><span class="status-text-read">Read</span>';
+        }
+      }
+    }
+  }catch(e){}
+  var pct=Math.round(read/total*100);
+  document.getElementById('progress-text').textContent=read+' of '+total+' chapters read';
+  document.getElementById('progress-pct').textContent=pct+'%';
+  document.getElementById('progress-fill').style.width=pct+'%';
+  if(read>0) document.getElementById('progress-reset').style.display='inline-block';
+})();
+function resetProgress(){
+  try{for(var i=1;i<=8;i++) localStorage.removeItem('tfgp_ch'+i)}catch(e){}
+  location.reload();
+}
+</script>
+</body>
+</html>

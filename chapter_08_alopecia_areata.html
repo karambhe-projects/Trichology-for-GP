@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 8 — Alopecia Areata | Trichology for GP</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--ink:#18161A;--ink2:#3d3a42;--ink3:#7a7680;--bg:#F9F7F4;--bg2:#F2EFE9;--bg3:#E8E3DB;--rule:#D4CEC4;--ch-accent:#185FA5;--teal:#1a6b6b;--teal2:#e6f5f5;--gold:#9a7228;--gold2:#c49a3c;--goldbg:#fdf6e4;--coral:#b84a2a;--coralbg:#fdf0ec;--blue:#2a4e8c;--bluebg:#edf2fc;--green:#2a6a3a;--greenbg:#edf6ee;--purple:#5a2a8c;--purplebg:#f0eafc;--red:#aa2020;--redbg:#fceaea;--info:#185FA5;--infobg:#E6F1FB;--success:#3B6D11;--successbg:#EAF3DE;--warning:#854F0B;--warningbg:#FAEEDA;--danger:#A32D2D;--dangerbg:#FCEBEB}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.78;font-size:16.5px;max-width:940px;margin:0 auto;padding-bottom:80px}
+.ch-header{padding:44px 46px 32px;border-bottom:0.5px solid var(--rule);position:relative;overflow:hidden}
+.header-number{font-family:'Playfair Display',serif;font-size:132px;font-weight:700;color:rgba(0,0,0,0.04);position:absolute;right:32px;top:-10px;line-height:1;user-select:none}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--info);margin-bottom:12px}
+.ch-title{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.1;margin-bottom:8px;position:relative;z-index:1}
+.ch-sub{font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:var(--ink2);margin-bottom:20px}
+.nav{display:flex;border-bottom:1px solid var(--rule);padding:0 46px;position:sticky;top:0;z-index:200;background:var(--bg);overflow-x:auto;gap:0}
+.nav::-webkit-scrollbar{height:0}
+.nt{font-size:14px;color:var(--ink3);padding:12px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .18s;text-decoration:none}
+.nt:hover{color:var(--ink)}
+.nt.on{color:var(--info);border-bottom-color:var(--info);font-weight:500}
+.sec{display:none;padding:36px 46px 20px}
+.sec.on{display:block}
+h2{font-family:'Playfair Display',serif;font-size:27.5px;font-weight:600;margin:34px 0 13px;padding-bottom:9px;border-bottom:1px solid var(--rule)}
+h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:500;font-style:italic;color:var(--ink2);margin:22px 0 10px}
+p{margin-bottom:14px;color:var(--ink2);font-size:16.5px}
+strong{color:var(--ink);font-weight:500}
+.box-gp{background:var(--warningbg);border-left:3px solid var(--warning);padding:17px 22px;margin:22px 0;border-radius:0 10px 10px 0}
+.box-gp .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--warning);margin-bottom:7px}
+.box-gp p{font-style:italic;color:var(--ink2);margin:0;font-size:16px}
+.box-key{background:var(--infobg);border-left:3px solid var(--info);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-key .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:5px}
+.box-key p{margin:0;color:var(--blue);font-size:15.5px}
+.box-warn{background:var(--dangerbg);border-left:3px solid var(--danger);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-warn .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--danger);margin-bottom:5px}
+.box-warn p{margin:0;color:#5a1010;font-size:15.5px}
+.box-success{background:var(--successbg);border-left:3px solid var(--success);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-success .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--success);margin-bottom:5px}
+.box-success p{margin:0;color:#1a4a0a;font-size:15.5px}
+.box-red{background:var(--dangerbg);border-left:3px solid var(--danger);padding:15px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.box-red .lbl{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--danger);margin-bottom:5px}
+.box-red p{margin:0;color:#5a1010;font-size:15.5px}
+.dcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:24px;margin:24px 0}
+.dcard-title{font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+.dcard-cap{font-size:14.5px;font-style:italic;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.65}
+.dtable{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+.dtable th{background:var(--bg2);font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);padding:11px 15px;text-align:left;border-bottom:1px solid var(--rule)}
+.dtable td{padding:11px 15px;border-bottom:1px solid var(--rule);vertical-align:top}
+.dtable tr:last-child td{border-bottom:none}
+.dtable td:first-child{font-weight:500;color:var(--ink)}
+.dtable tr:hover td{background:var(--bg)}
+.fcard{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+.fcard .ftag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.fcard .ftitle{font-size:15.5px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.fcard .fdesc{font-size:14.5px;color:var(--ink2);line-height:1.65}
+.spectrum-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0}
+.spec-cell{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:12px 8px;text-align:center}
+.spec-label{font-size:12px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.spec-sub{font-size:11px;color:var(--ink3);line-height:1.45;margin-bottom:6px}
+.spec-prog{font-size:11px;font-weight:600}
+.rcrd{background:var(--bg2);border:1px solid var(--rule);border-radius:12px;padding:22px}
+.rcrd h4{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.rcrd .mnem{font-size:22px;font-weight:600;letter-spacing:4px;color:var(--info);font-family:'DM Sans',sans-serif;margin-bottom:10px}
+.rcrd ul{list-style:none;font-size:14.5px;line-height:2.1;color:var(--ink2)}
+.rcrd ul li::before{content:"→ ";color:var(--ink3)}
+.rcrd ul strong{color:var(--info)}
+/* Flashcards */
+.pbar-wrap{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.pbar{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.pfill{height:100%;background:var(--info);border-radius:2px;transition:width .4s}
+.pct{font-size:13px;color:var(--ink3);min-width:72px;text-align:right}
+.fcrd{height:210px;perspective:1000px;cursor:pointer;margin-bottom:14px}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .48s cubic-bezier(.4,0,.2,1)}
+.fc-inner.flip{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:28px 32px;text-align:center}
+.fc-front{background:#fff;border:1px solid var(--rule)}
+.fc-front .fc-cat{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--info);margin-bottom:10px}
+.fc-front .fc-q{font-family:'Playfair Display',serif;font-size:18.5px;font-weight:500;color:var(--ink);line-height:1.45}
+.fc-back{background:var(--infobg);transform:rotateY(180deg)}
+.fc-back .fc-a{font-size:16px;color:var(--blue);line-height:1.7;white-space:pre-line}
+.fc-back .fc-tip{font-size:12px;color:var(--blue);margin-top:10px;opacity:.72}
+.hint-txt{font-size:13px;color:var(--ink3);text-align:center;margin-bottom:6px}
+.fc-btns{display:flex;gap:10px;justify-content:center}
+.fcbtn{font-family:'DM Sans',sans-serif;font-size:14.5px;padding:9px 20px;border-radius:8px;border:1px solid var(--rule);background:#fff;color:var(--ink2);cursor:pointer;transition:all .14s}
+.fcbtn:hover{background:var(--bg2)}
+.fcbtn.pri{background:var(--infobg);color:var(--blue);border-color:var(--info)}
+.fc-ctrl{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.fc-ctrl button{font-size:13px;color:var(--gold);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'DM Sans',sans-serif}
+.fc-done{display:none;background:var(--successbg);border:1px solid #a0d080;border-radius:10px;padding:18px;text-align:center;margin-top:14px}
+.fc-done h3{font-family:'Playfair Display',serif;color:var(--green);font-size:20px;margin-bottom:6px}
+.fc-done p{color:#2a5a1a;font-size:14.5px;margin:0}
+.ref-list{list-style:none;margin:14px 0}
+.ref-list li{font-size:14.5px;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--rule);line-height:1.65}
+.ref-list li:last-child{border-bottom:none}
+.ref-list li .rn{font-weight:500;color:var(--ink);margin-right:5px}
+.complete-badge{background:linear-gradient(135deg,var(--infobg),var(--successbg));border:1px solid var(--info);border-radius:12px;padding:20px 24px;margin:24px 0;text-align:center}
+.complete-badge h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--info);margin-bottom:6px}
+.complete-badge p{font-size:15.5px;color:var(--ink2);margin:0}
+@media(max-width:640px){
+  .spectrum-grid{grid-template-columns:1fr 1fr}
+  .ch-header,.nav,.sec{padding-left:20px;padding-right:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="ch-nav">
+  <a href="chapter_07_telogen_effluvium.html">← Ch. 7: Telogen Effluvium</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <span class="ch-nav-disabled">No next chapter →</span>
+</div>
+
+<div class="ch-header">
+  <div class="header-number">8</div>
+  <div class="eyebrow">Trichology for GP · Chapter Eight — Final Chapter</div>
+  <div class="ch-title">Alopecia Areata</div>
+  <div class="ch-sub">Autoimmune non-scarring alopecia — the immune system attacking its own hair</div>
+</div>
+
+<div class="nav">
+  <div class="nt on" onclick="showSec('intro')">Overview</div>
+  <div class="nt" onclick="showSec('immuno')">Immunopathology</div>
+  <div class="nt" onclick="showSec('spectrum')">Clinical Spectrum</div>
+  <div class="nt" onclick="showSec('clinical')">Clinical Features</div>
+  <div class="nt" onclick="showSec('trichoscopy')">Trichoscopy</div>
+  <div class="nt" onclick="showSec('diagnosis')">Diagnosis</div>
+  <div class="nt" onclick="showSec('treatment')">Treatment</div>
+  <div class="nt" onclick="showSec('recall')">Quick Recall</div>
+  <div class="nt" onclick="showSec('flashcards')">Anki Cards</div>
+  <div class="nt" onclick="showSec('references')">References</div>
+</div>
+
+<!-- OVERVIEW -->
+<div class="sec on" id="sec-intro">
+  <div class="box-gp">
+    <div class="lbl">GP-Level Analogy</div>
+    <p>"Alopecia areata is a case of mistaken identity in the body's security system. The immune system — normally expert at identifying foreign invaders — misidentifies its own hair follicles as enemies and launches a targeted strike. The follicles are not destroyed, just locked out of the factory. Given the right signal — resolution of the immune attack — most will restart. The newer JAK inhibitor treatments work by deactivating the alarm system entirely."</p>
+  </div>
+  <p>Alopecia areata (AA) is an organ-specific <strong>autoimmune, non-scarring alopecia</strong> affecting the hair follicle. It is the third most common cause of hair loss presenting to dermatology globally, affecting approximately <strong>2% of the world population</strong> at some point in their lifetime. It affects all races, both sexes, and all ages — though peak incidence is in the second and third decades.</p>
+  <p>AA has a profound psychological impact disproportionate to its physical severity. It can develop within days, affect children visibly, and fluctuate unpredictably. The GP's role includes accurate diagnosis, early autoimmune screening, realistic prognostic counselling, and timely referral for moderate-to-severe disease.</p>
+  <h2>At-a-glance key facts</h2>
+  <div class="grid3">
+    <div class="fcard"><div class="ftag" style="color:var(--purple)">Type</div><div class="ftitle">Non-scarring autoimmune</div><div class="fdesc">Follicular stem cells (bulge) are spared — regrowth is always biologically possible. The immune attack targets the bulb, not the bulge.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--amber)">Pattern</div><div class="ftitle">Patches to total loss</div><div class="fdesc">From one small smooth patch to loss of all scalp hair (alopecia totalis) or all body hair (alopecia universalis). Same immune mechanism, different extent.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--forest)">Prognosis</div><div class="ftitle">Highly variable</div><div class="fdesc">Patchy AA: 50–80% spontaneous regrowth within 12 months. Alopecia totalis/universalis: poor spontaneous prognosis; requires systemic treatment.</div></div>
+  </div>
+  <div class="box-key">
+    <div class="lbl">The critical GP insight</div>
+    <p>AA is <strong>never a scarring alopecia</strong>. The bulge (stem cell niche) is immunologically privileged and spared even in longstanding disease. Regrowth is always biologically possible — even after years of total scalp hair loss. Communicate this hope accurately to patients.</p>
+  </div>
+</div>
+
+<!-- IMMUNOPATHOLOGY -->
+<div class="sec" id="sec-immuno">
+  <h2>Immunopathology</h2>
+  <p>AA occurs when the hair follicle's normal <strong>immune privilege</strong> is breached. Understanding this mechanism is important because it explains why JAK inhibitors — the most significant therapeutic advance in decades — work so effectively.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 8.1 — Immune privilege collapse and the AA immunological cascade</div>
+    <svg width="100%" viewBox="0 0 680 380">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Step 1 -->
+      <rect x="20" y="20" width="155" height="56" rx="8" fill="#e4f4ec" stroke="#1a5028" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#1a5028" x="97" y="42" text-anchor="middle" dominant-baseline="central">Normal follicle</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="97" y="60" text-anchor="middle" dominant-baseline="central">Immune privilege intact</text>
+      <line x1="175" y1="48" x2="213" y2="48" stroke="#888" stroke-width="1" marker-end="url(#ar)"/>
+      <!-- Step 2 -->
+      <rect x="215" y="20" width="155" height="56" rx="8" fill="#fceaea" stroke="#8a1818" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#8a1818" x="292" y="42" text-anchor="middle" dominant-baseline="central">Trigger event</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="292" y="60" text-anchor="middle" dominant-baseline="central">Stress, infection, genetic</text>
+      <line x1="370" y1="48" x2="408" y2="48" stroke="#888" stroke-width="1" marker-end="url(#ar)"/>
+      <!-- Step 3 -->
+      <rect x="410" y="20" width="250" height="56" rx="8" fill="#fceaea" stroke="#8a1818" stroke-width="1.2"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#8a1818" x="535" y="42" text-anchor="middle" dominant-baseline="central">Immune privilege collapse</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="535" y="60" text-anchor="middle" dominant-baseline="central">MHC-I expressed on follicle</text>
+      <!-- Step 4 -->
+      <line x1="535" y1="76" x2="535" y2="106" stroke="#8a1818" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="410" y="108" width="250" height="56" rx="8" fill="#faecea" stroke="#9a2c18" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#9a2c18" x="535" y="130" text-anchor="middle" dominant-baseline="central">IFN-γ / IL-15 surge</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa4030" x="535" y="148" text-anchor="middle" dominant-baseline="central">JAK1/JAK2 pathway activated</text>
+      <!-- Step 5 -->
+      <line x1="410" y1="136" x2="372" y2="136" stroke="#9a2c18" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="215" y="108" width="155" height="56" rx="8" fill="#fceaea" stroke="#8a1818" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#8a1818" x="292" y="130" text-anchor="middle" dominant-baseline="central">CD8+ T cell attack</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="292" y="148" text-anchor="middle" dominant-baseline="central">Peribulbar lymphocytes</text>
+      <!-- Step 6 -->
+      <line x1="292" y1="164" x2="292" y2="196" stroke="#8a1818" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="215" y="198" width="155" height="56" rx="8" fill="#fdf0d4" stroke="#c49a3c" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#7a4a00" x="292" y="220" text-anchor="middle" dominant-baseline="central">Anagen arrest</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="292" y="238" text-anchor="middle" dominant-baseline="central">Dystrophic follicle</text>
+      <!-- Step 7 -->
+      <line x1="292" y1="254" x2="292" y2="286" stroke="#7a4a00" stroke-width="1" marker-end="url(#ar)"/>
+      <rect x="215" y="288" width="155" height="56" rx="8" fill="#e4e0d8" stroke="#888" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#3a3828" x="292" y="310" text-anchor="middle" dominant-baseline="central">Hair loss (patch)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#5a5040" x="292" y="328" text-anchor="middle" dominant-baseline="central">Bulge spared — reversible</text>
+      <!-- JAK inhibitor box -->
+      <rect x="20" y="108" width="175" height="56" rx="8" fill="#e6eef8" stroke="#1a3868" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#1a3868" x="107" y="130" text-anchor="middle" dominant-baseline="central">JAK inhibitors</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a4a88" x="107" y="148" text-anchor="middle" dominant-baseline="central">Block JAK1/JAK2</text>
+      <line x1="195" y1="136" x2="213" y2="136" stroke="#1a3868" stroke-width="1.2" stroke-dasharray="4 2" marker-end="url(#ar)"/>
+      <!-- Swarm of bees histology box -->
+      <rect x="20" y="210" width="175" height="110" rx="8" fill="none" stroke="#c8c2b4" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#3a3844" x="107" y="228" text-anchor="middle" font-weight="500">Histology: "swarm of bees"</text>
+      <!-- Bee dots around bulb -->
+      <circle cx="62" cy="285" r="5" fill="#8a1818" opacity="0.6"/>
+      <circle cx="78" cy="272" r="4.5" fill="#8a1818" opacity="0.7"/>
+      <circle cx="95" cy="280" r="5" fill="#aa3030" opacity="0.5"/>
+      <circle cx="112" cy="268" r="4" fill="#8a1818" opacity="0.6"/>
+      <circle cx="128" cy="278" r="5" fill="#8a1818" opacity="0.7"/>
+      <circle cx="75" cy="298" r="4" fill="#aa3030" opacity="0.5"/>
+      <circle cx="118" cy="294" r="4.5" fill="#8a1818" opacity="0.6"/>
+      <ellipse cx="95" cy="312" rx="24" ry="12" fill="#c8a888" stroke="#a06848" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#5a3828" x="95" y="314" text-anchor="middle" dominant-baseline="central">Bulb</text>
+      <!-- Bulge preserved note -->
+      <rect x="460" y="260" width="200" height="90" rx="8" fill="#e4f4ec" stroke="#1a5028" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#1a5028" x="560" y="285" text-anchor="middle">Bulge: SPARED</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="560" y="303" text-anchor="middle">CD200, TGF-β maintain</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="560" y="319" text-anchor="middle">immune privilege here</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#1a5028" x="560" y="337" text-anchor="middle" font-weight="500">→ Regrowth possible</text>
+      <line x1="460" y1="310" x2="370" y2="316" stroke="#1a5028" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#ar)"/>
+    </svg>
+    <div class="dcard-cap">Fig 8.1: The immunopathological cascade in AA. Normal follicular immune privilege is disrupted by a trigger. CD8+ T cells accumulate around the bulb (the "swarm of bees" on histology), driven by IFN-γ/IL-15 through JAK1/JAK2. JAK inhibitors interrupt this cascade. Critically, the bulge retains its immune privilege and is spared, preserving the potential for regrowth.</div>
+  </div>
+
+  <h3>Why the bulge is spared</h3>
+  <p>The hair follicle bulge maintains its immune privilege even in active AA. This is mediated by CD200, TGF-β, and other local immunosuppressants expressed by bulge cells. Because the follicular stem cells survive, regrowth remains biologically possible even after years of total hair loss — the single most important fact to communicate to patients.</p>
+
+  <h3>Genetic and associated conditions</h3>
+  <table class="dtable">
+    <thead><tr><th>Association</th><th>Detail</th><th>Prevalence in AA</th></tr></thead>
+    <tbody>
+      <tr><td>Thyroid disease</td><td>Hashimoto thyroiditis (most common); Graves disease</td><td>8–28% — always screen TFTs</td></tr>
+      <tr><td>Atopic disease</td><td>Atopic eczema, asthma, allergic rhinitis</td><td>Up to 40%</td></tr>
+      <tr><td>Other autoimmune</td><td>Vitiligo, type 1 diabetes, RA, pernicious anaemia</td><td>10–25%</td></tr>
+      <tr><td>Family history of AA</td><td>First-degree relative with AA</td><td>10–25% — polygenic inheritance</td></tr>
+      <tr><td>Down syndrome</td><td>Strong association</td><td>6–8× increased risk</td></tr>
+      <tr><td>Nail changes</td><td>Pitting, trachyonychia, Beau's lines</td><td>10–66%; correlates with severity</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- CLINICAL SPECTRUM -->
+<div class="sec" id="sec-spectrum">
+  <h2>Clinical spectrum of alopecia areata</h2>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 8.2 — Severity spectrum from patchy AA to alopecia universalis</div>
+    <svg width="100%" viewBox="0 0 680 320">
+      <defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Severity arrow -->
+      <line x1="40" y1="24" x2="640" y2="24" stroke="#c8c2b4" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#787584" x="340" y="16" text-anchor="middle">Increasing severity →</text>
+      <!-- Patchy AA -->
+      <ellipse cx="80" cy="130" rx="56" ry="66" fill="#f5dcc8" stroke="#c8906a" stroke-width="1"/>
+      <ellipse cx="80" cy="78" rx="38" ry="20" fill="#2C2C2A" opacity="0.6"/>
+      <ellipse cx="37" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.6"/>
+      <ellipse cx="123" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.6"/>
+      <ellipse cx="80" cy="188" rx="34" ry="14" fill="#2C2C2A" opacity="0.5"/>
+      <ellipse cx="68" cy="122" rx="18" ry="15" fill="#f5dcc8" stroke="#8a1818" stroke-width="1.5"/>
+      <text font-family="Jost,sans-serif" font-size="10" font-weight="500" fill="#3a3828" x="80" y="218" text-anchor="middle">Patchy AA</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#787584" x="80" y="230" text-anchor="middle">1–few patches</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#1a5028" x="80" y="244" text-anchor="middle">50–80% regrow</text>
+      <!-- Multifocal -->
+      <ellipse cx="210" cy="130" rx="56" ry="66" fill="#f5dcc8" stroke="#c8906a" stroke-width="1"/>
+      <ellipse cx="210" cy="78" rx="38" ry="20" fill="#2C2C2A" opacity="0.6"/>
+      <ellipse cx="167" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.6"/>
+      <ellipse cx="253" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.6"/>
+      <ellipse cx="210" cy="188" rx="34" ry="14" fill="#2C2C2A" opacity="0.5"/>
+      <ellipse cx="196" cy="116" rx="15" ry="13" fill="#f5dcc8" stroke="#8a1818" stroke-width="1.5"/>
+      <ellipse cx="222" cy="132" rx="13" ry="11" fill="#f5dcc8" stroke="#8a1818" stroke-width="1.5"/>
+      <ellipse cx="205" cy="86" rx="11" ry="9" fill="#f5dcc8" stroke="#c49a3c" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="10" font-weight="500" fill="#3a3828" x="210" y="218" text-anchor="middle">Multifocal</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#787584" x="210" y="230" text-anchor="middle">Multiple patches</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#c49a3c" x="210" y="244" text-anchor="middle">40–60% regrow</text>
+      <!-- Ophiasis -->
+      <ellipse cx="340" cy="130" rx="56" ry="66" fill="#f5dcc8" stroke="#c8906a" stroke-width="1"/>
+      <ellipse cx="340" cy="78" rx="38" ry="20" fill="#2C2C2A" opacity="0.5"/>
+      <ellipse cx="297" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.5"/>
+      <ellipse cx="383" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.5"/>
+      <path d="M286 180 Q292 198 340 202 Q388 198 394 180" fill="none" stroke="#f5dcc8" stroke-width="20"/>
+      <path d="M286 180 Q292 198 340 202 Q388 198 394 180" fill="none" stroke="#8a1818" stroke-width="2.5" opacity="0.7"/>
+      <text font-family="Jost,sans-serif" font-size="10" font-weight="500" fill="#3a3828" x="340" y="218" text-anchor="middle">Ophiasis</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#787584" x="340" y="230" text-anchor="middle">Marginal band</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#8a1818" x="340" y="244" text-anchor="middle">Poor prognosis</text>
+      <!-- Totalis -->
+      <ellipse cx="470" cy="130" rx="56" ry="66" fill="#f5dcc8" stroke="#c8906a" stroke-width="1"/>
+      <ellipse cx="428" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.3"/>
+      <ellipse cx="512" cy="130" rx="14" ry="44" fill="#2C2C2A" opacity="0.3"/>
+      <text font-family="Jost,sans-serif" font-size="10" font-weight="500" fill="#3a3828" x="470" y="218" text-anchor="middle">Totalis</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#787584" x="470" y="230" text-anchor="middle">All scalp hair</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#8a1818" x="470" y="244" text-anchor="middle">&lt;10% spontaneous</text>
+      <!-- Universalis -->
+      <ellipse cx="600" cy="130" rx="56" ry="66" fill="#f5dcc8" stroke="#c8906a" stroke-width="1"/>
+      <ellipse cx="556" cy="130" rx="10" ry="34" fill="#2C2C2A" opacity="0.15"/>
+      <ellipse cx="644" cy="130" rx="10" ry="34" fill="#2C2C2A" opacity="0.15"/>
+      <text font-family="Jost,sans-serif" font-size="10" font-weight="500" fill="#3a3828" x="600" y="218" text-anchor="middle">Universalis</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#787584" x="600" y="230" text-anchor="middle">All body hair</text>
+      <text font-family="Jost,sans-serif" font-size="9" fill="#8a1818" x="600" y="244" text-anchor="middle">JAK inhibitors needed</text>
+      <!-- Legend -->
+      <rect x="100" y="268" width="480" height="44" rx="8" fill="none" stroke="#c8c2b4" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#3a3828" x="340" y="285" text-anchor="middle" font-weight="500">All forms share the same immune mechanism — extent determines prognosis and treatment</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#787584" x="340" y="302" text-anchor="middle">Ophiasis pattern (band of marginal loss) carries the worst prognosis of the non-totalis forms</text>
+    </svg>
+    <div class="dcard-cap">Fig 8.2: Clinical spectrum of AA from patchy (best prognosis) through multifocal, ophiasis (worst non-totalis prognosis), to alopecia totalis and universalis. The ophiasis pattern targets the normally androgen-resistant fringe — explaining its treatment resistance.</div>
+  </div>
+
+  <div class="spectrum-grid">
+    <div class="spec-cell"><div class="spec-label">Patchy AA</div><div class="spec-sub">1–2 discrete patches, &lt;50% scalp</div><div class="spec-prog" style="color:var(--forest)">Best prognosis</div></div>
+    <div class="spec-cell"><div class="spec-label">Multifocal AA</div><div class="spec-sub">Multiple patches, 50–95% scalp</div><div class="spec-prog" style="color:var(--amber)">Moderate</div></div>
+    <div class="spec-cell"><div class="spec-label">Ophiasis</div><div class="spec-sub">Band at temporal/occipital margin</div><div class="spec-prog" style="color:var(--red)">Poor — resist.</div></div>
+    <div class="spec-cell"><div class="spec-label">Alopecia totalis</div><div class="spec-sub">All scalp hair lost</div><div class="spec-prog" style="color:var(--red)">&lt;10% spontaneous</div></div>
+    <div class="spec-cell"><div class="spec-label">Alopecia universalis</div><div class="spec-sub">All body hair lost</div><div class="spec-prog" style="color:var(--red)">JAK inhibitors</div></div>
+  </div>
+</div>
+
+<!-- CLINICAL FEATURES -->
+<div class="sec" id="sec-clinical">
+  <h2>Clinical features</h2>
+  <p>AA typically presents with <strong>sudden, rapid onset of well-defined, smooth, asymptomatic patches</strong> of hair loss. Most patients notice an area of hair loss within days. A minority describe a preceding tingling or pruritus at the affected site.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 8.3 — Key examination findings in alopecia areata</div>
+    <svg width="100%" viewBox="0 0 680 290">
+      <defs><marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Head front view with AA patch -->
+      <ellipse cx="190" cy="152" rx="140" ry="152" fill="#f5dcc8" stroke="#c8906a" stroke-width="1.2"/>
+      <ellipse cx="190" cy="48" rx="96" ry="38" fill="#2C2C2A" opacity="0.65"/>
+      <ellipse cx="68" cy="152" rx="22" ry="76" fill="#2C2C2A" opacity="0.65"/>
+      <ellipse cx="312" cy="152" rx="22" ry="76" fill="#2C2C2A" opacity="0.65"/>
+      <ellipse cx="190" cy="272" rx="78" ry="22" fill="#2C2C2A" opacity="0.55"/>
+      <!-- Face -->
+      <ellipse cx="162" cy="180" rx="12" ry="8" fill="#e8c8a8" opacity="0.5"/>
+      <ellipse cx="218" cy="180" rx="12" ry="8" fill="#e8c8a8" opacity="0.5"/>
+      <!-- AA patch — smooth, well defined -->
+      <ellipse cx="178" cy="130" rx="52" ry="45" fill="#faebd7" stroke="#8a1818" stroke-width="2"/>
+      <!-- Exclamation mark hairs at margin -->
+      <rect x="128" y="105" width="4" height="28" rx="2" fill="#2C2C2A"/>
+      <rect x="128" y="101" width="2" height="5" rx="1" fill="#B4B2A9"/>
+      <rect x="142" y="96" width="4.5" height="33" rx="2" fill="#2C2C2A"/>
+      <rect x="142" y="91" width="2.5" height="6" rx="1" fill="#B4B2A9"/>
+      <!-- Yellow dots inside patch -->
+      <circle cx="162" cy="124" r="5" fill="#EF9F27" stroke="#BA7517" stroke-width="0.8"/>
+      <circle cx="184" cy="116" r="4" fill="#FAC775" stroke="#EF9F27" stroke-width="0.8"/>
+      <circle cx="198" cy="130" r="5" fill="#EF9F27" stroke="#BA7517" stroke-width="0.8"/>
+      <circle cx="170" cy="142" r="4" fill="#FAC775" stroke="#EF9F27" stroke-width="0.8"/>
+      <!-- Labels -->
+      <line x1="136" y1="98" x2="392" y2="50" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="32" width="210" height="40" rx="6" fill="#fceaea" stroke="#8a1818" stroke-width="0.5"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="499" y="46" text-anchor="middle" dominant-baseline="central">Exclamation mark hairs</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="499" y="62" text-anchor="middle" dominant-baseline="central">Narrow base, dark tip — pathognomonic</text>
+      <line x1="230" y1="125" x2="392" y2="110" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="94" width="210" height="40" rx="6" fill="#fdf0d4" stroke="#c49a3c" stroke-width="0.5"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="499" y="108" text-anchor="middle" dominant-baseline="central">Yellow dots (trichoscopy)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="499" y="124" text-anchor="middle" dominant-baseline="central">Empty follicles — sebum-filled</text>
+      <line x1="178" y1="175" x2="392" y2="170" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="154" width="210" height="40" rx="6" fill="#e4f4ec" stroke="#1a5028" stroke-width="0.5"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#1a5028" x="499" y="168" text-anchor="middle" dominant-baseline="central">Smooth scalp — non-scarring</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="499" y="184" text-anchor="middle" dominant-baseline="central">Follicular ostia visible</text>
+      <line x1="170" y1="92" x2="392" y2="228" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <rect x="394" y="212" width="210" height="40" rx="6" fill="#e6eef8" stroke="#1a3868" stroke-width="0.5"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#1a3868" x="499" y="226" text-anchor="middle" dominant-baseline="central">Well-defined oval patch</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a4a88" x="499" y="242" text-anchor="middle" dominant-baseline="central">Smooth margin, sudden onset</text>
+    </svg>
+    <div class="dcard-cap">Fig 8.3: Key examination findings in AA. The smooth, well-defined oval patch with exclamation mark hairs at the margin and yellow dots inside is the classic appearance. The normal scalp surface with visible follicular ostia confirms non-scarring disease.</div>
+  </div>
+
+  <h3>Nail changes in AA</h3>
+  <table class="dtable">
+    <thead><tr><th>Nail finding</th><th>Description</th><th>Frequency</th></tr></thead>
+    <tbody>
+      <tr><td>Geometric nail pitting</td><td>Regular shallow pits across nail plate</td><td>Most common (20–40%)</td></tr>
+      <tr><td>Trachyonychia</td><td>Rough, sandpaper-like texture — all 20 nails</td><td>Severe AA indicator</td></tr>
+      <tr><td>Beau's lines</td><td>Transverse ridges — temporary matrix arrest</td><td>Acute/active disease</td></tr>
+      <tr><td>Onychorrhexis</td><td>Longitudinal ridging and brittleness</td><td>Moderate AA</td></tr>
+      <tr><td>Leukonychia</td><td>White discolouration</td><td>Variable</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Prognostic factors</h3>
+  <div class="grid2">
+    <div class="fcard"><div class="ftag" style="color:var(--red)">Poor prognosis (OCEAN)</div><div class="fdesc"><strong>O</strong>phiasis pattern · <strong>C</strong>hildhood onset (pre-pubertal) · <strong>E</strong>xtensive nail involvement · <strong>A</strong>topy association · <strong>N</strong>o response to first treatments<br><br>Also: AT/AU extent, family history of AA, Down syndrome</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--forest)">Good prognosis indicators</div><div class="fdesc">Single small patch, first episode · Short duration (&lt;1 year) · No nail involvement · No family history of AA · No atopy · Age of onset &gt;40 · Absence of ophiasis pattern</div></div>
+  </div>
+</div>
+
+<!-- TRICHOSCOPY -->
+<div class="sec" id="sec-trichoscopy">
+  <h2>Trichoscopy in alopecia areata</h2>
+  <p>Trichoscopy is the most useful diagnostic tool in AA at the GP level. Characteristic findings allow confident diagnosis, activity assessment, and monitoring of treatment response — often without biopsy.</p>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 8.4 — Trichoscopy activity atlas for alopecia areata</div>
+    <svg width="100%" viewBox="0 0 680 360">
+      <!-- Panel backgrounds — ACTIVE -->
+      <rect x="18" y="16" width="200" height="160" rx="10" fill="#fdf0d4" stroke="#c49a3c" stroke-width="0.8"/>
+      <rect x="232" y="16" width="200" height="160" rx="10" fill="#fceaea" stroke="#8a1818" stroke-width="0.8"/>
+      <rect x="446" y="16" width="216" height="160" rx="10" fill="#fceaea" stroke="#8a1818" stroke-width="0.8"/>
+      <!-- Panel backgrounds — RECOVERY -->
+      <rect x="18" y="192" width="200" height="160" rx="10" fill="#e4e0d8" stroke="#888" stroke-width="0.5" stroke-dasharray="3 2"/>
+      <rect x="232" y="192" width="200" height="160" rx="10" fill="#e4f4ec" stroke="#1a5028" stroke-width="0.8"/>
+      <rect x="446" y="192" width="216" height="160" rx="10" fill="#e4f4ec" stroke="#1a5028" stroke-width="0.8"/>
+      <!-- Panel 1 labels: Yellow dots -->
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="118" y="36" text-anchor="middle">Yellow dots</text>
+      <circle cx="68" cy="100" r="14" fill="#FAC775" stroke="#BA7517" stroke-width="1.2"/>
+      <circle cx="100" cy="88" r="12" fill="#EF9F27" stroke="#854F0B" stroke-width="1"/>
+      <circle cx="130" cy="102" r="14" fill="#FAC775" stroke="#BA7517" stroke-width="1.2"/>
+      <circle cx="90" cy="128" r="12" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.8"/>
+      <circle cx="148" cy="124" r="10" fill="#FAC775" stroke="#BA7517" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="118" y="164" text-anchor="middle">Active — hallmark finding</text>
+      <!-- Panel 2: Black dots + exclamation -->
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="332" y="36" text-anchor="middle">Black dots + exclamation hairs</text>
+      <circle cx="262" cy="80" r="8" fill="#2C2C2A"/>
+      <circle cx="290" cy="68" r="6" fill="#444441"/>
+      <circle cx="316" cy="78" r="8" fill="#2C2C2A"/>
+      <rect x="348" y="48" width="5" height="40" rx="2" fill="#2C2C2A"/>
+      <rect x="348" y="44" width="3" height="6" rx="1" fill="#B4B2A9"/>
+      <rect x="364" y="44" width="5" height="44" rx="2" fill="#2C2C2A"/>
+      <rect x="364" y="39" width="3" height="6" rx="1" fill="#B4B2A9"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="332" y="164" text-anchor="middle">Active — black + exclamation = urgent</text>
+      <!-- Panel 3: Tapered dystrophic -->
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="554" y="36" text-anchor="middle">Tapered / dystrophic hairs</text>
+      <path d="M480 144 L484 90 L488 78 L492 90 L496 144" fill="none" stroke="#8a1818" stroke-width="2" stroke-linecap="round"/>
+      <path d="M510 144 L515 86 L520 72 L525 86 L530 144" fill="none" stroke="#aa3030" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M545 144 L549 90 L553 78 L557 90 L561 144" fill="none" stroke="#8a1818" stroke-width="2" stroke-linecap="round"/>
+      <path d="M572 144 L577 88 L582 75 L587 88 L592 144" fill="none" stroke="#aa3030" stroke-width="2.5" stroke-linecap="round"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="554" y="164" text-anchor="middle">Tip-shaped taper — active inflam.</text>
+      <!-- Panel 4: Quiet (no dots) -->
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#5a5040" x="118" y="212" text-anchor="middle">No dots (quiescent)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#787584" x="118" y="330" text-anchor="middle">No activity — watchful waiting</text>
+      <text font-family="Jost,sans-serif" font-size="26" fill="#c8c2b4" x="118" y="295" text-anchor="middle">—</text>
+      <!-- Panel 5: Vellus regrowth -->
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#1a5028" x="332" y="212" text-anchor="middle">Vellus hair regrowth</text>
+      <rect x="253" y="244" width="2" height="52" rx="1" fill="#B4B2A9" opacity="0.5"/>
+      <rect x="270" y="238" width="2" height="58" rx="1" fill="#B4B2A9" opacity="0.6"/>
+      <rect x="287" y="248" width="2" height="48" rx="1" fill="#B4B2A9" opacity="0.4"/>
+      <rect x="304" y="242" width="2" height="54" rx="1" fill="#B4B2A9" opacity="0.5"/>
+      <rect x="321" y="246" width="2" height="50" rx="1" fill="#B4B2A9" opacity="0.6"/>
+      <rect x="338" y="240" width="2" height="56" rx="1" fill="#B4B2A9" opacity="0.4"/>
+      <rect x="355" y="244" width="2" height="52" rx="1" fill="#B4B2A9" opacity="0.5"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="332" y="330" text-anchor="middle">Fine pale hairs = early recovery</text>
+      <!-- Panel 6: Terminal regrowth -->
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#1a5028" x="554" y="212" text-anchor="middle">Terminal regrowing hairs</text>
+      <rect x="476" y="240" width="6" height="66" rx="2" fill="#2C2C2A" opacity="0.7"/>
+      <rect x="496" y="234" width="7" height="72" rx="3" fill="#2C2C2A" opacity="0.8"/>
+      <rect x="518" y="244" width="6" height="62" rx="2" fill="#2C2C2A" opacity="0.7"/>
+      <rect x="540" y="238" width="7" height="70" rx="3" fill="#2C2C2A" opacity="0.8"/>
+      <rect x="562" y="242" width="6" height="64" rx="2" fill="#2C2C2A" opacity="0.7"/>
+      <rect x="582" y="236" width="7" height="70" rx="3" fill="#2C2C2A" opacity="0.8"/>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="554" y="330" text-anchor="middle">Terminal regrowth = remission</text>
+      <!-- Activity labels -->
+      <text font-family="Jost,sans-serif" font-size="10" fill="#7c7984" x="340" y="354" text-anchor="middle">Activity markers: yellow + black dots + exclamation hairs | Recovery: vellus → terminal hairs</text>
+    </svg>
+    <div class="dcard-cap">Fig 8.4: Trichoscopy atlas for AA activity states. Top row (yellow dots, black dots + exclamation hairs, tapered dystrophic hairs) = active disease. Bottom row (quiescent, vellus regrowth, terminal regrowth) = recovery. Serial trichoscopy is the non-invasive activity index for AA.</div>
+  </div>
+
+  <h3>Trichoscopy activity scoring</h3>
+  <table class="dtable">
+    <thead><tr><th>Trichoscopy finding</th><th>Activity state</th><th>GP action</th></tr></thead>
+    <tbody>
+      <tr><td>Numerous yellow + black dots + exclamation hairs</td><td>Active, progressive</td><td>Treat urgently — risk of extension</td></tr>
+      <tr><td>Yellow dots, few exclamation hairs</td><td>Active but slowing</td><td>Treat — monitor for progression</td></tr>
+      <tr><td>Yellow dots only, no exclamation hairs</td><td>Stable / quiescent</td><td>Watchful waiting acceptable</td></tr>
+      <tr><td>Vellus hairs appearing, decreasing yellow dots</td><td>Early remission</td><td>Continue treatment; reassure patient</td></tr>
+      <tr><td>Terminal hairs appearing, no yellow/black dots</td><td>Remission</td><td>Consider treatment step-down</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- DIAGNOSIS -->
+<div class="sec" id="sec-diagnosis">
+  <h2>Diagnosis and investigation</h2>
+  <p>AA is primarily a <strong>clinical diagnosis</strong>. The smooth oval patch with exclamation mark hairs at the margin is usually pathognomonic. Trichoscopy confirms and assesses activity. Investigations screen for associated autoimmune conditions — not to diagnose AA itself.</p>
+
+  <div class="grid2">
+    <div class="fcard"><div class="ftag" style="color:var(--forest)">Sufficient for diagnosis</div><div class="ftitle">Classic presentation</div><div class="fdesc">Well-defined smooth oval patch + exclamation mark hairs + trichoscopy showing yellow/black dots = diagnose clinically. Biopsy not required.</div></div>
+    <div class="fcard"><div class="ftag" style="color:var(--red)">Biopsy when uncertain</div><div class="ftitle">Atypical presentations</div><div class="fdesc">Diffuse AA mimicking TE, ophiasis mimicking scarring alopecia, or co-existing conditions. Histology: peribulbar lymphocytic infiltrate ("swarm of bees").</div></div>
+  </div>
+
+  <h3>Mandatory investigations in all AA patients</h3>
+  <table class="dtable">
+    <thead><tr><th>Investigation</th><th>Rationale</th><th>Action if abnormal</th></tr></thead>
+    <tbody>
+      <tr><td>TSH + free T4</td><td>Hashimoto in 8–28%; Graves disease</td><td>Treat thyroid; do not assume AA will improve automatically</td></tr>
+      <tr><td>Anti-TPO antibodies</td><td>Subclinical thyroid autoimmunity</td><td>Annual TFT monitoring if positive with normal TSH</td></tr>
+      <tr><td>FBC</td><td>Anaemia, pernicious anaemia</td><td>B12/folate if macrocytic anaemia</td></tr>
+      <tr><td>Ferritin</td><td>Iron deficiency compounds AA-related shedding</td><td>Supplement to &gt;70 mcg/L</td></tr>
+      <tr><td>ANA</td><td>Screen for SLE, mixed CTD</td><td>Rheumatology if high titre + clinical features</td></tr>
+      <tr><td>Fasting glucose / HbA1c</td><td>Association with type 1 diabetes</td><td>Refer endocrinology if abnormal</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Differential diagnosis</h3>
+  <table class="dtable">
+    <thead><tr><th>Condition</th><th>Distinguishing features</th><th>Key test</th></tr></thead>
+    <tbody>
+      <tr><td>Tinea capitis</td><td>Children; scaling; broken hairs; posterior cervical LN</td><td>Mycology swab; Wood's lamp</td></tr>
+      <tr><td>Trichotillomania</td><td>Irregular patch; varied lengths; no yellow dots</td><td>Trichoscopy: flame/tulip hairs</td></tr>
+      <tr><td>Telogen effluvium (diffuse)</td><td>Diffuse; uniform calibre; pull test all zones; no yellow/black dots</td><td>Trichoscopy: no miniaturisation</td></tr>
+      <tr><td>Secondary syphilis</td><td>Moth-eaten patchy loss; lymphadenopathy; rash</td><td>VDRL / TPHA</td></tr>
+      <tr><td>LPP (vs ophiasis)</td><td>Perifollicular erythema and scale; absent ostia</td><td>Trichoscopy: white dots; biopsy</td></tr>
+      <tr><td>Androgenetic alopecia</td><td>Gradual; calibre diversity; no yellow dots in patches</td><td>Trichoscopy: miniaturisation ratio</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TREATMENT -->
+<div class="sec" id="sec-treatment">
+  <h2>Treatment of alopecia areata</h2>
+  <p>Treatment selection is guided by <strong>extent of hair loss, patient age, rate of progression, and quality of life impact</strong>. The introduction of JAK inhibitors (baricitinib 2022) represents the most significant therapeutic advance in the history of AA.</p>
+  <div class="box-gp">
+    <div class="lbl">GP Analogy — Treatment Philosophy</div>
+    <p>"Treatment of AA is about silencing a false alarm. Topical corticosteroids dampen the alarm locally; systemic corticosteroids turn it off temporarily then it rings again louder; JAK inhibitors cut the wiring to the alarm panel entirely — the most effective approach we have ever found."</p>
+  </div>
+
+  <div class="dcard">
+    <div class="dcard-title">Fig 8.5 — Treatment algorithm by disease extent</div>
+    <svg width="100%" viewBox="0 0 680 300">
+      <defs><marker id="ar5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Extent labels -->
+      <rect x="18" y="18" width="200" height="48" rx="8" fill="#e4f4ec" stroke="#1a5028" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#1a5028" x="118" y="35" text-anchor="middle" dominant-baseline="central">Mild / Patchy</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="118" y="54" text-anchor="middle" dominant-baseline="central">&lt;50% scalp</text>
+      <rect x="238" y="18" width="200" height="48" rx="8" fill="#fdf0d4" stroke="#c49a3c" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#7a4a00" x="338" y="35" text-anchor="middle" dominant-baseline="central">Moderate</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="338" y="54" text-anchor="middle" dominant-baseline="central">50–95% scalp / ophiasis</text>
+      <rect x="458" y="18" width="204" height="48" rx="8" fill="#fceaea" stroke="#8a1818" stroke-width="1"/>
+      <text font-family="Jost,sans-serif" font-size="12" font-weight="500" fill="#8a1818" x="560" y="35" text-anchor="middle" dominant-baseline="central">Severe (AT/AU)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="560" y="54" text-anchor="middle" dominant-baseline="central">&gt;95% / totalis / universalis</text>
+      <!-- Arrows down -->
+      <line x1="118" y1="66" x2="118" y2="96" stroke="#888" stroke-width="1" marker-end="url(#ar5)"/>
+      <line x1="338" y1="66" x2="338" y2="96" stroke="#888" stroke-width="1" marker-end="url(#ar5)"/>
+      <line x1="560" y1="66" x2="560" y2="96" stroke="#888" stroke-width="1" marker-end="url(#ar5)"/>
+      <!-- Treatment boxes -->
+      <rect x="18" y="98" width="200" height="130" rx="8" fill="#e4f4ec" stroke="#1a5028" stroke-width="0.8"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#1a5028" x="118" y="118" text-anchor="middle">First-line (GP):</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="118" y="136" text-anchor="middle">Potent topical CS (clobetasol)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="118" y="152" text-anchor="middle">Intralesional triamcinolone</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="118" y="168" text-anchor="middle">Topical minoxidil (adjunct)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="118" y="184" text-anchor="middle">Watchful waiting (small)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="118" y="200" text-anchor="middle">Reassure re: spontaneous</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#2a7040" x="118" y="216" text-anchor="middle">remission</text>
+      <rect x="238" y="98" width="200" height="130" rx="8" fill="#fdf0d4" stroke="#c49a3c" stroke-width="0.8"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#7a4a00" x="338" y="118" text-anchor="middle">Refer to dermatology:</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="338" y="136" text-anchor="middle">Oral mini-pulse CS</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="338" y="152" text-anchor="middle">Contact immunotherapy (DPCP)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="338" y="168" text-anchor="middle">JAK inhibitors (consider)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa7020" x="338" y="184" text-anchor="middle">Topical minoxidil</text>
+      <rect x="458" y="98" width="204" height="130" rx="8" fill="#fceaea" stroke="#8a1818" stroke-width="0.8"/>
+      <text font-family="Jost,sans-serif" font-size="11" font-weight="500" fill="#8a1818" x="560" y="118" text-anchor="middle">Specialist (JAK inhibitors):</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="560" y="136" text-anchor="middle">Baricitinib 2–4 mg/day</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="560" y="152" text-anchor="middle">Ruxolitinib cream (topical)</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="560" y="168" text-anchor="middle">Dritho-scalp / DPCP</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="560" y="184" text-anchor="middle">Psychological support</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#aa3030" x="560" y="200" text-anchor="middle">Prosthesis / wig support</text>
+      <!-- Children note -->
+      <rect x="18" y="244" width="644" height="46" rx="8" fill="none" stroke="#c8c2b4" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text font-family="Jost,sans-serif" font-size="10" font-weight="500" fill="#3a3828" x="340" y="262" text-anchor="middle">Children with AA (&lt;16 yrs): Topical CS and ILT are safe. Baricitinib not yet licensed under 18 in most regions.</text>
+      <text font-family="Jost,sans-serif" font-size="10" fill="#787584" x="340" y="278" text-anchor="middle">Psychological support essential. Wig/scalp camouflage available. School liaison recommended for children.</text>
+    </svg>
+    <div class="dcard-cap">Fig 8.5: Treatment algorithm by disease extent. GP-level treatments cover mild/patchy disease. Moderate disease requires specialist management. Severe disease (AT/AU) is the primary indication for oral JAK inhibitors — the first truly disease-modifying therapy for AA.</div>
+  </div>
+
+  <h3>JAK inhibitors — the landmark advance</h3>
+  <table class="dtable">
+    <thead><tr><th>Drug</th><th>Type</th><th>Evidence</th><th>Key side effects</th></tr></thead>
+    <tbody>
+      <tr><td>Baricitinib (Olumiant)</td><td>Oral JAK1/JAK2</td><td>BRAVE-AA1 and AA2 RCTs: 35–40% achieve &gt;80% scalp coverage at 36 weeks. FDA/EMA approved for severe AA (≥50% loss)</td><td>URTI, acne, elevated lipids, VTE risk, herpes zoster</td></tr>
+      <tr><td>Ruxolitinib (Opzelura)</td><td>Topical JAK1/JAK2</td><td>TRuE-AA1 and AA2: ~50% achieve ≥90% scalp coverage at 24 weeks in moderate-severe AA</td><td>Application site reactions; minimal systemic absorption</td></tr>
+      <tr><td>Deuruxolitinib</td><td>Oral JAK1/TYK2</td><td>Phase 3: 42% achieve SALT ≤10 at 24 weeks — among highest response rates reported</td><td>Similar to baricitinib class</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Intralesional triamcinolone — GP procedure</h3>
+  <table class="dtable">
+    <thead><tr><th>Aspect</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Concentration</td><td>10 mg/mL (standard); dilute to 5 mg/mL for temporal or eyebrow areas</td></tr>
+      <tr><td>Volume / technique</td><td>0.1 mL per injection site; intradermal (NOT subcutaneous — avoids fat atrophy); sites 1 cm apart</td></tr>
+      <tr><td>Interval</td><td>Every 4–6 weeks; assess response at 3 months</td></tr>
+      <tr><td>Response rate</td><td>60–70% show regrowth at treated site within 4–8 weeks</td></tr>
+      <tr><td>Limitation</td><td>Does not prevent new patches; does not treat diffuse/total disease</td></tr>
+      <tr><td>Side effects</td><td>Skin atrophy (temporary), hypopigmentation, post-injection pain</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box-warn">
+    <div class="lbl">JAK inhibitors: key prescribing points</div>
+    <p>JAK inhibitors must be continued indefinitely — stopping causes relapse in 70–80% within months. Pre-treatment: document VZV serostatus, TB screen (IGRA), baseline FBC/lipids, ensure vaccinations up-to-date. Herpes zoster vaccination (Shingrix) recommended before initiation. Not licensed under 18 in most countries.</p>
+  </div>
+</div>
+
+<!-- QUICK RECALL -->
+<div class="sec" id="sec-recall">
+  <h2>Quick Recall</h2>
+  <div class="recall-grid">
+    <div class="rcrd">
+      <h4>Pathology: JAIL</h4>
+      <div class="mnem">J·A·I·L</div>
+      <ul>
+        <li><strong>J</strong>AK pathway — the immune cascade driver</li>
+        <li><strong>A</strong>nagen arrest — follicle locked out</li>
+        <li><strong>I</strong>mmune privilege collapse — MHC-I exposed</li>
+        <li><strong>L</strong>ymphocytes (CD8+) — peribulbar "swarm of bees"</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Trichoscopy: YBET</h4>
+      <div class="mnem">Y·B·E·T</div>
+      <ul>
+        <li><strong>Y</strong>ellow dots — empty follicles, active</li>
+        <li><strong>B</strong>lack dots — broken hairs, active</li>
+        <li><strong>E</strong>xclamation mark hairs — pathognomonic</li>
+        <li><strong>T</strong>erminal regrowing hairs — remission</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Poor prognosis: OCEAN</h4>
+      <div class="mnem">O·C·E·A·N</div>
+      <ul>
+        <li><strong>O</strong>phiasis pattern</li>
+        <li><strong>C</strong>hildhood onset (pre-pubertal)</li>
+        <li><strong>E</strong>xtensive nail involvement</li>
+        <li><strong>A</strong>topy association</li>
+        <li><strong>N</strong>o response to first treatments</li>
+      </ul>
+    </div>
+    <div class="rcrd">
+      <h4>Associations: AVATAR</h4>
+      <div class="mnem">A·V·A·T·A·R</div>
+      <ul>
+        <li><strong>A</strong>topic disease (eczema, asthma)</li>
+        <li><strong>V</strong>itiligo</li>
+        <li><strong>A</strong>utoimmune thyroid (Hashimoto's)</li>
+        <li><strong>T</strong>ype 1 diabetes</li>
+        <li><strong>A</strong>NA-positive CTD</li>
+        <li><strong>R</strong>heumatoid arthritis</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>GP Quick-Reference Action Card</h2>
+  <table class="dtable">
+    <thead><tr><th>Presentation</th><th>Diagnosis</th><th>Investigation</th><th>Treatment</th><th>Refer?</th></tr></thead>
+    <tbody>
+      <tr><td>Single smooth oval patch, adult, exclamation hairs</td><td>Patchy AA</td><td>TFTs, anti-TPO, FBC, ferritin</td><td>ILT 10 mg/mL ± potent topical CS</td><td>Not urgent unless progressive</td></tr>
+      <tr><td>Multiple patches, child, rapid spread</td><td>Multifocal AA</td><td>TFTs, ANA, FBC, glucose</td><td>Topical CS; refer dermatology</td><td>Refer — specialist management</td></tr>
+      <tr><td>Band of loss at scalp margin</td><td>Ophiasis AA</td><td>Full autoimmune screen</td><td>DPCP or JAK inhibitor</td><td>Urgent — poor prognosis</td></tr>
+      <tr><td>Total scalp hair loss</td><td>Alopecia totalis</td><td>Full screen + psychological assessment</td><td>Baricitinib (specialist)</td><td>Urgent specialist referral</td></tr>
+      <tr><td>Patchy loss + broken hairs, child, no yellow dots</td><td>Exclude trichotillomania/tinea</td><td>Trichoscopy; mycology; psychology</td><td>Per diagnosis</td><td>Psychology if TTM; paed derm if tinea</td></tr>
+    </tbody>
+  </table>
+
+  <div class="complete-badge">
+    <h3>🎓 Trichology for GP — Complete</h3>
+    <p>You have completed all 8 chapters. This book covers the core trichology knowledge required for confident GP-level diagnosis and management of the most common hair and scalp disorders. Key mnemonics across the series: HET · SCALP · DICS · YBWR · DART · DOTGP · CHIPS · FTBVZ · YBET · OCEAN · AVATAR · JAK</p>
+  </div>
+</div>
+
+<!-- FLASHCARDS -->
+<div class="sec" id="sec-flashcards">
+  <h2>Anki Flashcard Deck — Chapter 8</h2>
+  <p style="color:var(--ink3);font-size:15.5px;margin-bottom:18px">24 cards — the complete AA deck covering immunopathology, spectrum, clinical features, trichoscopy, diagnosis, and treatment. Tap to flip.</p>
+  <div class="pbar-wrap">
+    <div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div>
+    <div class="pct" id="pct">Card 1 / 24</div>
+  </div>
+  <p class="hint-txt">tap card to flip</p>
+  <div class="fcrd" id="fcrd" onclick="flipFC()">
+    <div class="fc-inner" id="fci">
+      <div class="fc-front"><div class="fc-cat" id="fcat"></div><div class="fc-q" id="fq"></div></div>
+      <div class="fc-back"><div class="fc-a" id="fa"></div><div class="fc-tip" id="ftip"></div></div>
+    </div>
+  </div>
+  <div class="fc-btns">
+    <button class="fcbtn" onclick="rate('hard')">Hard</button>
+    <button class="fcbtn" onclick="rate('ok')">Got it</button>
+    <button class="fcbtn pri" onclick="rate('easy')">Easy</button>
+  </div>
+  <div class="fc-ctrl">
+    <button onclick="shuffleFC()">Shuffle</button>
+    <button onclick="restartFC()">Restart</button>
+  </div>
+  <div class="fc-done" id="fcdone"><h3>Deck complete</h3><p id="fcscore"></p></div>
+  <h3 style="margin-top:24px;margin-bottom:10px">All 24 cards</h3>
+  <table class="dtable" id="alltbl"></table>
+</div>
+
+<!-- REFERENCES -->
+<div class="sec" id="sec-references">
+  <h2>References</h2>
+  <p style="font-size:14.5px;color:var(--ink3);margin-bottom:16px">APA 7th edition format.</p>
+  <ul class="ref-list">
+    <li><span class="rn">1.</span> Alkhalifah, A., Alsantali, A., Wang, E., McElwee, K. J., &amp; Shapiro, J. (2010). Alopecia areata update: Part I. Clinical picture, histopathology, and pathogenesis. <em>Journal of the American Academy of Dermatology, 62</em>(2), 177–188. https://doi.org/10.1016/j.jaad.2009.10.032</li>
+    <li><span class="rn">2.</span> Alkhalifah, A., Alsantali, A., Wang, E., McElwee, K. J., &amp; Shapiro, J. (2010). Alopecia areata update: Part II. Treatment. <em>Journal of the American Academy of Dermatology, 62</em>(2), 191–202. https://doi.org/10.1016/j.jaad.2009.10.031</li>
+    <li><span class="rn">3.</span> Betz, R. C., Petukhova, L., Ripke, S., et al. (2015). Genome-wide meta-analysis in alopecia areata resolves HLA associations and reveals two new susceptibility loci. <em>Nature Communications, 6</em>, 5966. https://doi.org/10.1038/ncomms6966</li>
+    <li><span class="rn">4.</span> Gilhar, A., Etzioni, A., &amp; Paus, R. (2012). Alopecia areata. <em>New England Journal of Medicine, 366</em>(16), 1515–1525. https://doi.org/10.1056/NEJMra1103442</li>
+    <li><span class="rn">5.</span> Hordinsky, M. K. (2013). Overview of alopecia areata. <em>Journal of Investigative Dermatology Symposium Proceedings, 16</em>(1), S13–S15. https://doi.org/10.1038/jidsymp.2013.4</li>
+    <li><span class="rn">6.</span> Jain, N., Doshi, B., &amp; Khopkar, U. (2013). Trichoscopy in alopecias: Diagnosis by hair and scalp dermoscopy. <em>Indian Journal of Dermatology, Venereology and Leprology, 79</em>(5), 587–605. https://doi.org/10.4103/0378-6323.116729</li>
+    <li><span class="rn">7.</span> King, B., Ohyama, M., Kwon, O., et al. (2022). Two phase 3 trials of baricitinib for alopecia areata. <em>New England Journal of Medicine, 386</em>(18), 1687–1699. https://doi.org/10.1056/NEJMoa2110345</li>
+    <li><span class="rn">8.</span> Lew, B. L., Shin, M. K., &amp; Sim, W. Y. (2012). Dermoscopy in alopecia areata: A useful adjunctive tool. <em>Annals of Dermatology, 24</em>(2), 217–220.</li>
+    <li><span class="rn">9.</span> Liu, L. Y., King, B. A., &amp; Craiglow, B. G. (2019). Alopecia areata is associated with impaired health-related quality of life. <em>Journal of the American Academy of Dermatology, 80</em>(3), 844–846.e2.</li>
+    <li><span class="rn">10.</span> Madani, S., &amp; Shapiro, J. (2000). Alopecia areata update. <em>Journal of the American Academy of Dermatology, 42</em>(4), 549–566.</li>
+    <li><span class="rn">11.</span> Messenger, A. G., McKillop, J., Farrant, P., McDonagh, A. J., &amp; Sladden, M. (2012). British Association of Dermatologists' guidelines for the management of alopecia areata 2012. <em>British Journal of Dermatology, 166</em>(5), 916–926. https://doi.org/10.1111/j.1365-2133.2012.10955.x</li>
+    <li><span class="rn">12.</span> Paus, R., Nickoloff, B. J., &amp; Ito, T. (2005). A 'hairy' privilege. <em>Trends in Immunology, 26</em>(1), 32–40. https://doi.org/10.1016/j.it.2004.09.010</li>
+    <li><span class="rn">13.</span> Petukhova, L., Duvic, M., Hordinsky, M., et al. (2010). Genome-wide association study in alopecia areata implicates both innate and adaptive immunity. <em>Nature, 466</em>(7302), 113–117. https://doi.org/10.1038/nature09114</li>
+    <li><span class="rn">14.</span> Rudnicka, L., Olszewska, M., Rakowska, A., et al. (2008). Trichoscopy: A new method for diagnosing hair loss. <em>Journal of Drugs in Dermatology, 7</em>(7), 651–654.</li>
+    <li><span class="rn">15.</span> Seyrafi, H., Akhiani, M., Abbasi, H., Mirpour, S., &amp; Gholamrezanejad, A. (2005). Evaluation of the profile of alopecia areata and the prevalence of thyroid function test abnormalities and serum autoantibodies in Iranian patients. <em>BMC Dermatology, 5</em>, 11.</li>
+    <li><span class="rn">16.</span> Shapiro, J. (2007). <em>Hair loss: Principles of diagnosis and management of alopecia</em>. Martin Dunitz.</li>
+    <li><span class="rn">17.</span> Tosti, A., Piraccini, B. M., &amp; Pazzaglia, M. (2003). Clobetasol propionate 0.05% under occlusion in the treatment of alopecia totalis/universalis. <em>Journal of the American Academy of Dermatology, 49</em>(1), 96–98.</li>
+    <li><span class="rn">18.</span> Xing, L., Dai, Z., Jabbari, A., et al. (2014). Alopecia areata is driven by cytotoxic T lymphocytes and is reversed by JAK inhibition. <em>Nature Medicine, 20</em>(9), 1043–1049. https://doi.org/10.1038/nm.3645</li>
+    <li><span class="rn">19.</span> Ye, Y., Zhao, Y., Guo, Z., &amp; Yu, H. (2020). Trichoscopy in evaluating disease activity in alopecia areata. <em>Clinical, Cosmetic and Investigational Dermatology, 13</em>, 575–581.</li>
+  </ul>
+</div>
+
+<script>
+const cards=[
+  {cat:"Epidemiology",q:"What is the lifetime prevalence of alopecia areata and who does it affect?",a:"Approximately 2% of the global population develops AA at some point in their lifetime. It is the third most common alopecia in dermatology practice. It affects all races, both sexes, and all ages — peak incidence in the second and third decades.",tip:"2% lifetime prevalence. Third most common alopecia"},
+  {cat:"Immunopathology",q:"What is 'immune privilege' in the hair follicle and why does it matter in AA?",a:"The lower hair follicle (bulb) normally downregulates MHC-I expression and secretes local immunosuppressants (CD200, TGF-β, α-MSH), creating an immune-privileged site invisible to cytotoxic T cells. In AA, this privilege collapses — MHC-I is expressed — and CD8+ T cells attack the bulb.",tip:"MHC-I normally hidden → collapse exposes follicle to CD8+ attack"},
+  {cat:"Immunopathology",q:"Which immune cells primarily attack the hair follicle in AA, and what is the histological hallmark?",a:"CD8+ cytotoxic T lymphocytes accumulate around the hair bulb in active AA. The histological appearance is classically described as a 'swarm of bees' — dense peribulbar lymphocytic infiltrate. CD4+ T cells are also present but CD8+ cells drive the cytotoxic attack.",tip:"Swarm of bees = CD8+ peribulbar lymphocytes"},
+  {cat:"Immunopathology",q:"What cytokine drives the JAK1/JAK2 pathway in AA, and why is this clinically significant?",a:"IFN-γ (interferon-gamma) and IL-15, acting through JAK1/JAK2, are the primary drivers of the immune cascade. This is clinically significant because JAK1/JAK2 inhibitors (baricitinib, ruxolitinib) block this pathway — explaining their unprecedented efficacy.",tip:"IFN-γ → JAK1/JAK2 → CD8+ attack. Block JAK = treat AA"},
+  {cat:"Immunopathology",q:"Why can AA never cause permanent baldness (unlike scarring alopecias)?",a:"The follicular bulge — the stem cell niche — retains its immune privilege even in severe, longstanding AA. The attack targets the bulb (lower follicle), not the bulge. Stem cells survive, so regrowth is always biologically possible — even after years of AT/AU.",tip:"Bulge spared = regrowth always possible"},
+  {cat:"Immunopathology",q:"Name four autoimmune or atopic conditions associated with AA (AVATAR).",a:"A — Atopic disease (eczema, asthma) — up to 40%\nV — Vitiligo\nA — Autoimmune thyroid disease (Hashimoto's) — 8–28%\nT — Type 1 diabetes\n(Also: ANA-positive CTD, Rheumatoid arthritis)",tip:"AVATAR: Atopy, Vitiligo, Autoimmune thyroid, T1DM, ANA, RA"},
+  {cat:"Clinical spectrum",q:"Describe the five main clinical types of AA in order of increasing severity.",a:"1. Patchy AA — discrete patches, <50% scalp, best prognosis\n2. Multifocal AA — multiple patches, 50–95% scalp\n3. Ophiasis — band loss at temporal/occipital margins, poor prognosis\n4. Alopecia totalis (AT) — all scalp hair\n5. Alopecia universalis (AU) — all body hair",tip:"Patchy → Multifocal → Ophiasis → Totalis → Universalis"},
+  {cat:"Clinical spectrum",q:"What is ophiasis and why does it have a particularly poor prognosis?",a:"Ophiasis = band of hair loss following the temporal and occipital scalp margins. It targets the normally androgen-resistant fringe follicles — which lack DHT-protective mechanisms and are also resistant to standard treatments. Rarely remits spontaneously and often requires systemic immunosuppression or JAK inhibitors.",tip:"Ophiasis = marginal band. Resistant fringe = resistant to Rx"},
+  {cat:"Clinical features",q:"What are exclamation mark hairs and what condition are they pathognomonic for?",a:"Exclamation mark hairs have a narrow, depigmented proximal shaft widening to a normal pigmented distal end — shaped like '!'. They represent hairs where the immune attack caused anagen arrest — narrow base reflects nutritional cut-off. PATHOGNOMONIC for alopecia areata.",tip:"'!' shape: narrow pale base, dark tip. Always at active patch margin"},
+  {cat:"Clinical features",q:"Name three nail changes seen in alopecia areata.",a:"1. Geometric nail pitting — regular shallow pits; most common (20–40%)\n2. Trachyonychia — rough sandpaper-like nails across all 20 nails; correlates with severe disease\n3. Beau's lines — transverse ridges; indicate acute disease episode\n(Also: onychorrhexis, leukonychia)",tip:"Pitting most common, trachyonychia = severe, Beau's = acute"},
+  {cat:"Clinical features",q:"Name four poor prognostic factors in AA using the OCEAN mnemonic.",a:"O — Ophiasis pattern\nC — Childhood onset (pre-pubertal)\nE — Extensive nail involvement\nA — Atopy association\nN — No response to first-line treatments\n(Also: AT/AU extent, family history, Down syndrome)",tip:"OCEAN: Ophiasis, Childhood, Extensive nails, Atopy, No response"},
+  {cat:"Trichoscopy",q:"Name the four characteristic trichoscopy findings in active alopecia areata (YBET).",a:"Y — Yellow dots (sebum/keratin-filled empty follicles — hallmark)\nB — Black dots (hairs broken at scalp level)\nE — Exclamation mark hairs (pathognomonic, at patch margin)\nT — Tapered/dystrophic hairs (tips pointing inward — active inflammation)",tip:"YBET: Yellow, Black, Exclamation, Tapered = active AA"},
+  {cat:"Trichoscopy",q:"What trichoscopy findings indicate disease remission in AA?",a:"1. Vellus hairs appearing — fine, short, unpigmented; earliest sign of recovery\n2. Decreasing yellow and black dots\n3. Terminal (thick, pigmented) hair regrowth — confirms returning anagen\n4. Absence of exclamation mark hairs\nSerial trichoscopy is the non-invasive activity index for AA.",tip:"Vellus first, then terminal. Dots decreasing = recovery"},
+  {cat:"Trichoscopy",q:"How does trichoscopy distinguish AA from trichotillomania?",a:"AA: Yellow dots + black dots + exclamation mark hairs + tapered hairs.\nTrichotillomania: Flame/tulip/coiled hairs + broken hairs at different lengths + NO yellow dots + NO exclamation mark hairs.\nIrregular jagged patch border in TTM vs smooth oval border in AA.",tip:"AA: yellow/black dots + exclamation. TTM: flame/tulip, no dots"},
+  {cat:"Diagnosis",q:"Which blood tests should be ordered in ALL patients diagnosed with alopecia areata?",a:"TSH + free T4 — mandatory (8–28% Hashimoto's)\nAnti-TPO antibodies\nFBC (anaemia, pernicious anaemia)\nFerritin (supplement to >70 mcg/L)\nANA (screen for CTD/SLE)\nFasting glucose (type 1 diabetes association)",tip:"TFTs mandatory in all AA. Anti-TPO, FBC, ferritin, ANA, glucose"},
+  {cat:"Diagnosis",q:"How do you distinguish diffuse AA from acute telogen effluvium clinically?",a:"Diffuse AA:\n• Trichoscopy: yellow + black dots + exclamation mark hairs\n• No clear 3-month precipitant\n• May progress rapidly to totalis\n\nAcute TE:\n• Trichoscopy: uniform calibre, no yellow/black dots, no exclamation marks\n• Clear trigger 2–3 months prior\n• Self-limiting",tip:"Trichoscopy decides: yellow/black dots + exclamation hairs = AA not TE"},
+  {cat:"Treatment",q:"What is the first-line GP-level treatment for patchy AA affecting less than 50% of scalp?",a:"Intralesional triamcinolone acetonide (ILT):\n• 10 mg/mL concentration (5 mg/mL temporal/eyebrow)\n• 0.1 mL per injection site, intradermal, 1 cm apart\n• Every 4–6 weeks for 3 months\n• Response rate ~60–70% at treated sites\nPlus: potent topical CS (clobetasol) as adjunct.",tip:"ILT 10mg/mL intradermal, 0.1mL/site, 1cm apart, every 4–6 weeks"},
+  {cat:"Treatment",q:"What are the two licensed JAK inhibitors for AA and what is their mechanism?",a:"1. Baricitinib (Olumiant) — oral JAK1/JAK2; FDA/EMA approved for severe AA (≥50% loss)\n2. Ruxolitinib (Opzelura) — topical JAK1/JAK2; for moderate-severe AA\nMechanism: block JAK1/JAK2 signalling driven by IFN-γ/IL-15 — suppressing the CD8+ T cell attack.",tip:"Baricitinib oral (≥50% loss), ruxolitinib topical. Block JAK1/JAK2"},
+  {cat:"Treatment",q:"What response rates does baricitinib achieve in the BRAVE-AA trials?",a:"BRAVE-AA1 and BRAVE-AA2 Phase 3 RCTs (King et al., 2022):\n• Baricitinib 4mg: ~35–40% achieved ≥80% scalp coverage at 36 weeks\n• Baricitinib 2mg: ~22–28% achieved ≥80% coverage\n• Compared to <5% with placebo\nUnprecedented for a condition with no previously licensed systemic treatment.",tip:"BRAVE-AA: 35–40% achieve ≥80% coverage at 36 weeks — 4mg"},
+  {cat:"Treatment",q:"Why must JAK inhibitor treatment for AA be continued indefinitely?",a:"JAK inhibitors suppress the immune cascade but do not cure AA. The underlying autoimmune predisposition persists. Stopping treatment causes relapse in 70–80% of patients within weeks to months as the immune privilege collapse recurs.",tip:"Stop JAK inhibitor → 70–80% relapse within months"},
+  {cat:"Treatment",q:"A patient starting baricitinib for AT — what pre-treatment screening is required?",a:"1. VZV serostatus — offer Shingrix (non-live) before starting\n2. TB screening (IGRA or Mantoux)\n3. FBC, LFTs, lipid profile, renal function\n4. Ensure vaccinations up-to-date (no live vaccines once started)\n5. Discuss VTE risk\n6. Screen for depression",tip:"VZV + TB screen + FBC/LFTs/lipids + vaccinations before JAK Rx"},
+  {cat:"Treatment",q:"What is the GP approach to watchful waiting in mild patchy AA?",a:"Appropriate for: single small patch (<3 cm), adult, no poor prognostic features, <3 months duration, patient preference.\nExplain: 50–80% of single-patch AA resolves within 12 months spontaneously.\nMonitor with trichoscopy. Begin treatment if extending, failing to resolve at 3 months, or causing psychological distress.",tip:"Small patch <3 months → watchful waiting acceptable with monitoring"},
+  {cat:"Immunopathology",q:"What is the JAIL mnemonic for AA pathophysiology?",a:"J — JAK pathway (JAK1/JAK2) — the immune cascade driver activated by IFN-γ/IL-15\nA — Anagen arrest — follicle locked out of production\nI — Immune privilege collapse — MHC-I expressed, follicle visible to immune system\nL — Lymphocytes (CD8+) — peribulbar 'swarm of bees' attack",tip:"JAIL: JAK pathway, Anagen arrest, IP collapse, Lymphocytes"},
+  {cat:"Clinical features",q:"A 7-year-old child presents with a single smooth patch of hair loss and nail pitting. What is the most important prognostic indicator and initial GP management?",a:"Childhood onset is a poor prognostic indicator (OCEAN: C = childhood onset). Single patch: begin with potent topical CS; ILT acceptable.\nNail pitting correlates with severity — monitor closely.\nAutoimmune screen (TFTs, ANA, glucose). Refer if extending beyond 1 patch.\nPsychological support and school liaison are essential in children.",tip:"Child + nail pitting = poor prognosis. Topical CS + autoimmune screen + psychology"}
+];
+let deck=[...cards],cur=0,flipped=false,sc={easy:0,ok:0,hard:0};
+function showFC(i){const c=deck[i];document.getElementById('fcat').textContent=c.cat;document.getElementById('fq').textContent=c.q;document.getElementById('fa').textContent=c.a;document.getElementById('ftip').textContent=c.tip?'Tip: '+c.tip:'';document.getElementById('fci').classList.remove('flip');flipped=false;document.getElementById('pct').textContent='Card '+(i+1)+' / '+deck.length;document.getElementById('pfill').style.width=Math.round(i/deck.length*100)+'%';document.getElementById('fcdone').style.display='none';}
+function flipFC(){flipped=!flipped;document.getElementById('fci').classList.toggle('flip',flipped)}
+function rate(r){sc[r]++;cur++;if(cur>=deck.length){document.getElementById('fcdone').style.display='block';document.getElementById('fcscore').textContent='Easy: '+sc.easy+' | Got it: '+sc.ok+' | Hard: '+sc.hard;document.getElementById('pfill').style.width='100%';document.getElementById('pct').textContent='Complete';document.getElementById('fci').classList.remove('flip');document.getElementById('fq').textContent='All 24 cards reviewed. The textbook is complete.';document.getElementById('fa').textContent='';return;}showFC(cur);}
+function shuffleFC(){deck=[...cards].sort(()=>Math.random()-.5);cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+function restartFC(){deck=[...cards];cur=0;sc={easy:0,ok:0,hard:0};showFC(0)}
+document.getElementById('alltbl').innerHTML='<tr><th>#</th><th>Category</th><th>Question</th></tr>'+cards.map((c,i)=>'<tr><td>'+(i+1)+'</td><td>'+c.cat+'</td><td>'+c.q.substring(0,72)+(c.q.length>72?'…':'')+'</td></tr>').join('');
+function showSec(id){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nt').forEach(t=>t.classList.remove('on'));document.getElementById('sec-'+id).classList.add('on');const map={intro:0,immuno:1,spectrum:2,clinical:3,trichoscopy:4,diagnosis:5,treatment:6,recall:7,flashcards:8,references:9};document.querySelectorAll('.nt')[map[id]].classList.add('on');}
+showFC(0);
+</script>
+<div class="ch-nav ch-nav-bottom">
+  <a href="chapter_07_telogen_effluvium.html">← Ch. 7: Telogen Effluvium</a>
+  <a class="ch-nav-index" href="index.html">Chapter Index</a>
+  <span class="ch-nav-disabled">No next chapter →</span>
+</div>
+<script>try{localStorage.setItem('tfgp_ch8','1')}catch(e){}</script>
+</body>
+</html>
